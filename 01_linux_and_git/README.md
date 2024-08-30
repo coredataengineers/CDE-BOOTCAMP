@@ -1,0 +1,2 @@
+# BASIC LINUX COMMANDS
+- ls
