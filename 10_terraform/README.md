@@ -40,14 +40,21 @@ This are the things that will happen...
 - Below shows the flow of how terraform provision your resources
 <img width="574" alt="Screenshot 2024-08-30 at 22 44 45" src="https://github.com/user-attachments/assets/7453f25c-b372-4860-9fee-28836441461b">
 
-IMAGE SUMMARY
+**IMAGE SUMMARY**
 - The first thing is writing your configuration file, which is where you will represent what your resources will look like
-- Next step is for Terraform to plan based on what you define in the configuration file, Terraform is basically saying this is what you say you want to provision, it gives you a summary of that so you can review it before creating it.
+- Next step is for **Terraform** to plan based on what you define in the configuration file, Terraform is basically saying this is what you say you want to provision, it gives you a summary of that so you can review it before creating it.
 - Final part is to Apply the configuartion file, this is what initiate the creation of the defined resource inside the configuration file
 - NOTE: After the resources are applied and created, the copy of that operation is registered in the Terraformn state file.
 
 Source Reference: https://developer.hashicorp.com/terraform/intro
 
 ## WHAT IS TERRAFORM STATE FILE ?
-
+First of all, we need to understand that Terraform state file is **VERY IMPORTANT**, in fact Terraform cann ot function without the state file. So lets describe what the state file is all about
+- Terraform state file is a file that contain the summary of the resource that has been created
+  - If you define a resource A in your Terraform configuration file, when you apply, the resource **A** will be created on aws for example, Terraform will also make sure it writes in the terraform state file that **A** has been created in AWS.
+  - Let us assume you go back to your Terraform configuration file where you define A to change it to B
+  - Terraform will compare what you have in the configuration file which B with what Terraform have in the Terraform state file which is A.
+    - When you run a plan on the Terraform configuration file, Terraform will notice a difference, immediately Terraform will assume you want to create B.
+  - So this means Terraform use the state file as a reference to what you already created and use it to compare what you have inside your configuration file, if there is difference, it shows you that.
+  - What if you are creating a another new configuration file, lets assume you want to create a resource called JJJ, again Terraform will check the terraform state file if JJJ is there, if it's not, then Terraform will show you that you are about create JJJ in the plan summary.
 
