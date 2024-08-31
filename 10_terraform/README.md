@@ -57,4 +57,19 @@ First of all, we need to understand that Terraform state file is **VERY IMPORTAN
     - When you run a plan on the Terraform configuration file, Terraform will notice a difference, immediately Terraform will assume you want to create B.
   - So this means Terraform use the state file as a reference to what you already created and use it to compare what you have inside your configuration file, if there is difference, it shows you that.
   - What if you are creating a another new configuration file, lets assume you want to create a resource called JJJ, again Terraform will check the terraform state file if JJJ is there, if it's not, then Terraform will show you that you are about create JJJ in the plan summary.
+  - State file Reference:
+    - https://developer.hashicorp.com/terraform/language/state
+    - https://developer.hashicorp.com/terraform/language/state/purpose
+  - **NOTE**: When working with Terraform state file, PLEASE DO NOT push the state file to github. Terraform state file contains your infrastructure in plain text, it means if you create a Database, the username and password of the database will be available in plain text inside the state file. See here on how to manage state file in Production [HERE](https://developer.hashicorp.com/terraform/language/state/remote).
+ 
+## USEFUL TERRAFORM COMMANDS
+To be able to work with terraform, some commands are useed to conduct the terraform operations, in short, you can't create these resources in the cloud without using terraform commands. Below are the most commonly used
+
+- `terraform init`: This command initialise your terraform project, if you have a specific provider in your project for example `aws`, this will install the plugins for the `aws` provider, so that terraform can be able to use this plugins to communicate with the provider. If you have a new provided added for example `azure`, you need to run the `terraform init` command again.
+- `terraform plan`: This command shows the summary of what you are about to create for review. Basically you create a terraform configuration file of what you want that infrastructure or resource to look like, when you run terraform plan, it display the summary of what that infrastructure looks like, this allow you to review if its exactly what you want.
+- `terraform apply`: This command create the resource in the target provider, for example it will create the rersource in `aws`. Before the final creation, it will ask you to type in `yes`, as soon as this is typed in, the resource will be created.
+- `terraform validate`: This command help you to check if your terraform configuration file is correct, one thing is creating a configuration file of what you want your cloud resources should look like, but you need to confirm if how you represent those resource inside the file is correct or valid.
+- Terraform Command Reference: https://developer.hashicorp.com/terraform/cli/commands
+
+ 
 
