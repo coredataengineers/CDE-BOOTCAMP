@@ -2,11 +2,12 @@
 This Terraform guide covers the basics of Terraform to important concept that needs to be known
 for beginners, this will help beginners know what terraform is and how it works before
 writing Terraform configuration file to provision resources. We will cover the below
-- Prerequisite
-- What is Terraform
-- How Terraform Works
-- Terraform state file
-- Terraform Commands
+- [Prerequisite](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#prerequisite)
+- [Real life Scenario](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/10_terraform/README.md#a-real-life-scenrario)
+- [What is Terraform](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/10_terraform/README.md#what-is-terraform-)
+- [How Terraform Works](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/10_terraform/README.md#how-does-terraform-work-)
+- [Terraform state file](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/10_terraform/README.md#what-is-terraform-state-file-)
+- [Terraform Commands](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/10_terraform/README.md#useful-terraform-commands)
 
 # PREREQUISITE
 To be able to work with terraform, it's important to have the below prerequisite in place.
