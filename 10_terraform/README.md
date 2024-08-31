@@ -1,10 +1,21 @@
-# TERRAFORM
+# TERRAFORM GUIDE
 This Terraform guide covers the basics of Terraform to important concept that needs to be known
 for beginners, this will help beginners know what terraform is and how it works before
 writing Terraform configuration file to provision resources. We will cover the below
+- Prerequisite
 - What is Terraform
 - How Terraform Works
 - Terraform state file
+- Terraform Commands
+
+# PREREQUISITE
+To be able to work with terraform, it's important to have the below prerequisite in place.
+- Install Teraform on your Computer
+  - MAC/LINUX users: Open your terminal and run the below command ( Make sure you have brew install, if not, install it [HERE](https://brew.sh/)
+    - `brew tap hashicorp/tap`
+    - `brew install hashicorp/tap/terraform`
+  - WINDOWS users: Follow the manual installation [HERE](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+  - After the installation, to verify everything is good, run `terraform --version` on your terminal
 
 
 ## A REAL LIFE SCENRARIO
@@ -64,6 +75,8 @@ First of all, we need to understand that Terraform state file is **VERY IMPORTAN
  
 ## USEFUL TERRAFORM COMMANDS
 To be able to work with terraform, some commands are useed to conduct the terraform operations, in short, you can't create these resources in the cloud without using terraform commands. Below are the most commonly used
+
+**NOTE**: Terraform command will only work if you are running the command in the Directory that contain any terraform configuration file that ends with .tf.
 
 - `terraform init`: This command initialise your terraform project, if you have a specific provider in your project for example `aws`, this will install the plugins for the `aws` provider, so that terraform can be able to use this plugins to communicate with the provider. If you have a new provided added for example `azure`, you need to run the `terraform init` command again.
 - `terraform plan`: This command shows the summary of what you are about to create for review. Basically you create a terraform configuration file of what you want that infrastructure or resource to look like, when you run terraform plan, it display the summary of what that infrastructure looks like, this allow you to review if its exactly what you want.
