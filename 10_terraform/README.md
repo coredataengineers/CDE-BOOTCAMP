@@ -6,7 +6,7 @@ writing Terraform configuration file to provision resources. We will cover the b
 - [Real life Scenario](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#a-real-life-scenrario)
 - [What is Terraform](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#what-is-terraform-)
 - [How Terraform Works](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#how-does-terraform-work-)
-- [Terraform state file](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#what-is-terraform-state-file)
+- [Terraform state file](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#what-is-terraform-state-file-)
 - [Terraform Commands](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#useful-terraform-commands)
 
 # PREREQUISITE
