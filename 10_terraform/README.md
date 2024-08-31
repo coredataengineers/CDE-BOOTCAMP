@@ -63,9 +63,9 @@ Source Reference: https://developer.hashicorp.com/terraform/intro
 
 ## WHAT IS TERRAFORM STATE FILE ?
 First of all, we need to understand that Terraform state file is **VERY IMPORTANT**, in fact Terraform cann ot function without the state file. So lets describe what the state file is all about
-- Terraform state file is a file that contain the summary of the resource that has been created
-  - If you define a resource A in your Terraform configuration file, when you apply, the resource **A** will be created on aws for example, Terraform will also make sure it writes in the terraform state file that **A** has been created in AWS.
-  - Let us assume you go back to your Terraform configuration file where you define A to change it to B
+- Terraform state file is a file that contain the summary of the resource that has been created, and it is usually like this `terraform.tfstate`
+  - If you define a resource `A` in your Terraform configuration file called `example.tf`, when you apply, the resource `A` will be created on aws for example, Terraform will also make sure it writes in the terraform state file that resource `A` has been created in AWS.
+  - Let us assume you go back to your Terraform configuration file `example.tf` where you define resource `A` to change it to B
   - Terraform will compare what you have in the configuration file which B with what Terraform have in the Terraform state file which is A.
     - When you run a plan on the Terraform configuration file, Terraform will notice a difference, immediately Terraform will assume you want to create B.
   - So this means Terraform use the state file as a reference to what you already created and use it to compare what you have inside your configuration file, if there is difference, it shows you that.
