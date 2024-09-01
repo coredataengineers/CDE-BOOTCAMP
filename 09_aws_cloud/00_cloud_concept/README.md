@@ -5,11 +5,11 @@ going to explain with simple terms as much as possible, so as to allow this
 concepts to stick faster. 
 
 ### TOPICS TO BE COVERED
-- Life before Cloud
-- What is Cloud Computing
-- What is AWS
-- What is Data Center
-- AWS Global Infrastructure
+- [Life before Cloud](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/00_cloud_concept/README.md#life-before-cloud)
+- [What is Cloud Computing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/00_cloud_concept/README.md#what-is-cloud-computing)
+- [What is AWS](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/00_cloud_concept/README.md#what-is-aws)
+- [What is Data Center](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/00_cloud_concept/README.md#what-is-data-center)
+- [AWS Global Infrastructure](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/00_cloud_concept/README.md#aws-global-infrastructure)
 
 ### LIFE BEFORE CLOUD
 
