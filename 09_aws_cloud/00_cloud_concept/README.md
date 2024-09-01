@@ -26,9 +26,9 @@ Cloud computing is the on-demand delivery of IT resources over the Internet with
 
 
 ### WHAT IS AWS
-
-
-### WHAT IS DATA CENTER
-
+Amazon Web Service popularlily known as AWS is a company offering a Cloud Computing service. You sign up on their website to get Infrastructures/resources you need and pay based on usage. If you need a Server or Database for example, you can easily do that with few clicks on their website without having to manage those physically wherever you are. It's still worth to know that AWS run the Data Center in some physical locations accross the world. 
 
 ### AWS GLOBAL INFRASTRUCTURE
+These section aim to provide some informations about the Global Infrastructure of AWS, we are focusing on where do AWS have those physical Data Centers. We will be introduce to 2 important concepts called `REGION` and `AVAILABILITY ZONES`
+<img width="1000" alt="Screenshot 2024-09-02 at 00 18 29" src="https://github.com/user-attachments/assets/865e2613-83f3-4158-aaa6-2fe818ec6236">
+
