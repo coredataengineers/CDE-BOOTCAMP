@@ -4,21 +4,42 @@ for beginners, this will help beginners know what terraform is and how it works 
 writing Terraform configuration file to provision resources. We will cover the topics below:
 
 - [Prerequisite](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#prerequisite)
-- IAC
+- [Brief Introduction to IAC](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#Brief-Introduction-to-IAC)
 - [Real life Scenario](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#a-real-life-scenrario)
 - [What is Terraform](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#what-is-terraform-)
 - [How Terraform Works](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#how-does-terraform-work-)
 - [Terraform state file](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#what-is-terraform-state-file-)
+- [State and Configuration File Handling In Terraform](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#State-and-Configuration-File-Handling-In-Terraform)
 - [Terraform Commands](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#useful-terraform-commands)
 
-# PREREQUISITE
-To be able to work with Terraform, it's important to have the below prerequisite in place.
+## PREREQUISITE
+Before you start working with Terraform, you'll need to have certain prerequisites in place.
 - Install Terraform on your Computer
   - MAC/LINUX users: Open your terminal and run the below command ( Make sure you have brew installed, if not, install it [HERE](https://brew.sh/)
     - `brew tap hashicorp/tap`
     - `brew install hashicorp/tap/terraform`
   - WINDOWS users: Follow the manual installation [HERE](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
   - After the installation, to verify everything is good, run `terraform --version` on your terminal
+
+# Brief Introduction to IAC
+
+Infrastructure as Code (IaC) is a method of managing and provisioning infrastructure by using code instead of relying on manual processes. This approach involves defining your infrastructure in configuration files, which makes it easier to adjust and share settings, while also ensuring that each environment you set up is identical to the previous one. By documenting these configurations in code, IaC also helps prevent the unintentional changes that can occur with manual setups.
+
+An important aspect of IaC is version control, where these configuration files are managed just like any other software code. This practice allows you to break down your infrastructure into reusable, modular parts that can be combined and automated in various ways.
+
+By automating infrastructure tasks through IaC, developers no longer need to manually set up servers, operating systems, or other infrastructure components whenever they work on new applications or updates.
+
+In the past, setting up infrastructure was a labor-intensive and expensive manual task. With the advent of virtualization, containers, and cloud technologies, the management of infrastructure has shifted away from physical hardware in data centers. While this transition offers many benefits, it also introduces new challenges, such as the need to handle an increasing number of infrastructure components and the frequent scaling of resources. Without IaC, managing today’s complex infrastructure can be quite challenging.
+
+IaC helps organizations effectively manage their infrastructure by enhancing consistency, reducing errors, and eliminating the need for repetitive manual configurations.
+
+The key advantages of IaC include:
+- Lower costs
+- Faster deployment processes
+- Reduced chances of errors
+- Greater consistency in infrastructure setup
+- Prevention of configuration drift
+
 
 
 ## A REAL LIFE SCENARIO
@@ -71,7 +92,7 @@ It is crucial to bear in mind that the Terraform State file is  **VERY IMPORTANT
 - Terraform State File is a file that contains the summary/Metadata of any resource that has been created. It has the `.tfstate` extension. A typical file name could be `terraform.tfstate`
   - If you define a resource `A` in your Terraform configuration file called `example.tf` when you `apply`,  Terraform will automatically document this resource creation in the State file.
 
-## STATE FILE AND CONFIGURATION FILE HANDLING IN TERRAFORM
+## STATE AND CONFIGURATION FILE HANDLING IN TERRAFORM
   - Let us assume you go back to your Terraform configuration file `example.tf` where you define resource `A` to change it to B. 
   - Terraform will compare what you have in the configuration file (which has now changed from `A` to `B`) with what exists in the Terraform State file, A.
     - When you run a `plan` on this configuration file, Terraform notices a difference and immediately assumes you now want to create B.
