@@ -8,7 +8,6 @@ writing Terraform configuration file to provision resources. We will cover the t
 - [Real life Scenario](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#a-real-life-scenrario)
 - [What is Terraform](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#what-is-terraform-)
 - [How Terraform Works](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#how-does-terraform-work-)
-- [Visual Representation of Terraform’s Resource Provisioning](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#Visual-Representation-of-Terraform’s-Resource-Provisioning)
 - [Terraform state file](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#what-is-terraform-state-file-)
 - [State and Configuration File Handling In Terraform](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#State-and-Configuration-File-Handling-In-Terraform)
 - [Terraform Commands](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/10_terraform/README.md#useful-terraform-commands)
@@ -72,7 +71,7 @@ These are the things that will happen...
   
   <img width="204" alt="Screenshot 2024-08-30 at 22 19 35" src="https://github.com/user-attachments/assets/a0703d1c-b9d1-4f2e-8f7e-35c49e98c7a8">
     
-## VISUAL REPRESENTATION OF TERRAFORM’S RESOURCE PROVISIONING
+**Visual Representation of Terraform’s Resource Provisioning**
 
 
 
