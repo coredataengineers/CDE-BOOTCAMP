@@ -32,6 +32,19 @@ Cloud computing is the on-demand delivery of IT resources over the Internet with
 - It's still worth to know that AWS run the Data Center in some physical locations accross the world. 
 
 ### AWS GLOBAL INFRASTRUCTURE
-These section aim to provide some informations about the Global Infrastructure of AWS, we are focusing on where do AWS have those physical Data Centers. We will be introduce to 2 important concepts called `REGION` and `AVAILABILITY ZONES`
-<img width="1000" alt="Screenshot 2024-09-02 at 00 18 29" src="https://github.com/user-attachments/assets/865e2613-83f3-4158-aaa6-2fe818ec6236">
+These section aim to provide some informations about the Global Infrastructure of AWS, we are focusing on where do AWS have those physical Data Centers. We will be introduce to 2 important concepts called `REGION` and `AVAILABILITY ZONES`. Before we dive into explaining what both really means, lets see an image representing both.
+
+<img width="1056" alt="Screenshot 2024-09-02 at 18 00 02" src="https://github.com/user-attachments/assets/e02053d1-034f-4eb0-ae4f-d40ad58af531">
+Image Reference: https://aws.amazon.com/about-aws/global-infrastructure/?p=ngi&loc=1
+
+- `Region`: This is a physical geographical location around the world where they have their data centers. Previously above, we said Data Centers are physical location where all this resources like Servers, Databases and many other IT infrsatructures are. AWS has many of this locations around the world, they classify each geographical location as a Region. From the above image we can see they spread accross different region , the obvious region shown is Cape Town which has 3 `Availability Zones`.
+- `Availability Zones`: This is one or more Data Center, Usually within a Region, you have 1 or more `Availability Zones(AZ)`. Each AZ represent a data center, As we can see above image, Cape Town Region have 3 Availability Zones, which means they have 3 Data Centers. One of the advantages of muliple `Availability Zone (AZ)` is disaster recovery, if you create your Servers accross the 3 `Availabilty Zone (AZ)` , it means if one of the Data Centers experience Outage or Failure, you still have access to your Server since its replicated accross multiple `Availability Zone (AZ)`.
+- `Region Codes`: Every Region have their corresponding way of representing them. For example ..
+  - Region Cape Town code representation is `af-south-1`
+  - Frankfurt code representation is `eu-central-1`
+  - Find the full list [HERE](https://www.aws-services.info/regions.html)
+
+### MORE RESOURCES
+- https://aws.amazon.com/about-aws/global-infrastructure/regions_az/?p=ngi&loc=2
+- https://www.aws-services.info/regions.html
 
