@@ -2,8 +2,8 @@
 This guide gives what beginners need to know about Amazon s3, there is a lot about Amazon s3 but this guide is enought to understand what Amazon s3 is all about and its important features.
 
 ### TOPICS TO COVER
-- What is Amazon s3
-- Some s3 features
+- [What is Amazon s3](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#what-is-amazon-s3)
+- Amazon s3 features
   - Storage Classes
   - Storage management
   - Access management and security
