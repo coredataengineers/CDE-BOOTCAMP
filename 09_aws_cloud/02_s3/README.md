@@ -63,4 +63,4 @@ Let's discuss some of the top feature of Amazon s3
    
 ### AWS DOCUMENTATION REFERENCE
 - https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html
-- Note, there is a lot in the Documenation, this notes above summarise what you need to be aware and thats enought to work with Amazon s3.
+- Note, there is a lot in the Documenation, this notes above summarise what you need to be aware and thats enought to work with Amazon s3 for now.
