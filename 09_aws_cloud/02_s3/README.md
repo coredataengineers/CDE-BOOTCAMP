@@ -3,15 +3,15 @@ This guide gives what beginners need to know about Amazon s3, there is a lot abo
 
 ### TOPICS TO COVER
 - [What is Amazon s3](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#what-is-amazon-s3)
-- Amazon s3 features
-  - Storage Classes
-  - Storage management
-  - Access management and security
-  - Analytics and insights
-  - s3 Versioning
-  - Regions Support
-  - s3 access medium
-- AWS Documenation Reference
+- [Amazon s3 features](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#amazon-s3-features)
+  - [Storage Classes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#:~:text=of%20Amazon%20s3-,Storage%20classes,-Amazon%20s3%20offer)
+  - [Storage management](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#:~:text=their%20corresponding%20detals-,Storage%20management,-Storage%20management%20help)
+  - [Access management and security](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#:~:text=lifecycle%20rule%20HERE-,Access%20management%20and%20security,-Security%20is%20CRITICAL)
+  - [Analytics and insights](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#:~:text=a%20specific%20service.-,Analytics%20and%20insights,-Amazon%20S3%20offers)
+  - [s3 Versioning](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#:~:text=optimize%20your%20storage.-,s3%20Versioning,-Amazon%20s3%20provides)
+  - [Regions Support](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#:~:text=s3%20Versioning%20HERE-,Regions%20Support,-You%20can%20choose)
+  - [s3 access medium](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#:~:text=To%20access%20s3%20bucket%20on%20AWS%2C%20You%20can%20use%20any%20of%20the%20below%20medium)
+- [AWS Documenation Reference](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/02_s3/README.md#aws-documentation-reference)
 
 ### WHAT IS AMAZON S3
 - Amazon Simple Storage Service (Amazon S3) is an object storage service that offers scalability, data availability, security, and performance.
