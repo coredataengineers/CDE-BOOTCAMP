@@ -27,7 +27,7 @@ This guide gives what beginners need to know about Amazon s3, there is a lot abo
   - Your company data that is stored in Amazon s3 need to be secure, they need to be organise also, these are sopme of the many feature s3 offer you.
 
 
-### S3 FEATURES
+### AMAZON S3 FEATURES
 Let's discuss some of the top feature of Amazon s3
 - Storage classes
   - Amazon s3 offer something called storage class which is designed for different use case that meet your needs. There are different types of storage class available in s3 and they all vary in cost.
