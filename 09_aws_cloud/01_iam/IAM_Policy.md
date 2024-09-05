@@ -86,8 +86,43 @@ To summarise the image above
 - Within the IAM Service, you can create users , groups, roles, policies which are called `Resources`
 - So in short, You create one or more Resources within a specific AWS Service
 
-### IAM POLICY DETAILS
+### IAM POLICY EXAMPLE
+- Let's take a look at the IAM policy below, this policy simply allow a `ListBucket` Action to take place on a bucket called `core-data-engineers-cohort1`.
+- If this policy is attached to a specific IAM entity like IAM user, IAM role e.t.c
+  - They will be able to perform a `ListBucket` action only on the `core-data-engineers-cohort1` that is specified in the IAM Policy.
 
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Action": ["s3:ListBucket"],
+            "Resource": ["arn:aws:s3:::core-data-engineers-cohort1"]
+        }
+    ]
+}
+```
+
+### IAM POLICY DEEP DIVE
+We are going to use our IAM policy example above to do a deep dive that will give us a detail understanding of the structure and its elements.
+- `Version`: The Version policy element specifies the language syntax rules that are to be used to process a policy. More on `Version` [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_version.html)
+- `Statement`: The Statement element is the most important element for an IAM policy. Within a Statement element, you can have One or More Statements inside a `List` for people coming from Python Background and `Array` for individuals coming from JavaScript background. Each statement are wrapped inside a curly braces. Example: `"Statement": [ {Statement1}, {Statement2} ]`. More on Statement element [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_statement.html).
+  - `Sid`: This is just the id of the individual statement within the Statement element, this can be any unique id of your choice. More on Sid [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_sid.html)
+  - `Effect`: Effect takes 2 values `Allow` or `Deny`, this is just specifying whether to Allow a specific Action or Deny it. By default it's `Deny`. More on Effect [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_effect.html)
+  - `Action`: The Action element describes the specific action or actions that will be allowed or denied, you can have one or more actions, depending on your use case. More on Actions [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_action.html).
+    - To see the complete list of Actions that is associated with a specific AWS Service, please visit [Service Authorisation Reference](https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html)
+    - For example to see Actions related to IAM Service, Visit [HERE](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html#awsidentityandaccessmanagementiam-actions-as-permissions)
+  - `Resource`: The Resource element in an IAM policy statement defines the object/Resource or objects/Resources within an AWS Service that the statement applies to. You specify a Resource using an Amazon Resource Name (ARN). More on Resource [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_resource.html)
+ 
+NOTE: The above IAM Policy elements are not the only elements, there are more which can be found [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html). But you do not require all of them, the one mentioned here are enough to start writing IAM Policy, you can always extend as you grow in the field. 
+ 
+### DOCUMENTATION REFERENCE
+- https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html
+- https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html
+- https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
+- https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
 
 
     
