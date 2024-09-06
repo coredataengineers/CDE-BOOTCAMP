@@ -62,7 +62,7 @@ Before we talk about what Security Group is, its important to know that when you
 **IMAGE SUMMARY**
 - An individual sending a Query from outside into our EC2 Instance to be able to query our Database table.
   - That request is a traffic aim to go inside the Instance which makes it an Inbound Traffic
-- We have our Postgres Database running inside our EC2 instance, but we attached a Security Group that has both Inbound and Outbound traffic on our EC2 Instance.
+- We have our Postgres Database running inside our EC2 instance, but we attached a Security Group that has both Inbound and Outbound rule to our EC2 Instance.
   - The Inbound rule will check any traffic location, if its not on the inbound rule list, it will be decline, it will be allowed to connect to the Database if the location is on the list.
   - Outbound will check any traffic leaving the Instance to ensure it matches the location on the Outbound rule. NOTE, Outbound bound rule is by default allow to go to any location around the world.
   - Locations are usually represented based on IP address, thos require STRONG networking knowledge. 
