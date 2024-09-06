@@ -1,5 +1,5 @@
 # IAM POLICY
-This page will give detail understanding of IAM Policy, this is an important resource in AWS to understand. 
+This page will give detailed understanding of the IAM Policy, this is an important resource in AWS to understand. 
 To be honest, you can do very little without IAM policy, we will cover this in detail.
 
 ### Topics that will be covered
@@ -17,12 +17,15 @@ To be honest, you can do very little without IAM policy, we will cover this in d
 
 
 ### WHAT IS IAM POLICY
-- In a simple word, IAM Policy is a Document containing the instruction of what an AWS entity like IAM User, IAM Role, IAM Group can do.
-  - Basically, this policy contain what an entity should have and what they should not have access to.
-  - For example you can define a policy saying access to be able to create a Database is allowed.
-  - When this policy is attached to an IAM user called `John` for example, it means `John` will be able to carry out the action to create a Database.
-  - Also you can create a policy to grant a permission to a specific `Principal` in AWS.
-    - A `Principal` is the user, account, service, or other entity that is allowed or denied access to a resource in AWS.
+- In a simple word, the IAM Policy is a Document containing the instructions of what an AWS entity like IAM User, IAM Role, or IAM Group can do. 
+- **Kindly note** that `entity` would be used a lot in this article, generally meaning either an IAM User, Role, or Group.
+  - Basically, this policy contains what an entity should have and what they should not have access to.
+  - For example, you can define a policy that grants access to create a Database.
+  - When this policy is attached to an IAM user called `John` for example, it means `John` will be able to create a Database.
+  - Also, you can create a policy to grant a permission to a specific `Principal` in AWS.
+- A `Principal` is the user, account, service, or other entity that is allowed or denied access to a resource in AWS. 
+    - To clarify the difference between IAM entities and principals. Entities are the managed resources within AWS IAM that represent identities (like users, groups, and roles), while IAM principals are actors that perform actions on AWS resources.
+- All IAM entities (such as users and roles) can act as IAM principals when they interact with AWS services, but not all IAM principals are entities. For example, a federated user (authenticated through an external identity provider) is a principal but not an entity.
     - You can create a policy that say only `John` can access an s3 Bucket, we will cover Amazon s3 later.
 
 ### TYPE OF POLICY
@@ -124,9 +127,3 @@ NOTE: The above IAM Policy elements are not the only elements, there are more wh
 - https://docs.aws.amazon.com/service-authorization/latest/reference/reference_policies_actions-resources-contextkeys.html
 - https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html
 - https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html
-
-
-    
-
-
-    
