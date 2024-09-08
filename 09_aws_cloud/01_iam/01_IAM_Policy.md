@@ -3,6 +3,7 @@ This page will give detailed understanding of the IAM Policy, this is an importa
 To be honest, you can do very little without IAM policy, we will cover this in detail.
 
 ### Topics that will be covered
+- [Common IAM Concepts](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#common-iam-concepts)
 - [What is IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#what-is-iam-policy)
 - [Type of IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#type-of-policy)
   - [AWS Managed Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=TYPE%20OF%20POLICY-,AWS%20Managed%20Policies,-An%20AWS%20managed)
@@ -15,9 +16,15 @@ To be honest, you can do very little without IAM policy, we will cover this in d
 - [IAM policy example](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#iam-policy-example)
 - [IAM Policy Deep Dive](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#iam-policy-deep-dive)
 
+### COMMON IAM CONCEPTS
+  We would be explaining the concepts Identity, Entity and Principals. Feel free to revert here when you seem confused about their application and how they differ.
+- `AWS Entity`: An entity refers is any object that interacts with AWS resources. This could include identities, but it also encompasses broader AWS resources that have permissions. The term “entity” is broader than identity. While all identities are entities (since they can interact with AWS), not all entities are identities. An EC2 instance or Lambda function, for instance, is an entity but not typically considered an identity in the human or application sense.
+- `AWS Identity`: An identity in AWS refers to any entity (user, role, group, etc.) that can be authenticated and authorized to interact with AWS resources. The term "identity" emphasizes who or what is authenticated. AWS identities are defined and managed in AWS Identity and Access Management (IAM).
+- `AWS Principal`: A principal is an identity that can make a request to interact with an AWS resource. It is the actor or initiator of an action within AWS. Principals can be human users, AWS services, or external identity providers who are given temporary access to AWS can act as principals.
+
 
 ### WHAT IS IAM POLICY
-- In a simple word, the IAM Policy is a Document containing the instructions of what an AWS entity like IAM User, IAM Role, or IAM Group can do. 
+- Simply put, the IAM Policy is a Document containing the instructions of what an AWS entity like IAM User, IAM Role, or IAM Group can do. 
 - **Kindly note** that `entity` would be used a lot in this article, generally meaning either an IAM User, Role, or Group.
   - Basically, this policy contains what an entity should have and what they should not have access to.
   - For example, you can define a policy that grants access to create a Database.
@@ -30,15 +37,14 @@ To be honest, you can do very little without IAM policy, we will cover this in d
 
 ### TYPE OF POLICY
 - `AWS Managed Policies`
-  - An AWS managed policy is a policy that is created and managed by AWS, they are already created and it comes with every AWS account
-  - AWS managed policies make it convenient for you to assign appropriate permissions to users, user groups, and roles.
-  - You cannot change the permissions defined in AWS managed policies.
-  - AWS occasionally updates the permissions defined in an AWS managed policy.
-    - When AWS does this, the update affects all principal entities (users, user groups, and roles) that the policy is attached to
-  - It is faster than writing the policies yourself, and includes permissions for many common use cases.
-    - But AWS Management policies sometimes doesn't fit our use case sometimes.
-    - For example, you might want to restrict someone from having access to a resource which will require you to really customize the policy
-    - In that case, you have to write your own.
+  - AWS-managed policies are pre-built and maintained by AWS, available by default in every AWS account.
+  - These policies make it easy to assign relevant permissions to users, groups, and roles without needing to create them manually.
+  - The permissions in AWS-managed policies are fixed, and you cannot modify them.
+  - AWS occasionally updates the permissions within these policies, and these changes apply automatically to all entities (users, groups, or roles) that the policy is associated with.
+  - Using AWS-managed policies is quicker than creating your own and covers many typical use cases.
+  - However, they may not always meet specific needs.
+  - For instance, if you need to limit access to certain resources, you would need to customize the policy accordingly.
+  - In such cases, writing a custom policy is necessary.
   - More on `AWS Managed Polices` [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)
    
 - `Inline policies`
@@ -49,7 +55,7 @@ To be honest, you can do very little without IAM policy, we will cover this in d
 - `Identity-based policies`
   - These are attached to an IAM user, group, or role, they are identity based in nature.
   - These policies let you specify what that identity can do (its permissions)
-  -  Identity-based policies can be be [Managed Policies or Inline Policies.](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)
+  -  Identity-based policies can be [Managed Policies or Inline Policies.](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)
 
 - `Resource-based policies`
   - These are policies that are attached to a resource for example s3, Databases, EC2 e.t.c
