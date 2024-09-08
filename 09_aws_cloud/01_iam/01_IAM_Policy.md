@@ -3,18 +3,18 @@ This page will give detailed understanding of the IAM Policy, this is an importa
 To be honest, you can do very little without IAM policy, we will cover this in detail.
 
 ### Topics that will be covered
-- [Common IAM Concepts](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#common-iam-concepts)
-- [What is IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#what-is-iam-policy)
-- [Type of IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#type-of-policy)
-  - [AWS Managed Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=TYPE%20OF%20POLICY-,AWS%20Managed%20Policies,-An%20AWS%20managed)
-  - [Inline Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=Managed%20Polices%20HERE-,Inline%20policies,-An%20inline%20policy)
-  - [Identity Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=is%20also%20deleted.-,Identity%2Dbased%20policies,-These%20are%20attached)
-  - [Resource Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=or%20Inline%20Policies.-,Resource%2Dbased%20policies,-These%20are%20policies)
-- [What is ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#what-is-arn-amazon-resource-name)
-- [Format of ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#arn-format)
-- [Understanding AWS Service and Resource](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#understanding-aws-service-and-resource)
-- [IAM policy example](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#iam-policy-example)
-- [IAM Policy Deep Dive](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#iam-policy-deep-dive)
+- [Common IAM Concepts](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#common-iam-concepts)
+- [What is IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#what-is-iam-policy)
+- [Type of IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#type-of-policy)
+  - [AWS Managed Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=TYPE%20OF%20POLICY-,AWS%20Managed%20Policies,-An%20AWS%20managed)
+  - [Inline Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=Managed%20Polices%20HERE-,Inline%20policies,-An%20inline%20policy)
+  - [Identity Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=is%20also%20deleted.-,Identity%2Dbased%20policies,-These%20are%20attached)
+  - [Resource Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=or%20Inline%20Policies.-,Resource%2Dbased%20policies,-These%20are%20policies)
+- [What is ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#what-is-arn-amazon-resource-name)
+- [Format of ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#arn-format)
+- [Understanding AWS Service and Resource](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#understanding-aws-service-and-resource)
+- [IAM policy example](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#iam-policy-example)
+- [IAM Policy Deep Dive](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#iam-policy-deep-dive)
 
 ### COMMON IAM CONCEPTS
   We would be explaining the concepts Identity, Entity and Principals. Feel free to revert here when you seem confused about their application and how they differ.
@@ -30,7 +30,7 @@ To be honest, you can do very little without IAM policy, we will cover this in d
   - For example, you can define a policy that grants access to create a Database.
   - When this policy is attached to an IAM user called `John` for example, it means `John` will be able to create a Database.
   - Also, you can create a policy to grant a permission to a specific `Principal` in AWS.
-- A `Principal` is the user, account, service, or other entity that is allowed or denied access to a resource in AWS. 
+- A `Principal` is the user, account, service, or federated user (other entity that is allowed or denied access to a resource in AWS). 
     - To clarify the difference between IAM entities and principals. Entities are the managed resources within AWS IAM that represent identities (like users, groups, and roles), while IAM principals are actors that perform actions on AWS resources.
 - All IAM entities (such as users and roles) can act as IAM principals when they interact with AWS services, but not all IAM principals are entities. For example, a federated user (authenticated through an external identity provider) is a principal but not an entity.
     - You can create a policy that say only `John` can access an s3 Bucket, we will cover Amazon s3 later.
@@ -45,7 +45,7 @@ To be honest, you can do very little without IAM policy, we will cover this in d
   - However, they may not always meet specific needs.
   - For instance, if you need to limit access to certain resources, you would need to customize the policy accordingly.
   - In such cases, writing a custom policy is necessary.
-  - More on `AWS Managed Polices` [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)
+  - More on `AWS Managed Policies` [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#aws-managed-policies)
    
 - `Inline policies`
   - An inline policy is a policy created for a single IAM identity (a user, group, or role)
@@ -53,7 +53,7 @@ To be honest, you can do very little without IAM policy, we will cover this in d
     - For example, if you create an inline policy for `John`, when you delete `John`, the inline policy is also deleted.
    
 - `Identity-based policies`
-  - These are attached to an IAM user, group, or role, they are identity based in nature.
+  - These are attached to an IAM user, group, or role, they are identity-based in nature. They are the most used policies.
   - These policies let you specify what that identity can do (its permissions)
   -  Identity-based policies can be [Managed Policies or Inline Policies.](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html)
 
@@ -62,17 +62,17 @@ To be honest, you can do very little without IAM policy, we will cover this in d
   - With resource-based policies, you can specify who has access to the resource and what actions they can perform on it.
  
 ### WHAT IS ARN (AMAZON RESOURCE NAME)?
-- Amazon Resource Names (ARNs) uniquely identify AWS resources. Resources are like infrastructures you create in the cloud like Storage, Database, Server e.t.c.
-- Basically when you create resources in the cloud, to be able to identify them uniquely, they are assigned their corresponding ARN
-- Two resources can not share the same ARN
+- Amazon Resource Names (ARNs) uniquely identify AWS resources. Resources are like infrastructures you create in the cloud like Storage, Database, Server etc.
+- When you create resources in the cloud, to be able to identify them uniquely, they are assigned their corresponding ARN. You can visualize it as a tag/barcode.
+- Two resources cannot share the same ARN
 
 ### ARN FORMAT
-- The format of ARN is not the same accross every resources
+- The format of ARN is not the same across every resources
 - The specific AWS service will determine the format of the ARN
-  - For example the ARN format for an Amazon s3 bucket is like this below
+  - For example, the ARN format for an Amazon s3 bucket is like 
     - `arn:PARTITION:s3:::NAME-OF-YOUR-BUCKET`
     - PARTITION in this case is `aws`. See [HERE](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html#arns-syntax) for more on ARN.
-  - The ARN format for an IAM user called `john` is like this below
+  - Meanwhile, the ARN format for Amazon IAM for a user, `john` is like
     - `arn:PARTITION:iam::AWS-ACCOUNT-NUMBER:user/john`
   - It's evident that the format of ARN varies based on specific AWS Service.
 - To know the format for a specific AWS Service, follow the below steps
@@ -82,19 +82,25 @@ To be honest, you can do very little without IAM policy, we will cover this in d
     - Search and click on [Amazon s3](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html) from the long list on the left.
   - Under the `Topics` section, click on [Resource Types Defined by Amazon s3](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html#amazons3-resources-for-iam-policies)
     - You can see a table with `Resource types` and `ARN`
-      - The ARN side, shows the format of the ARN for a specific resources in Amazon s3.
+      - The ARN side, shows the format of the ARN for a specific resource in Amazon s3.
      
 ### UNDERSTANDING AWS SERVICE AND RESOURCE
-Understanding the difference between these two is important to know in AWS, this will come very handy when we jump to understanding IAM Policy and also in other AWS services that will be covered.
+Understanding the difference between these two is important to know in AWS, this will come very handy when we jump to understanding IAM Policy and in other AWS services that will be covered.
+
+`AWS Service`: Refers to the platform or tool provided by AWS to offer functionality (e.g. IAM, EC2, S3, Lambda). Services deliver capabilities and are abstract concepts.
+
+`AWS Resource`: Refers to the instances or objects you create and manage using AWS services (e.g., IAM User, EC2 instance, S3 bucket, Lambda function). Resources are concrete and actionable items.
+
 Below is a visual representation of both AWS Service and Resource, in this case we picked IAM Service.
 
 ![Screenshot 2024-09-05 at 19 54 19](https://github.com/user-attachments/assets/0fb12a96-f186-41d3-8443-e759be7796e2)
 
-To summarise the image above
-- Within the AWS Account, there is a Service AWS offer called IAM
-  - This Service allow us to create identity and manage access that secure our AWS Account and its related Services
-- Within the IAM Service, you can create users , groups, roles, policies which are called `Resources`
-- So in short, You create one or more Resources within a specific AWS Service
+To summarize the image above
+ - AWS offers a service called IAM (Identity and Access Management) that helps manage identities and control access, ensuring the security of your AWS account and its associated services.
+
+With IAM, you can set up users, groups, roles, and policies—collectively known as 'resources'—to manage permissions and control who can access what within your AWS environment.
+
+In essence, IAM allows you to create and manage multiple resources within a particular AWS service to handle access and identity-related tasks.
 
 ### IAM POLICY EXAMPLE
 - Let's take a look at the IAM policy below, this policy simply allow a `ListBucket` Action to take place on a bucket called `core-data-engineers-cohort1`.
