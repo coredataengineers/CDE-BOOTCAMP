@@ -3,18 +3,18 @@ This page will give detailed understanding of the IAM Policy, this is an importa
 To be honest, you can do very little without IAM policy, we will cover this in detail.
 
 ### Topics that will be covered
-- [Common IAM Concepts](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#common-iam-concepts)
-- [What is IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#what-is-iam-policy)
-- [Type of IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#type-of-policy)
-  - [AWS Managed Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=TYPE%20OF%20POLICY-,AWS%20Managed%20Policies,-An%20AWS%20managed)
-  - [Inline Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=Managed%20Polices%20HERE-,Inline%20policies,-An%20inline%20policy)
-  - [Identity Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=is%20also%20deleted.-,Identity%2Dbased%20policies,-These%20are%20attached)
-  - [Resource Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#:~:text=or%20Inline%20Policies.-,Resource%2Dbased%20policies,-These%20are%20policies)
-- [What is ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#what-is-arn-amazon-resource-name)
-- [Format of ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#arn-format)
-- [Understanding AWS Service and Resource](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#understanding-aws-service-and-resource)
-- [IAM policy example](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#iam-policy-example)
-- [IAM Policy Deep Dive](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/IAM_Policy.md#iam-policy-deep-dive)
+- [Common IAM Concepts](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#common-iam-concepts)
+- [What is IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#what-is-iam-policy)
+- [Type of IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#type-of-policy)
+  - [AWS Managed Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=TYPE%20OF%20POLICY-,AWS%20Managed%20Policies,-An%20AWS%20managed)
+  - [Inline Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=Managed%20Polices%20HERE-,Inline%20policies,-An%20inline%20policy)
+  - [Identity Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=is%20also%20deleted.-,Identity%2Dbased%20policies,-These%20are%20attached)
+  - [Resource Based Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#:~:text=or%20Inline%20Policies.-,Resource%2Dbased%20policies,-These%20are%20policies)
+- [What is ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#what-is-arn-amazon-resource-name)
+- [Format of ARN](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#arn-format)
+- [Understanding AWS Service and Resource](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#understanding-aws-service-and-resource)
+- [IAM policy example](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#iam-policy-example)
+- [IAM Policy Deep Dive](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/01_IAM_Policy.md#iam-policy-deep-dive)
 
 ### COMMON IAM CONCEPTS
   We would be explaining the concepts Identity, Entity and Principals. Feel free to revert here when you seem confused about their application and how they differ.
