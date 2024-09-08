@@ -44,6 +44,10 @@
 <img width="1153" alt="Screenshot 2024-09-04 at 20 09 30" src="https://github.com/user-attachments/assets/b4129dc8-c7fd-4e24-9b43-be38bd2af444">
 
 ### IAM POLICY
-You manage access in AWS by creating policies and attaching them to IAM identities (users, groups of users, or roles) or AWS resources. A policy is an object in AWS that, when associated with an identity or resource, defines its permissions. AWS evaluates these policies when an IAM principal (user or role) makes a request. Permissions in the policies determine whether the request is allowed or denied. Most policies are stored in AWS as JSON documents.
+You manage access in AWS by creating policies and attaching them to IAM identities (users, groups of users, or roles) or AWS resources. A policy is an object in AWS that, when associated with an identity or resource, defines its permissions. AWS evaluates these policies when an IAM principal (user or role) makes a request. Permissions in the policies determine whether the request is allowed or denied. Most policies are stored in AWS as JSON documents. We covered IAM Policy seperately [HERE](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/01_IAM_Policy.md) because it's very import to understand it in detail as a Data Engineer.
 
 ### IAM ROLE
+Another IAM Resource is IAM Role, this role is very important
+- An IAM role is an IAM identity that you can create in your account that has specific permissions.
+  - Basically you create a Role, you attach an IAM Policy to it and anyone or specific service can assume that Role to perform a specific action.
+IAM Role is VERY CRITICAL to know and understand, we covered it in detail [HERE](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/02_IAM_Role.md)
