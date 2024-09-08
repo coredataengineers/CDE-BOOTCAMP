@@ -1,12 +1,12 @@
 # IDENTITY AND ACCESS MANAGEMENT (IAM)
 
  # TOPICS
- - [What is IAM](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/README.md#what-is-iam)
- - [Root User](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/README.md#root-user)
- - [IAM user](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/README.md#iam-user)
- - [IAM group](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/README.md#iam-group)
- - [IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/README.md#iam-policy)
- - [IAM Role](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/README.md#iam-role)
+ - [What is IAM](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/00_IAM_resources.md#what-is-iam)
+ - [Root User](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/00_IAM_Resources.md#root-user)
+ - [IAM user](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/00_IAM_resources.md#iam-user)
+ - [IAM group](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/00_IAM_resources.md#iam-group)
+ - [IAM Policy](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/00_IAM_resources.md#iam-policy)
+ - [IAM Role](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/09_aws_cloud/01_iam/00_IAM_resources.md#iam-role)
 
 ### WHAT IS IAM
 - AWS Identity and Access Management (IAM) is one of the key services AWS provides that helps you to securely control who can access your account and the resources in it, like Servers and databases. etc.
