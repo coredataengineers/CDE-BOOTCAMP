@@ -49,5 +49,5 @@ You manage access in AWS by creating policies and attaching them to IAM identiti
 ### IAM ROLE
 Another IAM Resource is IAM Role, this role is very important
 - An IAM role is an IAM identity that you can create in your account that has specific permissions.
-  - Basically you create a Role, you attach an IAM Policy to it and anyone or specific service can assume that Role to perform a specific action.
-IAM Role is VERY CRITICAL to know and understand, we covered it in detail [HERE](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/02_IAM_Role.md)
+  - Basically you create an `IAM Role`, you attach an IAM Policy to it and anyone or specific service can assume that Role to perform a specific action.
+`IAM Role` is `VERY CRITICAL` to know and understand, we covered it in detail [HERE](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/01_iam/02_IAM_Role.md)
