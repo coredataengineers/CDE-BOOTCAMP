@@ -35,6 +35,16 @@
 
 <img width="1159" alt="Screenshot 2024-09-04 at 20 03 00" src="https://github.com/user-attachments/assets/1a2537aa-5a4e-4322-bbe3-cb354e75b8b0">
 
+### IAM ACCESS AND SECRET KEY
+- These are long-term credentials for an IAM user or the AWS account root user
+- These credentials are mainly used to authenticate into your AWS account programatically
+- For example you might have a python code that need to put a csv file in an s3 bucket in AWS
+  - In this case, python cannot login into AWS, it's not a human being, the only option is use these access key and secret key as a means to authenticate and put the file there.
+  - Basically, you will create an IAM user for that your python application
+  - You will grant the necessary permission to that IAM user to be able to put file in the s3 bucket.
+  - You create the access and secret key for that IAM user
+  - Your python application can use the access and secret keys to authenticate and carry out the actions to put the csv in the bucket.
+
 ### IAM GROUP
 - An IAM user group is a collection of IAM users.
 - User groups let you easily group IAM users that belong to the same function in one entity called an IAM group.
