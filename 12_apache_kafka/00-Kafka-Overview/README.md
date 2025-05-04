@@ -4,3 +4,5 @@ Apache Kafka is a distributed event streaming platform designed for high-through
 
 Confluent Kafka is an enterprise-grade distribution of Apache Kafka that adds additional tools, services, and APIs to simplify deployment, monitoring, security, and integration.
 
+
+## Life befpre Kafka
