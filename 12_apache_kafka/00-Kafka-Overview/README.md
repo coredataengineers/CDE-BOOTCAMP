@@ -12,9 +12,7 @@ Let’s explore what life looked like without Kafka — and why even batch proce
 ### Option 1: Direct Communication Between Systems
 Each service is wired to talk directly to another.
 
-[Orders Service] ---> [Payments Service]  
-[Website]       ---> [Analytics System]  
-[Mobile App]    ---> [Dashboard Service]
+<img width="400" alt="Screenshot 2025-05-05 at 8 40 23 AM" src="https://github.com/user-attachments/assets/21caa313-cdd7-40f2-b6a3-e202b18217bf" />
 
 **Problems**:
 * Tightly coupled: Changes in one service break the others.
@@ -32,7 +30,7 @@ Message queues (like RabbitMQ or ActiveMQ) improved decoupling but still had lim
 ### Option 3: Batch Processing
 Some teams turned to batch processing pipelines, like using cron jobs or ETL tools (Extract, Transform, Load) to move data periodically:
 
-[Database A] --> (Nightly Job) --> [Data Warehouse]
+<img width="540" alt="Screenshot 2025-05-05 at 8 41 36 AM" src="https://github.com/user-attachments/assets/de244e88-bc4a-4673-83b0-13dd3e0e503e" />
 
 **Problems with Batch Processing**:
 
@@ -53,6 +51,24 @@ Some teams turned to batch processing pipelines, like using cron jobs or ETL too
 
 If you use batch processing, you’ll only update the dashboard every 15 minutes. That’s too late as users expect instant updates.
 
+
+## Kafka: The Real-Time Streaming Solution
+Kafka is built to solve these limitations. It acts as a central pipeline where producers publish events and consumers subscribe to them.
+
+Here’s what it looks like with Kafka
+
+          +----------------+
+          | Orders Service |
+          +----------------+
+                  |
+                  v
+             [ Kafka Topic ]  <--- Event stream
+                  |
+        +--------------------------+
+        | Payment Service          |
+        | Inventory Service        |
+        | Analytics Dashboard      |
+        +--------------------------+
 
 
 # Apache Kafka Overview
