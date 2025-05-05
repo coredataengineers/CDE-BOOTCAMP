@@ -74,6 +74,26 @@ Here’s what it looks like with Kafka
 | No historical data in queues  | Kafka retains messages for days/weeks     |
 | Replay not possible           | Consumers can replay by resetting offsets |
 
+**Kafka vs Batch: A Quick Comparison**
+
+| Feature             | Batch Processing        | Kafka Streaming                         |
+| ------------------- | ----------------------- | --------------------------------------- |
+| Data delivery speed | Delayed (minutes/hours) | Near real-time                          |
+| Processing method   | Periodic jobs           | Continuous stream                       |
+| Replayability       | Complex/manual          | Simple (via offsets)                    |
+| Scalability         | Often brittle           | Built-in partitioning                   |
+| Use case fit        | Reports, backups        | Dashboards, alerts, real-time services  |
+| Failure handling    | Retry whole batch       | Consumer resumes from last known offset |
+
+**Conclusion**
+
+Kafka replaces rigid, slow, and fragile communication pipelines with a fast, scalable, and reliable event streaming platform.
+
+**With Kafka:**
+
+* Systems are loosely coupled.
+* Data is streamed continuously.
+* Consumers can act in real-time or replay the past.
 
 # Apache Kafka Overview
 
