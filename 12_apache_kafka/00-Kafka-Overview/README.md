@@ -57,19 +57,7 @@ Kafka is built to solve these limitations. It acts as a central pipeline where p
 
 Here’s what it looks like with Kafka
 
-          +----------------+
-          | Orders Service |
-          +----------------+
-                  |
-                  v
-             [ Kafka Topic ]  <--- Event stream
-                  |
-        +--------------------------+
-        | Payment Service          |
-        | Inventory Service        |
-        | Analytics Dashboard      |
-        +--------------------------+
-
+<img width="668" alt="Screenshot 2025-05-05 at 8 49 36 AM" src="https://github.com/user-attachments/assets/5890e930-2cb9-496c-aa9c-f3a910ba3075" />
 
 # Apache Kafka Overview
 
