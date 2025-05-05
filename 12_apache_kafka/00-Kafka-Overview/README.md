@@ -63,6 +63,18 @@ Here’s what it looks like with Kafka
 * Producers write events to Kafka.
 * Consumers read at their own speed, even replaying old messages if needed.
 
+**How Kafka Solves These Problems**
+
+| Problem                       | Kafka’s Answer                            |
+| ----------------------------- | ----------------------------------------- |
+| Delayed batch insights        | Streams data in real time                 |
+| Fragile point-to-point links  | Centralized topic-based communication     |
+| Consumers blocked by failures | Kafka stores data until consumer is ready |
+| Difficult scaling             | Horizontal scaling with partitions        |
+| No historical data in queues  | Kafka retains messages for days/weeks     |
+| Replay not possible           | Consumers can replay by resetting offsets |
+
+
 # Apache Kafka Overview
 
 Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and scalable real-time data pipelines. Originally developed at LinkedIn and later open-sourced, Kafka has become the de facto standard for building modern data streaming architectures.
