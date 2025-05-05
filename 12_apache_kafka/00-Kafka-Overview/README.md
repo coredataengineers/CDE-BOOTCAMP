@@ -29,6 +29,23 @@ Each service is wired to talk directly to another.
 * Not built for high throughput or large-scale replay.
 * Lacked storage—used for moving data, not persisting it.
 
+**Option 3**: Batch Processing
+<br> Some teams turned to batch processing pipelines, like using cron jobs or ETL tools (Extract, Transform, Load) to move data periodically:
+
+[Database A] --(Nightly Job)--> [Data Warehouse]
+
+**Problems with Batch Processing**:
+
+| Issue                         | Why It's a Problem                                                |
+| ----------------------------- | ----------------------------------------------------------------- |
+| **Delayed Data**            | Batches often run every hour or daily. You get outdated insights. |
+| **Rigid Scheduling**       | Missed jobs = missed data. Dependencies are brittle.              |
+| **Poor Real-Time Support** | No way to react instantly to new events.                          |
+| **Not Scalable**           | Moving millions of rows in batches causes spikes and failures.    |
+| **Replay is Hard**         | You can’t “go back” unless you re-run the entire job.             |
+| **No Streaming**            | Not suitable for dashboards, alerts, or event-driven systems.     |
+
+
 
 
 # Apache Kafka Overview
