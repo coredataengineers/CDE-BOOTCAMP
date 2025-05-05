@@ -17,11 +17,17 @@ Each service is wired to talk directly to another.
 [Mobile App]    ---> [Dashboard Service]
 
 **Problems**:
-<br> 1. Tightly coupled: Changes in one service break the others.
-<br> 2. Fragile: If the destination is down, messages are lost or delayed.
-<br> 3. Complex: Adding a new consumer means touching the producer code.
+* Tightly coupled: Changes in one service break the others.
+* Fragile: If the destination is down, messages are lost or delayed.
+* Complex: Adding a new consumer means touching the producer code.
 
 
+**Option 2**: Traditional Message Queues
+<br> Message queues (like RabbitMQ or ActiveMQ) improved decoupling but still had limits:
+
+* Messages are often removed after being read.
+* Not built for high throughput or large-scale replay.
+* Lacked storage—used for moving data, not persisting it.
 
 
 
