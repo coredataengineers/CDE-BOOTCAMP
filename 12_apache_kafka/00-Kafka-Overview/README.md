@@ -59,6 +59,10 @@ Here’s what it looks like with Kafka
 
 <img width="668" alt="Screenshot 2025-05-05 at 8 49 36 AM" src="https://github.com/user-attachments/assets/5890e930-2cb9-496c-aa9c-f3a910ba3075" />
 
+**What now happens**
+* Producers write events to Kafka.
+* Consumers read at their own speed, even replaying old messages if needed.
+
 # Apache Kafka Overview
 
 Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and scalable real-time data pipelines. Originally developed at LinkedIn and later open-sourced, Kafka has become the de facto standard for building modern data streaming architectures.
