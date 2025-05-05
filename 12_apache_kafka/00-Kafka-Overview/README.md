@@ -9,8 +9,17 @@ Before Kafka, organizations often relied on direct communication between service
 
 Let’s explore what life looked like without Kafka — and why even batch processing couldn’t solve the full picture.
 
+**Option 1**: Direct Communication Between Systems
+Each service is wired to talk directly to another.
 
+[Orders Service] ---> [Payments Service]  
+[Website]       ---> [Analytics System]  
+[Mobile App]    ---> [Dashboard Service]
 
+**Problems**:
+<br> 1. Tightly coupled: Changes in one service break the others.
+<br> 2. Fragile: If the destination is down, messages are lost or delayed.
+<br> 3. Complex: Adding a new consumer means touching the producer code.
 
 
 
