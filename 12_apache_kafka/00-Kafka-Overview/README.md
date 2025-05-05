@@ -9,7 +9,7 @@ Before Kafka, organizations often relied on direct communication between service
 
 Let’s explore what life looked like without Kafka — and why even batch processing couldn’t solve the full picture.
 
-**Option 1**: Direct Communication Between Systems
+### Option 1: Direct Communication Between Systems
 Each service is wired to talk directly to another.
 
 [Orders Service] ---> [Payments Service]  
@@ -22,17 +22,17 @@ Each service is wired to talk directly to another.
 * Complex: Adding a new consumer means touching the producer code.
 
 
-**Option 2**: Traditional Message Queues
-<br> Message queues (like RabbitMQ or ActiveMQ) improved decoupling but still had limits:
+### Option 2: Traditional Message Queues
+Message queues (like RabbitMQ or ActiveMQ) improved decoupling but still had limits:
 
 * Messages are often removed after being read.
 * Not built for high throughput or large-scale replay.
 * Lacked storage—used for moving data, not persisting it.
 
-**Option 3**: Batch Processing
-<br> Some teams turned to batch processing pipelines, like using cron jobs or ETL tools (Extract, Transform, Load) to move data periodically:
+### Option 3: Batch Processing
+Some teams turned to batch processing pipelines, like using cron jobs or ETL tools (Extract, Transform, Load) to move data periodically:
 
-[Database A] --(Nightly Job)--> [Data Warehouse]
+[Database A] --> (Nightly Job) --> [Data Warehouse]
 
 **Problems with Batch Processing**:
 
@@ -45,6 +45,13 @@ Each service is wired to talk directly to another.
 | **Replay is Hard**         | You can’t “go back” unless you re-run the entire job.             |
 | **No Streaming**            | Not suitable for dashboards, alerts, or event-driven systems.     |
 
+
+**Example:**
+<br> Imagine you work at a ride-sharing company.
+<br> Riders open the app. Drivers complete trips.
+<br> A dashboard shows active drivers in real time.
+
+If you use batch processing, you’ll only update the dashboard every 15 minutes. That’s too late as users expect instant updates.
 
 
 
