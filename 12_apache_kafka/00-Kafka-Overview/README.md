@@ -100,3 +100,16 @@ Kafka replaces rigid, slow, and fragile communication pipelines with a fast, sca
 Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and scalable real-time data pipelines. Originally developed at LinkedIn and later open-sourced, Kafka has become the de facto standard for building modern data streaming architectures.
 
 Confluent Kafka is an enterprise-grade distribution of Apache Kafka that adds additional tools, services, and APIs to simplify deployment, monitoring, security, and integration.
+
+## What is Kafka?
+Kafka is fundamentally a publish-subscribe messaging system based on distributed commit logs. It enables applications to:
+
+Publish (write) streams of data (events, logs, metrics, etc.)
+
+Subscribe (read) those data streams in real-time
+
+Store data durably and reliably
+
+Process streams either in real-time or batch
+
+Kafka can handle trillions of events per day across thousands of clients.
