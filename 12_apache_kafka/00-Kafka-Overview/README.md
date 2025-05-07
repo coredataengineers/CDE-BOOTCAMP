@@ -104,12 +104,9 @@ Confluent Kafka is an enterprise-grade distribution of Apache Kafka that adds ad
 ## What is Kafka?
 Kafka is fundamentally a publish-subscribe messaging system based on distributed commit logs. It enables applications to:
 
-Publish (write) streams of data (events, logs, metrics, etc.)
-
-Subscribe (read) those data streams in real-time
-
-Store data durably and reliably
-
-Process streams either in real-time or batch
+* Publish (write) streams of data (events, logs, metrics, etc.)
+* Subscribe (read) those data streams in real-time
+* Store data durably and reliably
+* Process streams either in real-time or batch
 
 Kafka can handle trillions of events per day across thousands of clients.
