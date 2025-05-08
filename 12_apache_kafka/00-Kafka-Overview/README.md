@@ -110,3 +110,23 @@ Kafka is fundamentally a publish-subscribe messaging system based on distributed
 * Process streams either in real-time or batch
 
 Kafka can handle trillions of events per day across thousands of clients.
+
+
+
+# Confluent Kafka Concepts Guide
+
+A comprehensive walk-through of core Apache Kafka (Confluent) concepts.
+
+## Table of Contents
+
+1. [Kafka Overview](docs/01-kafka-overview.md)  
+2. [Kafka Cluster](docs/02-kafka-cluster.md)  
+3. [Topics & Configuration](docs/03-topic-and-configuration.md)  
+4. [Partitions & Offsets](docs/04-partitions-and-offsets.md)  
+5. [Serialization & Deserialization](docs/05-serialization-and-deserialization.md)  
+6. [Producers & Configurations](docs/06-producers-and-configuration.md)  
+7. [Consumers & Configurations](docs/07-consumers-and-configuration.md)  
+8. [Consumer Groups](docs/08-consumer-groups.md)  
+9. [Consumer Group Protocol](docs/09-consumer-group-protocol.md)  
+10. [Schema Registry](docs/10-schema-registry.md)  
+11. [Production Kafka Clusters](docs/11-production-kafka-clusters.md) 
