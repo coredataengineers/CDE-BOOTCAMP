@@ -91,5 +91,15 @@ Kafka originally relied on Apache ZooKeeper to manage:
 
 <br> *Note:* Confluent and Apache Kafka are moving toward a KRaft mode, which removes the need for ZooKeeper and makes Kafka self-managed. But ZooKeeper is still used in many current deployments.
 
+<br> **Cluster Workflow: High-Level View**
+Here’s how data flows in a Kafka cluster:
 
+
+[ Producer ] ---> [ Kafka Broker ] ---> [ Topic (with Partitions) ] ---> [ Consumer ]
+<br> Behind the scenes:
+
+* The producer sends a message to Topic A.
+* Kafka decides which partition of Topic A the message should go to.
+* That partition is stored on a broker.
+* Consumers subscribe to Topic A and read from the partition.
 
