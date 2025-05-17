@@ -103,3 +103,12 @@ Here’s how data flows in a Kafka cluster:
 * That partition is stored on a broker.
 * Consumers subscribe to Topic A and read from the partition.
 
+<br> **Fault Tolerance and Replication**
+Kafka handles failures gracefully through replication:
+
+* Each partition can have multiple replicas (copies).
+* One replica is the leader — producers/consumers talk to it.
+* Others are followers, ready to take over if the leader fails.
+
+This means even if a broker crashes, no data is lost and processing continues.
+
