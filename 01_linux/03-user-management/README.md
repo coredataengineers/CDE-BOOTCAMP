@@ -10,7 +10,7 @@ delete the group.
 We will begin with some theoretical way to carry out this administartive task, at the end we highlight steps to carry out this so as to do this practically, please you will need your 
 Linux environment set up and ready, please follow the instructions [HERE](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/01_linux/02-linux-setup/README.md) to launch your Linux environment.
 
-# USER AND GROUP
+# CREATE USER AND GROUP
 Users in Linux is simply an individual who need access to the Linux Opeating system.
 To create a user, you can leverage the following 2 commands 
 - `adduser <TheUserName>`
@@ -31,3 +31,19 @@ To add a User to a Group, run the below command
 
 To check the user added, run the below command
 - `cat /etc/group`
+
+To check the list of Users in a specific group, run the below command
+- `cat /etc/group | grep TheGroupName`
+
+
+# DELETE USER AND GROUP
+Sometimes, there are some users or groups that are no longer needed, its ideal to clean up and tidy the Linux environment.
+
+To remove a user from the group
+- `gpasswd -d TheUserName TheGroupName`
+
+To delete the group
+- `delgroup TheGroupName`
+
+To delete the user
+- `deluser TheUserName`
