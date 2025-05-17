@@ -10,3 +10,24 @@ delete the group.
 We will begin with some theoretical way to carry out this administartive task, at the end we highlight steps to carry out this so as to do this practically, please you will need your 
 Linux environment set up and ready, please follow the instructions [HERE](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/01_linux/02-linux-setup/README.md) to launch your Linux environment.
 
+# USER AND GROUP
+Users in Linux is simply an individual who need access to the Linux Opeating system.
+To create a user, you can leverage the following 2 commands 
+- `adduser <TheUserName>`
+  - This command will prompt for password and some other information about the user.
+  - To verify the user has been created, you can run this command `cat /etc/passwd` to see the list of users in the `passwd` file.
+- `useradd <TheUserName>`
+  - This command doesn't prompt for password, the administartor can later add password to the user by running this command `passwd <TheUserName>`. This will prompt for the password to be inserted.
+  - To verify the user has been created, you can run this command `cat /etc/passwd` to see the list of users in the `passwd` file.
+- To check the encrypted passord of the users, run the command `cat /etc/shadow`, this will list all the encrypted password for all users.
+
+Group is much easier to manage users, users of the same functions can go into the same group and have a single permission applied to that group, rather than individual user permission.
+
+To create a group in Linux, run the below command
+- `addgroup <TheGroupName>`
+
+To add a User to a Group, run the below command
+- `usermod -aG <TheGroupName> <TheUserName>`
+
+To check the user added, run the below command
+- `cat /etc/group`
