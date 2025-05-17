@@ -7,9 +7,6 @@ It's a bit similar in Linux, also you create user in Linux, however users doesn'
 We are going to go through different user mnanagemet commands to allow us create a new user, create a new group, add that user into the group, delete the user and
 delete the group.
 
-We will begin with some theoretical way to carry out this administartive task, at the end we highlight steps to carry out this so as to do this practically, please you will need your 
-Linux environment set up and ready, please follow the instructions [HERE](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/01_linux/02-linux-setup/README.md) to launch your Linux environment.
-
 # CREATE USER AND GROUP
 Users in Linux is simply an individual who need access to the Linux Opeating system.
 To create a user, you can leverage the following 2 commands 
