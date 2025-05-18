@@ -25,6 +25,7 @@ The below image shows a similar layers as we have above, the major difference is
 software via the `System Calls` interface.
 
 <img width="799" alt="Screenshot 2025-05-17 at 23 56 03" src="https://github.com/user-attachments/assets/a368b919-d3a5-48dd-889b-f3cb5ae05ea4" />
+
 Brief read on Linux Kernel [here](https://www.redhat.com/en/topics/linux/what-is-the-linux-kernel).
 
 # WHY LINUX
