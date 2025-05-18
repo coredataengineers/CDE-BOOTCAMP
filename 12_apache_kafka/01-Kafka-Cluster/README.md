@@ -115,7 +115,7 @@ This means even if a broker crashes, no data is lost and processing continues.
 <br> **Summary: Why the Kafka Cluster Matters**
 
 | Kafka Cluster Feature |	What It Enables |
-----------------------------------------------
+------------------------|---------------------- |
 | Multiple brokers	| Horizontal scalability and fault tolerance |
 | Topic partitions	| Load distribution and parallelism |
 | Leader election	| Automatic failover and high availability |
