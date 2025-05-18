@@ -10,7 +10,8 @@ doing this on the Operating System file system. The image below 👇  shows the 
 <img width="1392" alt="Screenshot 2025-05-18 at 10 31 55" src="https://github.com/user-attachments/assets/ee3e04a6-1e84-4ccb-82aa-64d014c0f9ef" />
 
 SUMMARY
-- `/` is the Root dircetory of the Linux file system, all other directories (folders) like mnt, home, bin are inside the Root directory. 
+- `/` is the Root dircetory of the Linux file system, all other directories (folders) like mnt, home, bin are inside the Root directory.
+- `bin`
 
 
 
