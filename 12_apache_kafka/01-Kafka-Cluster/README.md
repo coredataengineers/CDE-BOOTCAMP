@@ -112,3 +112,12 @@ Kafka handles failures gracefully through replication:
 
 This means even if a broker crashes, no data is lost and processing continues.
 
+<br> **Summary: Why the Kafka Cluster Matters**
+
+| Kafka Cluster Feature |	What It Enables |
+----------------------------------------------
+| Multiple brokers	| Horizontal scalability and fault tolerance |
+| Topic partitions	| Load distribution and parallelism |
+| Leader election	| Automatic failover and high availability |
+| Replication	| Durable data even during node failure |
+| ZooKeeper (or KRaft)	| Coordination of brokers and metadata |
