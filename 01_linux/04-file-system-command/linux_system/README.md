@@ -23,7 +23,11 @@ Linux has lots of commands available to users to work on linux, we will cover fe
   - Command usage is simply running `pwd` on the terminal.
 - `cd`: This means change directory, it helps to move/switch from one directory to the other. For example if you are in the Root directory `/`, running `cd bin` will take you into the bin directory.
   - Command usage: `cd <NameOfTheDirectory>` on the terminal.
-- `mkdir`
+- `mkdir`: This means make a new directory, it esssentially create a new directory right inside the directory where you initiate the command. If you are inside the `/` Root directory for example, if you run `mkdir CoreDataEngineers`, the folder `CoreDataEngineers` will be created inside the `/` Root directory of your Linux file system.
+  - Command usage: `mkdir DirectoryName`.
+- `touch`: The touch command is used to create files inside a directory in Linux. let's assume in our newly created `CoreDataEngineers` directory, we want to create a file called `registration.txt`, we will use touch to achieve this. You simply change directory into the `CoreDataEngineers` directory and run `touch registration.txt`.
+  - Command usage: `touch FileName`.
+
 
 
 
