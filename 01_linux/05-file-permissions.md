@@ -8,7 +8,13 @@ Another Scenerio, lets say User A created a created a script inside a file insid
 
 To prevent critical incidents due to users unrestraicted actions, this is where Linux introduces file permission. This aim is to control individual access to have access to only what the administrator think they should access.
 
-
-To better understand file permission, let's quickly understand the labelled image below in detail
+# PERMISSION OUTPUT BREAKDOWN
+The command used to verify the permission applied on files and directories in Linux is `ls -l`, if you run this command from a specific directory, it will list all the files and directories with the permission set on each of them. Let's quickly understand the labelled image below in
+detail, this image gives the complete output of the command Linux users run to check if they have access.
 
 ![Screenshot 2025-05-19 at 09 38 31](https://github.com/user-attachments/assets/a8fcda19-504d-4086-b247-09436ea43121)
+Starting from left to the right
+
+- The letter `d` stands for `directory`, this means the object you are checking it's permission is a `directory`. If you have `-` dash , it means its a `file`.
+  - For example if you see an output like this `-rwxrwxrwx`, it simply means its a `file`, however if you have `drwxrwxrwx`, then its a `directory`.
+- Next is a box labelled `USER`, inside the box we have `rwx`. This first box shows the permission is for the USER who created the directory or who created the file.
