@@ -29,3 +29,7 @@ Starting from left to the right
   - `r` means the Group which the User that own the file has read permission on that file, anyone who is part of that group will inherit that permission.
   - `w` means the Group which the User that own the file has write permission, write permission include being able to delete the file, being able to write something inside the file.
   - `x` shows the Group which the User who own the file is allowed to execute the file.
+- The last box labelled OTHERS is for anyone who is not the owner of the file or the directory and who is also not in the group the user belongs to.
+  - `r` means other users has read permission on the directory or file.
+  - `w` means other users has write permission on the directory or file.
+  - `x` means other users has permission to execute a file.
