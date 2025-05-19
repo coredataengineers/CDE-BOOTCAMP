@@ -17,4 +17,7 @@ Starting from left to the right
 
 - The letter `d` stands for `directory`, this means the object you are checking it's permission is a `directory`. If you have `-` dash , it means its a `file`.
   - For example if you see an output like this `-rwxrwxrwx`, it simply means its a `file`, however if you have `drwxrwxrwx`, then its a `directory`.
-- Next is a box labelled `USER`, inside the box we have `rwx`. This first box shows the permission is for the USER who created the directory or who created the file.
+- Next is a box labelled `USER`, inside the box we have `rwx`, this first box shows the permission is for the `USER (owner)` who created the directory or who created the file. lets assume we have this output `-rwxrwxrwx`, 
+  - `r` means the User that own the file has read permission on that file, read permission include being able to list the file
+  - `w` means the User that own the file has write permission, write permission include being able to delete the file, being able to write something inside the file.
+  - `x` shows the User who own the file is allowed to execute the file.
