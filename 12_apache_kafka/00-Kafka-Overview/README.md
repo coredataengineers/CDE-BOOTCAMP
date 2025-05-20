@@ -18,7 +18,7 @@ If you are here, I want to give you a heartwarming congratulations, because you 
 
 
 Here, we would be discussing the following topics:
-- [Life Without Kafka: The Problem Kafka Solves](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/00-Kafka-Overview/README.md##Life-Without-Kafka:-The-Problem-Kafka-Solves)
+- [Life Without Kafka: The Problem Kafka Solves](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Life-Without-Kafka:-The-Problem-Kafka-Solves)
 
 
 We won't go straight into it, I would like you to understand what happened before event streaming as we know it today.
