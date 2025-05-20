@@ -1,6 +1,6 @@
 # Introduction
 
-If you are here, I want to give you a heartwarming congratulations, because you are about to explore and understand the beautiful world of `Apache Kafka`
+If you are here, I want to give you a heartwarming congratulations, because you are about to explore and understand the beautiful world of `Apache Kafka`. The contents of the Kafka module is based on [Confluent Kafka](https://docs.confluent.io/), the original creators of Apache Kafka.
 
 We won't go straight into it, I would like you to understand what happened before event streaming as we know it today.
 
@@ -110,8 +110,6 @@ Kafka is fundamentally a publish-subscribe messaging system based on distributed
 * Process streams either in real-time or batch
 
 Kafka can handle trillions of events per day across thousands of clients.
-
-
 
 # Confluent Kafka Concepts Guide
 
