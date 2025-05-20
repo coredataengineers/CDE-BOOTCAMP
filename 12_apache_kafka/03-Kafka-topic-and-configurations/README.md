@@ -20,5 +20,20 @@ It never erases or overwrites old lines. It just keeps adding new ones at the bo
 Each line (or message) in this notebook has:
 
 * Key – Who or what it's about (e.g., “Sensor 12”)
-*  Value – What happened (e.g., “Temperature is 23°C”)
-*   Timestamp – When it happened (e.g., “9:35 AM”)
+* Value – What happened (e.g., “Temperature is 23°C”)
+* Timestamp – When it happened (e.g., “9:35 AM”)
+
+### Not a Queue — It’s a Shared Notebook
+Kafka topics aren’t like queues, where once you read a message, it's gone.
+
+Instead:
+
+* Everyone gets to read the same notebook
+* Messages stay there for as long as you want
+* If someone needs to read it again (maybe they missed a part), they can go back and re-read old pages
+
+This makes Kafka great for apps that need to:
+
+* Process data at different speeds
+* Recover from a crash
+* Or replay past events
