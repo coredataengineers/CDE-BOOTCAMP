@@ -37,3 +37,11 @@ This makes Kafka great for apps that need to:
 * Process data at different speeds
 * Recover from a crash
 * Or replay past events
+
+### What if the Notebook Gets Too Full?
+Kafka lets you control how long you keep the notebook pages:
+
+* **Retention:** Keep data for 1 day, 7 days, or forever
+* **Compaction:** If you only care about the latest info, Kafka can clean up old entries with the same key
+
+Example: You only want the latest location of a delivery truck. Kafka can remove old locations and keep just the newest one.
