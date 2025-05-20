@@ -19,6 +19,9 @@ If you are here, I want to give you a heartwarming congratulations, because you 
 
 Here, we would be discussing the following topics:
 - [Life Without Kafka: The Problem Kafka Solves](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Life-Without-Kafka:-The-Problem-Kafka-Solves)
+  - [Option 1: Direct Communication Between Systems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Option-1:-Direct-Communication-Between-Systems)
+  - [Option 2: Traditional Message Queues](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Option-2:-Traditional-Message-Queues)
+  - [Option 3: Batch Processing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Option-3:-Batch-Processing)
 
 
 We won't go straight into it, I would like you to understand what happened before event streaming as we know it today.
