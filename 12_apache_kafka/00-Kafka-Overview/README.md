@@ -1,6 +1,6 @@
 # Introduction
 
-If you are here, I want to give you a heartwarming congratulations, because you are about to explore and understand the beautiful world of `Apache Kafka`. The contents of the entire Kafka module is based on [Confluent Kafka](https://docs.confluent.io/), the original creators of Apache Kafka.
+If you are here, I want to give you a heartwarming congratulations, because you are about to explore and understand the beautiful world of `Apache Kafka`. The contents of the entire Kafka module in this repository is based on [Confluent Kafka](https://docs.confluent.io/), the original creators of Apache Kafka. The core Apache Kafka (Confluent) concepts we'll be covering include: 
 
 ## Table of Contents
 
@@ -25,10 +25,12 @@ Here, we would be discussing the following topics:
 - [Problems with Batch Processing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Problems-with-Batch-Processing)
 - [Kafka: The Real-Time Streaming Solution](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Kafka:-The-Real-Time-Streaming-Solution)
 - [How Kafka Solves These Problems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###How-Kafka-Solves-These-Problems)
-- [Kafka: The Real-Time Streaming Solution](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Kafka:-The-Real-Time-Streaming-Solution)
+- [Apache Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Apache-Kafka-Overview)
+  - [What is Kafka?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###-What-is-Kafka?)
+  - [Kafka vs Batch: A Quick Comparison](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Kafka-vs-Batch:-A-Quick-Comparison)
 
 
-We won't go straight into it, I would like you to understand what happened before event streaming as we know it today.
+We won't go straight into Apache Kafka, I would like you to understand what happened before event streaming as we know it today.
 
 ## Life Without Kafka: The Problem Kafka Solves
 Before Kafka, organizations often relied on direct communication between services or traditional data pipelines. These setups were hard to manage, unreliable, and not designed for real-time needs.
@@ -100,7 +102,24 @@ Here’s what it looks like with Kafka
 | No historical data in queues  | Kafka retains messages for days/weeks     |
 | Replay not possible           | Consumers can replay by resetting offsets |
 
-## Kafka vs Batch: A Quick Comparison
+
+## Apache Kafka Overview
+
+Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and scalable real-time data pipelines. Originally developed at LinkedIn and later open-sourced, Kafka has become the de facto standard for building modern data streaming architectures.
+
+Confluent Kafka is an enterprise-grade distribution of Apache Kafka that adds additional tools, services, and APIs to simplify deployment, monitoring, security, and integration.
+
+### What is Kafka?
+Kafka is fundamentally a publish-subscribe messaging system based on distributed commit logs. It enables applications to:
+
+* Publish (write) streams of data (events, logs, metrics, etc.)
+* Subscribe (read) those data streams in real-time
+* Store data durably and reliably
+* Process streams either in real-time or batch
+
+Kafka can handle trillions of events per day across thousands of clients.
+
+### Kafka vs Batch: A Quick Comparison
 
 | Feature             | Batch Processing        | Kafka Streaming                         |
 | ------------------- | ----------------------- | --------------------------------------- |
@@ -117,21 +136,6 @@ Here’s what it looks like with Kafka
 * Data is streamed continuously.
 * Consumers can act in real-time or replay the past.
 
-# Apache Kafka Overview
-
-Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and scalable real-time data pipelines. Originally developed at LinkedIn and later open-sourced, Kafka has become the de facto standard for building modern data streaming architectures.
-
-Confluent Kafka is an enterprise-grade distribution of Apache Kafka that adds additional tools, services, and APIs to simplify deployment, monitoring, security, and integration.
-
-## What is Kafka?
-Kafka is fundamentally a publish-subscribe messaging system based on distributed commit logs. It enables applications to:
-
-* Publish (write) streams of data (events, logs, metrics, etc.)
-* Subscribe (read) those data streams in real-time
-* Store data durably and reliably
-* Process streams either in real-time or batch
-
-Kafka can handle trillions of events per day across thousands of clients.
 
 **Conclusion**
 
