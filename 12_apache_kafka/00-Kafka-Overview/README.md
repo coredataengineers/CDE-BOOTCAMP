@@ -140,11 +140,3 @@ Kafka can handle trillions of events per day across thousands of clients.
 **Conclusion**
 
 Kafka replaces rigid, slow, and fragile communication pipelines with a fast, scalable, and reliable event streaming platform.
-
-
-
-# Confluent Kafka Concepts Guide
-
-A comprehensive walk-through of core Apache Kafka (Confluent) concepts.
-
-
