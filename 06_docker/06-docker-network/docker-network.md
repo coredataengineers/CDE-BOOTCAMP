@@ -30,7 +30,8 @@ Docker comes with 3 different networks which can be confirmed by running the com
 ```bash
 docker network ls # List networks
 ```
-![alt text](image-1.png)
+<img width="367" alt="image-1" src="https://github.com/user-attachments/assets/635bcbd5-b3f8-46ed-81d5-4dcd8af3749c" />
+
 
 ### <span style='color:lightblue'>Network drivers
 | <code>Driver | <code>Description|
@@ -92,7 +93,8 @@ docker run -d --name container_using_customnetwork --network custom_network myim
 ### <span style='color:lightblue'>Illustration
 Let's assume we have a server/virtual machine hosting 3 containers:
 One conatiner is a database of sensitive information that needs to be tightly secured while the other containers do not need the same of security.
-![docker network illustration](image-4.png)
+![docker-networrking-illustration](https://github.com/user-attachments/assets/6b7eb04e-2de1-4883-8a8a-93e04bf5d407)
+
 
 ### Summary
 - Networking is the means of connection and communication between containers.
