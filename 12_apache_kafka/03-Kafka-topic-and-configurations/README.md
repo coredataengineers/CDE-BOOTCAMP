@@ -1,3 +1,9 @@
+Here, we are going to be covering the basics of Kafka Topics and Configurations under the following titles:
+
+- [What is a Kafka Topic?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md##What-is-a-Kafka-Topic?)
+
+
+
 ## What is a Kafka Topic?
 
 A Kafka topic is like a named folder where messages are stored.
@@ -11,7 +17,7 @@ That’s exactly what a Kafka topic is:
 
 A place where Kafka writes down every event, in the order it happened — like a diary.
 
-### How Kafka Writes Events
+## How Kafka Writes Events
 
 <br> Every time something happens, like a temperature sensor sending a new reading, Kafka writes it as a new line in the notebook.
 It never erases or overwrites old lines. It just keeps adding new ones at the bottom.
@@ -23,7 +29,7 @@ Each line (or message) in this notebook has:
 * Value – What happened (e.g., “Temperature is 23°C”)
 * Timestamp – When it happened (e.g., “9:35 AM”)
 
-### Not a Queue — It’s a Shared Notebook
+## Not a Queue — It’s a Shared Notebook
 Kafka topics aren’t like queues, where once you read a message, it's gone.
 
 Instead:
@@ -38,7 +44,7 @@ This makes Kafka great for apps that need to:
 * Recover from a crash
 * Or replay past events
 
-### What if the Notebook Gets Too Full?
+## What if the Notebook Gets Too Full?
 Kafka lets you control how long you keep the notebook pages:
 
 * **Retention:** Keep data for 1 day, 7 days, or forever
