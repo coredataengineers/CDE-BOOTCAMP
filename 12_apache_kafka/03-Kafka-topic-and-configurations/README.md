@@ -1,9 +1,9 @@
 Here, we are going to be covering the basics of Kafka Topics and Configurations under the following titles:
 
 - [What is a Kafka Topic?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md##What-is-a-Kafka-Topic?)
-- [How Kafka Writes Events](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md##How-Kafka-Writes-Events)
-- [Not a Queue](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md##Not-a-Queue)
-- [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md##What-if-the-Notebook-Gets-Too-Full?)
+- [How Kafka Writes Events](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###How-Kafka-Writes-Events)
+- [Not a Queue](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###Not-a-Queue)
+- [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###What-if-the-Notebook-Gets-Too-Full?)
 
 
 
@@ -20,7 +20,7 @@ That’s exactly what a Kafka topic is:
 
 A place where Kafka writes down every event, in the order it happened — like a diary.
 
-## How Kafka Writes Events
+### How Kafka Writes Events
 
 <br> Every time something happens, like a temperature sensor sending a new reading, Kafka writes it as a new line in the notebook.
 It never erases or overwrites old lines. It just keeps adding new ones at the bottom.
@@ -32,7 +32,7 @@ Each line (or message) in this notebook has:
 * Value – What happened (e.g., “Temperature is 23°C”)
 * Timestamp – When it happened (e.g., “9:35 AM”)
 
-## Not a Queue
+### Not a Queue
 Kafka topics aren’t like queues, where once you read a message, it's gone.
 
 Instead:
@@ -47,7 +47,7 @@ This makes Kafka great for apps that need to:
 * Recover from a crash
 * Or replay past events
 
-## What if the Notebook Gets Too Full?
+### What if the Notebook Gets Too Full?
 Kafka lets you control how long you keep the notebook pages:
 
 * **Retention:** Keep data for 1 day, 7 days, or forever
