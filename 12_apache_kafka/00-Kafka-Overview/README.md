@@ -1,6 +1,25 @@
 # Introduction
 
-If you are here, I want to give you a heartwarming congratulations, because you are about to explore and understand the beautiful world of `Apache Kafka`. The contents of the Kafka module is based on [Confluent Kafka](https://docs.confluent.io/), the original creators of Apache Kafka.
+If you are here, I want to give you a heartwarming congratulations, because you are about to explore and understand the beautiful world of `Apache Kafka`. The contents of the entire Kafka module is based on [Confluent Kafka](https://docs.confluent.io/), the original creators of Apache Kafka.
+
+## Table of Contents
+
+1. [Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md)  
+2. [Kafka Cluster](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Cluster/README.md)  
+3. [Topics & Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md)  
+4. [Partitions & Offsets](docs/04-partitions-and-offsets.md)  
+5. [Serialization & Deserialization](docs/05-serialization-and-deserialization.md)  
+6. [Producers & Configurations](docs/06-producers-and-configuration.md)  
+7. [Consumers & Configurations](docs/07-consumers-and-configuration.md)  
+8. [Consumer Groups](docs/08-consumer-groups.md)  
+9. [Consumer Group Protocol](docs/09-consumer-group-protocol.md)  
+10. [Schema Registry](docs/10-schema-registry.md)  
+11. [Production Kafka Clusters](docs/11-production-kafka-clusters.md) 
+
+
+Here, we would be discussing the following topics:
+- [Life Without Kafka: The Problem Kafka Solves](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/00-Kafka-Overview/README.md##Life-Without-Kafka:-The-Problem-Kafka-Solves)
+
 
 We won't go straight into it, I would like you to understand what happened before event streaming as we know it today.
 
@@ -115,16 +134,4 @@ Kafka can handle trillions of events per day across thousands of clients.
 
 A comprehensive walk-through of core Apache Kafka (Confluent) concepts.
 
-## Table of Contents
 
-1. [Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md)  
-2. [Kafka Cluster](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Cluster/README.md)  
-3. [Topics & Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md)  
-4. [Partitions & Offsets](docs/04-partitions-and-offsets.md)  
-5. [Serialization & Deserialization](docs/05-serialization-and-deserialization.md)  
-6. [Producers & Configurations](docs/06-producers-and-configuration.md)  
-7. [Consumers & Configurations](docs/07-consumers-and-configuration.md)  
-8. [Consumer Groups](docs/08-consumer-groups.md)  
-9. [Consumer Group Protocol](docs/09-consumer-group-protocol.md)  
-10. [Schema Registry](docs/10-schema-registry.md)  
-11. [Production Kafka Clusters](docs/11-production-kafka-clusters.md) 
