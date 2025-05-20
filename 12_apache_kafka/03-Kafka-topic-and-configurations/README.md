@@ -15,3 +15,10 @@ A place where Kafka writes down every event, in the order it happened — like a
 
 <br> Every time something happens, like a temperature sensor sending a new reading, Kafka writes it as a new line in the notebook.
 It never erases or overwrites old lines. It just keeps adding new ones at the bottom.
+
+
+Each line (or message) in this notebook has:
+
+* Key – Who or what it's about (e.g., “Sensor 12”)
+*  Value – What happened (e.g., “Temperature is 23°C”)
+*   Timestamp – When it happened (e.g., “9:35 AM”)
