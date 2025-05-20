@@ -118,8 +118,8 @@ A comprehensive walk-through of core Apache Kafka (Confluent) concepts.
 ## Table of Contents
 
 1. [Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md)  
-2. [Kafka Cluster](docs/02-kafka-cluster.md)  
-3. [Topics & Configuration](docs/03-topic-and-configuration.md)  
+2. [Kafka Cluster]()  
+3. [Topics & Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md)  
 4. [Partitions & Offsets](docs/04-partitions-and-offsets.md)  
 5. [Serialization & Deserialization](docs/05-serialization-and-deserialization.md)  
 6. [Producers & Configurations](docs/06-producers-and-configuration.md)  
