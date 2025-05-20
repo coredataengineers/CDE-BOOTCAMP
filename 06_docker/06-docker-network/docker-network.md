@@ -1,5 +1,17 @@
 # <span style='color:lightblue'>Docker Networking
 ___
+
+## Contents
+- [Introduction](#introduction)
+- [Types of Networks in docker](#types-of-networks-in-docker)
+    - [Bridge](#bridge-network)
+    - [Host](#host-network)
+    - [Custom](#custom-network)
+- [Illustration](#illustration)
+- [Summary](#summary)
+
+## Introduction
+
 Networking in simple terms is the process of building relationships and connection with others.
 
 Let's relate this concept to processes (containers) in Docker.
@@ -35,14 +47,14 @@ docker network ls # List networks
 ### <span style='color:lightblue'>Bridge Network</span>
 The bridge network is a type of network that allows communication to occur between the host's network (on a more granular level, IP address) and the container(s) network. This is also the default network that Docker maps new containers that are not assigned any network to.
 
-For instance, if the host is on a network of <span style='color:lightgreen'>__16.0.0.7__ IP address </span> while the containers are on network of <span style='color:lightgreen'>__19.0.0.10__ IP address</span>, communication would never occur as long as the <span style='color:lightgreen'>uniform is different</span> and there is nothing connecting them to <span style='color:lightgreen'>_bridge_</span> the communication gap.
+For instance, if the host is on a network of <code>__16.0.0.7__ IP address </code> while the containers are on network of <code>__19.0.0.10__ IP address</code>, communication would never occur as long as the <code>uniform is different</code> and there is nothing connecting them to <code>_bridge_</code> the communication gap.
 
-Due to this isolation, docker creates a virtual network type called <span style='color:lightgreen'>__bridge__</span> which is the medium of connecting the host/server to the container.
+Due to this isolation, docker creates a virtual network type called <code>__bridge__</code> which is the medium of connecting the host/server to the container.
 
 ### <span style='color:lightblue'>Host Network
 Contrary to the concept of isolation between the host and docker containers, the Docker host network, just as the name implies maps the containers to whatever network the host/server is on, hence the containers are on the same IP range as the host.
 
-For example: a server running on<span style='color:lightgreen'> __16.0.0.2__ IP </span> will have its docker containers on the <span style='color:lightgreen'>same network of IPs __16.0.0.<any number between 1 and 254>__</span> if the host network is assigned to the container upon creation. See code below:
+For example: a server running on<code> __16.0.0.2__ IP </code> will have its docker containers on the <code>same network of IPs __16.0.0.<any number between 1 and 254>__</code> if the host network is assigned to the container upon creation. See code below:
 
 ```
 docker run -d --name container_using_hostnetwork --network host myimage
@@ -81,3 +93,8 @@ docker run -d --name container_using_customnetwork --network custom_network myim
 Let's assume we have a server/virtual machine hosting 3 containers:
 One conatiner is a database of sensitive information that needs to be tightly secured while the other containers do not need the same of security.
 ![docker network illustration](image-4.png)
+
+### Summary
+- Networking is the means of connection and communication between containers.
+- Understanding the concept of networking is crucial in knowing how to isolate containers from each other.
+- Unless explicitly defined, all containers will be mapped to the <code>bridge</code> network by default.
