@@ -22,6 +22,11 @@ Here, we would be discussing the following topics:
   - [Option 1: Direct Communication Between Systems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Option-1:-Direct-Communication-Between-Systems)
   - [Option 2: Traditional Message Queues](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Option-2:-Traditional-Message-Queues)
   - [Option 3: Batch Processing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Option-3:-Batch-Processing)
+ 
+- [Problems with Batch Processing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Problems-with-Batch-Processing)
+- [Kafka: The Real-Time Streaming Solution](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Kafka:-The-Real-Time-Streaming-Solution)
+- [How Kafka Solves These Problems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###How-Kafka-Solves-These-Problems)
+- [Kafka: The Real-Time Streaming Solution](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Kafka:-The-Real-Time-Streaming-Solution)
 
 
 We won't go straight into it, I would like you to understand what happened before event streaming as we know it today.
@@ -54,7 +59,7 @@ Some teams turned to batch processing pipelines, like using cron jobs or ETL too
 
 <img width="540" alt="Screenshot 2025-05-05 at 8 41 36 AM" src="https://github.com/user-attachments/assets/de244e88-bc4a-4673-83b0-13dd3e0e503e" />
 
-**Problems with Batch Processing**:
+## Problems with Batch Processing:
 
 | Issue                         | Why It's a Problem                                                |
 | ----------------------------- | ----------------------------------------------------------------- |
@@ -85,7 +90,7 @@ Here’s what it looks like with Kafka
 * Producers write events to Kafka.
 * Consumers read at their own speed, even replaying old messages if needed.
 
-**How Kafka Solves These Problems**
+### How Kafka Solves These Problems
 
 | Problem                       | Kafka’s Answer                            |
 | ----------------------------- | ----------------------------------------- |
@@ -96,7 +101,7 @@ Here’s what it looks like with Kafka
 | No historical data in queues  | Kafka retains messages for days/weeks     |
 | Replay not possible           | Consumers can replay by resetting offsets |
 
-**Kafka vs Batch: A Quick Comparison**
+## Kafka vs Batch: A Quick Comparison
 
 | Feature             | Batch Processing        | Kafka Streaming                         |
 | ------------------- | ----------------------- | --------------------------------------- |
@@ -106,10 +111,6 @@ Here’s what it looks like with Kafka
 | Scalability         | Often brittle           | Built-in partitioning                   |
 | Use case fit        | Reports, backups        | Dashboards, alerts, real-time services  |
 | Failure handling    | Retry whole batch       | Consumer resumes from last known offset |
-
-**Conclusion**
-
-Kafka replaces rigid, slow, and fragile communication pipelines with a fast, scalable, and reliable event streaming platform.
 
 **With Kafka:**
 
@@ -132,6 +133,12 @@ Kafka is fundamentally a publish-subscribe messaging system based on distributed
 * Process streams either in real-time or batch
 
 Kafka can handle trillions of events per day across thousands of clients.
+
+**Conclusion**
+
+Kafka replaces rigid, slow, and fragile communication pipelines with a fast, scalable, and reliable event streaming platform.
+
+
 
 # Confluent Kafka Concepts Guide
 
