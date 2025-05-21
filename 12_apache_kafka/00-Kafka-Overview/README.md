@@ -7,7 +7,7 @@ If you are here, I want to give you a heartwarming congratulations, because you 
 1. [Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md)  
 2. [Kafka Cluster](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Cluster/README.md)  
 3. [Topics & Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md)  
-4. [Partitions & Offsets](docs/04-partitions-and-offsets.md)  
+4. [Partitions & Offsets](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Partition-and-offset/README.md) 
 5. [Serialization & Deserialization](https://github.com/coredataengineers/CDE-BOOTCAMP/tree/main/12_apache_kafka/05-Serialisation-and-Deserialisation/README.md)  
 6. [Producers & Configurations](docs/06-producers-and-configuration.md)  
 7. [Consumers & Configurations](docs/07-consumers-and-configuration.md)  
