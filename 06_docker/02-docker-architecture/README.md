@@ -7,7 +7,7 @@ The architecture of Docker explains how Docker works under the hood using a clie
 Docker is a containerization platform that lets you package your application and its dependencies into lightweight, portable containers.
 
 ## Docker Architecture Diagram
-
+![alt text](image.png)
 
 The diagram above shows how Docker components interact.
 
@@ -41,7 +41,6 @@ This pulls a Python image from Docker Hub. You can then run a container from thi
 
 ### 4. Docker Containers
 A container is a runnable instance of an image. It is isolated and lightweight.
-### For Example:
 ```bash
 docker run -it python:3.10
 ```
@@ -49,7 +48,6 @@ This runs a Python shell in an isolated container.
 
 ### 5. Docker Registries (like Docker Hub)
 Registries are storage and distribution systems for Docker images.
-### For Example:
 ```bash
 docker push yourname/myapp
 ```
