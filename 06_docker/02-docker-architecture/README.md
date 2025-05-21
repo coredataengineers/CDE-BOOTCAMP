@@ -7,7 +7,7 @@ The architecture of Docker explains how Docker works under the hood using a clie
 Docker is a containerization platform that lets you package your application and its dependencies into lightweight, portable containers.
 
 ## Docker Architecture Diagram
-![alt text](image.png)
+![Docker Architecture Diagram](docker_architecture_diagram.png)
 
 The diagram above shows how Docker components interact.
 
