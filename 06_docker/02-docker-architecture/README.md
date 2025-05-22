@@ -8,7 +8,7 @@ Docker follows a client-server model where the Docker client talks to the Docker
 
 The diagram above shows how Docker components interact.
 
-##  Docker Components
+##  Docker Components Explained
 
 ### 1. Docker Client
 
