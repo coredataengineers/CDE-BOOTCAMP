@@ -50,7 +50,7 @@ CREATE TABLE employees (      -- create employees table
 - ALTER TABLE table_name DROP column_name: Deletes a column from a table.
 - ALTER TABLE  table_name MODIFY column_name: Changes the data type or constraints of an existing column.
 
-##### ALTER TABLE Patterns
+##### ALTER TABLE examples
 ```sql
 -- Add/drop columns
 ALTER TABLE Customers ADD Email VARCHAR(100);
@@ -64,14 +64,8 @@ ALTER TABLE transactions ALTER COLUMN amount TYPE NUMERIC(12,2);
 - DROP TABLE: Deletes an entire table (structure and all its data).
 - DROP INDEX: Deletes an index.
 
-##### Table Cleanup
+##### drop table examples
 ```sql
--- Fast deletion (DDL, auto-committed)
-TRUNCATE TABLE temp_logs;  
-
--- Conditional removal (DML, can rollback)
-DELETE FROM audit_log WHERE year < 2020;
-
 -- Full removal (irreversible)
 DROP TABLE obsolete_data CASCADE;
 ```
@@ -84,7 +78,8 @@ DROP TABLE obsolete_data CASCADE;
 ```sql
 truncate table table_name;
 
-truncate table orders; 
+truncate table orders;
+
 ```
 
 
@@ -92,7 +87,7 @@ truncate table orders;
 ## DML (Data Manipulation Language)
 Purpose: DML commands are used to manage and manipulate data within the database objects. They interact with the actual records.
 
-Key Characteristics:
+#### Key Characteristics:
 
 - They affect the data stored in the tables.
 - They are not auto-committed and can be rolled back (undone) if necessary, often within a transaction.
@@ -104,9 +99,18 @@ Key Characteristics:
 - `UPDATE:` Used to modify existing data within a table.
 - `DELETE:` Used to remove one or more rows (records) from a table.
 
-## Advanced Data Operations
-### INSERT Variants
+##### INSERT Variants: ways to insert values into a table
 ```sql
+-- insert into orders table
+INSERT INTO orders VALUES (1,1001,'2015-10-06 17:31:14',123,22,24,169);
+INSERT INTO orders VALUES (2,1001,'2015-11-05 03:34:33',190,41,57,288);
+INSERT INTO orders VALUES (3,1001,'2015-12-04 04:21:55',85,47,0,132);
+INSERT INTO orders VALUES (4,1001,'2016-01-02 01:18:24',144,32,0,176);
+
+-- insert into customers table
+INSERT INTO Customers (CustomerID, FirstName, LastName, Email)
+VALUES (1, 'John', 'Doe', 'john.doe@example.com');
+
 -- CTAS (Create Table As Select)
 CREATE TABLE high_value_customers AS
 SELECT * FROM customers WHERE lifetime_spend > 10000;
@@ -117,58 +121,20 @@ INSERT INTO order_archive
 SELECT * FROM orders WHERE status = 'completed';
 ```
 
-### UPDATE with JOIN
+##### UPDATE 
 ```sql
-UPDATE inventory i
-SET stock = stock - o.quantity
-FROM orders o
-WHERE i.product_id = o.product_id
-AND o.order_date > CURRENT_DATE - INTERVAL '7 days';
+UPDATE Customers
+SET Email = 'johndoe@example.com'
+WHERE CustomerID = 1;
+
 ```
 
-### MERGE/UPSERT
+##### DELETE
+
 ```sql
--- Standard MERGE (SQL:2003)
-MERGE INTO customer_metrics t
-USING daily_stats s
-ON t.customer_id = s.customer_id
-WHEN MATCHED THEN
-    UPDATE SET visits = t.visits + s.visits
-WHEN NOT MATCHED THEN
-    INSERT (customer_id, visits) VALUES (s.customer_id, s.visits);
+DELETE FROM Customers
+WHERE CustomerID = 1;
 ```
 
-## Transaction Control
-### ACID Properties
-```sql
-BEGIN;  -- Start transaction
-UPDATE accounts SET balance = balance - 100 WHERE id = 123;
-UPDATE accounts SET balance = balance + 100 WHERE id = 456;
-COMMIT; -- OR ROLLBACK if errors occur
-```
 
-| Property   | Guarantee                              | Implementation Example              |
-|------------|----------------------------------------|-------------------------------------|
-| Atomicity  | All-or-nothing execution               | `ROLLBACK` on failed transfer       |
-| Consistency | Valid state transitions               | `CHECK` constraints prevent invalid data |
-| Isolation  | Concurrent transactions don't interfere | `BEGIN ISOLATION LEVEL SERIALIZABLE`|
-| Durability | Committed changes survive crashes      | Write-ahead logging (WAL)           |
 
-## Performance Considerations
-### Index Strategies
-```sql
--- Create optimized indexes
-CREATE INDEX idx_orders_date ON orders(order_date DESC);
-CREATE UNIQUE INDEX idx_products_sku ON products(sku);
-
--- Partial indexes
-CREATE INDEX idx_active_users ON users(email) WHERE is_active;
-```
-
-### Index Tradeoffs
-| Scenario               | Recommended Index Approach          |
-|------------------------|-------------------------------------|
-| Frequent exact matches | B-tree on filtered column          |
-| Range queries          | BRIN for temporal data             |
-| Text search            | GIN/GIST for full-text search      |
-| Composite conditions   | Multi-column indexes               |
