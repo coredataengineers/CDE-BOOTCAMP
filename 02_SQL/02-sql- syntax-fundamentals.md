@@ -123,13 +123,13 @@ ORDER BY 2 DESC, 3 ASC;  -- Sorts by price then stock
 
 ```sql
 -- MySQL/PostgreSQL/SQLite
-SELECT * FROM large_table LIMIT 10;
+SELECT * FROM table_name LIMIT 10;
 
 -- SQL Server
-SELECT TOP 10 * FROM large_table;
+SELECT TOP 10 * FROM table_name;
 
 -- Oracle
-SELECT * FROM large_table 
+SELECT * FROM table_name
 FETCH FIRST 10 ROWS ONLY;
 ```
 
