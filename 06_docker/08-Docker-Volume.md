@@ -117,7 +117,7 @@ docker volume rm my-vol
    * Share configuration files or resource caches.
    * Coordinate work: one container writes data, another reads or processes it without complicated copy operations
 
-## Illustration of Docker volumes
+## Using Volumes in a container
 
 You can mount a Docker volume into a container using the `-v` (or `--volume`) flag.  
 This is the syntax
