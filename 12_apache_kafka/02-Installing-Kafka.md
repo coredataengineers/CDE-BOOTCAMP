@@ -5,14 +5,13 @@ Confluent Kafka has been chosen for use during this bootcamp, and this is due to
 ## Prerequisites
 To run this quick start, you will need Git, Docker Desktop, and Docker Compose installed on a computer with a supported Operating System. Make sure you have Docker Desktop running.
 
-## Windows
+## Windows Users
 To set up your Confluent Kafka cluster on Windows, click [here](https://www.confluent.io/blog/set-up-and-run-kafka-on-windows-linux-wsl-2/)
 
-## Mac
-From a Git/Bash terminal
+## Mac/Linux Users
 
 **Step 1: Download and start Confluent Platform**
-In this step, you start by cloning a GitHub repository. This repository contains a Docker compose file and some required configuration files. The docker-compose.yml file sets ports and Docker environment variables such as the replication factor and listener properties for Confluent Platform and its components. To learn more about the settings in this file, see Docker Image Configuration Reference for Confluent Platform.
+In this step, you start by cloning a GitHub repository. This repository contains a Docker compose file and some required configuration files. The docker-compose.yml file sets ports and Docker environment variables such as the replication factor and listener properties for Confluent Platform and its components. To learn more about the settings in this file, see [Docker Image Configuration Reference for Confluent Platform](https://docs.confluent.io/platform/current/installation/docker/config-reference.html#config-reference).
 
 Clone the Confluent Platform all-in-one example repository, for example:
 
@@ -66,6 +65,7 @@ ksqldb-server       confluentinc/cp-ksqldb-server:7.9.0                         
 prometheus          confluentinc/cp-enterprise-prometheus:2.0.0                 "prometheus-start --…"   prometheus          2 minutes ago        Up About a minute   0.0.0.0:9090->9090/tcp
 rest-proxy          confluentinc/cp-kafka-rest:7.9.0                            "/etc/confluent/dock…"   rest-proxy          2 minutes ago        Up About a minute   0.0.0.0:8082->8082/tcp
 schema-registry     confluentinc/cp-schema-registry:7.9.0                       "/etc/confluent/dock…"   schema-registry     2 minutes ago        Up About a minute   0.0.0.0:8081->8081/tcp
+
 After a few minutes, if the state of any component isn’t Up, run the docker compose up -d command again, or try docker compose restart <image-name>, for example:
 
 docker compose restart control-center
