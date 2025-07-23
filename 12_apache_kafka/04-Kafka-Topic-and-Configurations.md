@@ -1,3 +1,5 @@
+# Kafka Topic and Configurations
+
 Here, we are going to be covering the basics of Kafka Topics and Configurations under the following titles:
 
 - [What is a Kafka Topic?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md##What-is-a-Kafka-Topic?)
