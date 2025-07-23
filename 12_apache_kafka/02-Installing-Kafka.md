@@ -33,30 +33,18 @@ Start the Confluent Platform stack with the `-d` option to run in detached mode:
 docker compose up -d
 ```
 
-**Note**
+**Note**: If you are using Docker Compose V1, you need to use a dash in the Docker Compose commands. For example:
 
-If you are using Docker Compose V1, you need to use a dash in the Docker Compose commands. For example:
-
+```bash
 docker-compose up -d
+```
 To learn more, see Migrate to Compose V2.
 
 Each Confluent Platform component starts in a separate container. Your output should resemble the following. Your output may vary slightly from these examples depending on your operating system.
 
-✔ Container flink-jobmanager   Started         37.9s
-✔ Container broker             Started         37.8s
-✔ Container prometheus         Started         37.9s
-✔ Container flink-taskmanager  Started         34.2s
-✔ Container flink-sql-client   Started         34.3s
-✔ Container alertmanager       Started         34.5s
-✔ Container schema-registry    Started         34.3s
-✔ Container rest-proxy         Started         34.7s
-✔ Container connect            Started         34.8s
-✔ Container ksqldb-server      Started         35.1s
-✔ Container ksqldb-cli         Started         35.6s
-✔ Container control-center     Started         35.9s
-✔ Container ksql-datagen       Started         35.7s
+<img width="1118" height="159" alt="Screenshot 2025-07-23 at 9 50 08 PM" src="https://github.com/user-attachments/assets/29e99c57-a49c-43f9-8a6b-77c53ecb22a2" />
 
-Verify that the services are up and running:
+_Verify that the services are up and running:_
 
 docker compose ps
 Your output should resemble:
