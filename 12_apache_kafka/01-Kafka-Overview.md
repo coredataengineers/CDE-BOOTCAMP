@@ -27,7 +27,7 @@ Here, we would be discussing the following topics:
 - [Kafka: The Real-Time Streaming Solution](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#kafka-the-real-time-streaming-solution)
 - [How Kafka Solves These Problems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#how-kafka-solves-these-problems)
 - [Apache Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#apache-kafka-overview)
-  - [What is Kafka?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###-What-is-Kafka?)
+  - [What is Kafka?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#what-is-kafka)
   - [Kafka vs Batch: A Quick Comparison](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Kafka-vs-Batch:-A-Quick-Comparison)
 
 
