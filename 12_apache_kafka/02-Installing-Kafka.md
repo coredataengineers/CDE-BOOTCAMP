@@ -9,7 +9,7 @@ To run this quick start, you will need Git, Docker Desktop, and Docker Compose i
 To set up your Confluent Kafka cluster on Windows, click [here](https://www.confluent.io/blog/set-up-and-run-kafka-on-windows-linux-wsl-2/)
 
 ## Mac/Linux Users
-
+<br>
 **Step 1**: Download and start Confluent Platform
 
 In this step, you start by cloning a GitHub repository. This repository contains a Docker compose file and some required configuration files. The docker-compose.yml file sets ports and Docker environment variables such as the replication factor and listener properties for Confluent Platform and its components. To learn more about the settings in this file, see [Docker Image Configuration Reference for Confluent Platform](https://docs.confluent.io/platform/current/installation/docker/config-reference.html#config-reference).
