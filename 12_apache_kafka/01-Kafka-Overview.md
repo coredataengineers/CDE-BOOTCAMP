@@ -4,17 +4,18 @@ If you are here, I want to give you a heartwarming congratulations, because you 
 
 ## Table of Contents
 
-1. [Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md)  
-2. [Kafka Cluster](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/02-Installing-Kafka.md)  
-3. [Topics & Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md)  
-4. [Partitions & Offsets](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Partition-and-offset/README.md) 
-5. [Serialization & Deserialization](https://github.com/coredataengineers/CDE-BOOTCAMP/tree/main/12_apache_kafka/05-Serialisation-and-Deserialisation/README.md)  
-6. [Producers & Configurations](docs/06-producers-and-configuration.md)  
-7. [Consumers & Configurations](docs/07-consumers-and-configuration.md)  
-8. [Consumer Groups](docs/08-consumer-groups.md)  
-9. [Consumer Group Protocol](docs/09-consumer-group-protocol.md)  
-10. [Schema Registry](docs/10-schema-registry.md)  
-11. [Production Kafka Clusters](docs/11-production-kafka-clusters.md) 
+1. [Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md)
+2. [Installing Kafka](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/02-Installing-Kafka.md)  
+3. [Kafka Cluster](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/02-Installing-Kafka.md)  
+4. [Topics & Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md)  
+5. [Partitions & Offsets](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Partition-and-offset/README.md) 
+6. [Serialization & Deserialization](https://github.com/coredataengineers/CDE-BOOTCAMP/tree/main/12_apache_kafka/05-Serialisation-and-Deserialisation/README.md)  
+7. [Producers & Configurations](docs/06-producers-and-configuration.md)  
+8. [Consumers & Configurations](docs/07-consumers-and-configuration.md)  
+9. [Consumer Groups](docs/08-consumer-groups.md)  
+10. [Consumer Group Protocol](docs/09-consumer-group-protocol.md)  
+11. [Schema Registry](docs/10-schema-registry.md)  
+12. [Production Kafka Clusters](docs/11-production-kafka-clusters.md) 
 
 
 Here, we would be discussing the following topics:
