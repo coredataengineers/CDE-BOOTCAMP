@@ -20,15 +20,22 @@ Clone the Confluent Platform all-in-one example repository, for example:
 git clone https://github.com/confluentinc/cp-all-in-one.git
 ```
 
-Change to the cp-all-in-one directory. The default branch that is checked out is the latest version of Confluent Platform:
+**Step 2: Change to the `cp-all-in-one` directory.**
 
+ The default branch that is checked out is the latest version of Confluent Platform:
+
+```bash
 cd cp-all-in-one/cp-all-in-one
-Start the Confluent Platform stack with the -d option to run in detached mode:
+```
+Start the Confluent Platform stack with the `-d` option to run in detached mode:
 
+```bash
 docker compose up -d
-Note
+```
 
-If you using an Docker Compose V1, you need to use a dash in the docker compose commands. For example:
+**Note**
+
+If you are using Docker Compose V1, you need to use a dash in the Docker Compose commands. For example:
 
 docker-compose up -d
 To learn more, see Migrate to Compose V2.
