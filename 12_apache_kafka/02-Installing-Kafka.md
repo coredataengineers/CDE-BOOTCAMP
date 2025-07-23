@@ -16,7 +16,8 @@ In this step, you start by cloning a GitHub repository. This repository contains
 
 Clone the Confluent Platform all-in-one example repository, for example:
 
-```git clone https://github.com/confluentinc/cp-all-in-one.git```
+```bash git clone https://github.com/confluentinc/cp-all-in-one.git```
+
 Change to the cp-all-in-one directory. The default branch that is checked out is the latest version of Confluent Platform:
 
 cd cp-all-in-one/cp-all-in-one
