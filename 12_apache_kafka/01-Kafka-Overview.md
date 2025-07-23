@@ -6,7 +6,7 @@ If you are here, I want to give you a heartwarming congratulations, because you 
 
 1. [Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md)
 2. [Installing Kafka](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/02-Installing-Kafka.md)  
-3. [Kafka Cluster](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/02-Installing-Kafka.md)  
+3. [Kafka Cluster](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-Cluster.md)  
 4. [Topics & Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md)  
 5. [Partitions & Offsets](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Partition-and-offset/README.md) 
 6. [Serialization & Deserialization](https://github.com/coredataengineers/CDE-BOOTCAMP/tree/main/12_apache_kafka/05-Serialisation-and-Deserialisation/README.md)  
