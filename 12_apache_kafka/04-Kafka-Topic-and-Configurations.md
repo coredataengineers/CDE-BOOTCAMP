@@ -2,7 +2,7 @@
 
 Here, we are going to be covering the basics of Kafka Topics and Configurations under the following titles:
 
-- [What is a Kafka Topic?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md##What-is-a-Kafka-Topic?)
+- [What is a Kafka Topic?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#what-is-a-kafka-topic)
   - [How Kafka Writes Events](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###How-Kafka-Writes-Events)
   - [Not a Queue](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###Not-a-Queue)
   - [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###What-if-the-Notebook-Gets-Too-Full?)
