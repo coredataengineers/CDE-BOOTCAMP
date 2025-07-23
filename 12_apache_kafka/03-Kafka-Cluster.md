@@ -51,7 +51,7 @@ A Kafka cluster is made up of multiple Kafka brokers (servers), working together
 * Allow consumers to read messages efficiently
 
 ## Core Components of a Kafka Cluster
-<br>1. **Broker**
+<br> 1. **Broker**
 A broker is a Kafka server that:
 
 * Stores message data
