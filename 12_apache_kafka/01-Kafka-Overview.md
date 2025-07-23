@@ -28,7 +28,7 @@ Here, we would be discussing the following topics:
 - [How Kafka Solves These Problems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#how-kafka-solves-these-problems)
 - [Apache Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#apache-kafka-overview)
   - [What is Kafka?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#what-is-kafka)
-  - [Kafka vs Batch: A Quick Comparison](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###Kafka-vs-Batch:-A-Quick-Comparison)
+  - [Kafka vs Batch: A Quick Comparison](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#kafka-vs-batch-a-quick-comparison)
 
 
 We won't go straight into Apache Kafka, I would like you to understand what happened before event streaming as we know it today.
