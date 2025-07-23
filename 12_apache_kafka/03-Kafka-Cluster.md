@@ -52,7 +52,7 @@ A Kafka cluster is made up of multiple Kafka brokers (servers), working together
 
 ## Core Components of a Kafka Cluster
 <br> 1. **Broker**
-A broker is a Kafka server that:
+<br> A broker is a Kafka server that:
 
 * Stores message data
 
@@ -63,14 +63,14 @@ A broker is a Kafka server that:
 You can think of a broker as a message warehouse.
 **Brokers are scalable**: You can add more brokers to handle more data.
 
-<br>2. **Cluster**
-When you have multiple brokers, they form a Kafka cluster.
+<br> 2. **Cluster**
+<br> When you have multiple brokers, they form a Kafka cluster.
 
 * One broker is elected as the Controller (it manages metadata and broker coordination).
 * Other brokers do the heavy lifting of storing and delivering messages.
 
-<br>3. **Topic**
-A topic is a named channel to which data is sent. Producers write messages to a topic, and consumers read from it.
+<br> 3. **Topic**
+<br> A topic is a named channel to which data is sent. Producers write messages to a topic, and consumers read from it.
 
 Kafka topics are partitioned across brokers, which helps with:
 
@@ -80,8 +80,8 @@ Kafka topics are partitioned across brokers, which helps with:
 
 We’ll cover partitions in detail soon.
 
-<br>4. **Zookeeper** (Legacy but still in use in many setups)
-Kafka originally relied on Apache ZooKeeper to manage:
+<br> 4. **Zookeeper** (Legacy but still in use in many setups)
+<br> Kafka originally relied on Apache ZooKeeper to manage:
 
 * Broker metadata
 
