@@ -23,7 +23,7 @@ Here, we would be discussing the following topics:
   - [Option 1: Direct Communication Between Systems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#option-1-direct-communication-between-systems)
   - [Option 2: Traditional Message Queues](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#option-2-traditional-message-queues)
   - [Option 3: Batch Processing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#option-3-batch-processing)
-- [Problems with Batch Processing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Problems-with-Batch-Processing)
+- [Problems with Batch Processing](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/01-Kafka-Overview.md#problems-with-batch-processing)
 - [Kafka: The Real-Time Streaming Solution](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Kafka:-The-Real-Time-Streaming-Solution)
 - [How Kafka Solves These Problems](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md###How-Kafka-Solves-These-Problems)
 - [Apache Kafka Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/00-Kafka-Overview/README.md##Apache-Kafka-Overview)
