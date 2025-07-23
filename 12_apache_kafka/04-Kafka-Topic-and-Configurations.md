@@ -6,14 +6,13 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###What-if-the-Notebook-Gets-Too-Full?)
 
 
-
 ## What is a Kafka Topic?
 
 A Kafka topic is like a named folder where messages are stored.
 Producers send messages into a topic, and consumers read messages from it.
 Topics live inside Kafka clusters, which are grouped into larger environments.
 
-<br> Imagine you have a notebook where you write down everything that happens in your day: every single event, from waking up to going to bed.
+Imagine you have a notebook where you write down everything that happens in your day: every single event, from waking up to going to bed.
 
 That’s exactly what a Kafka topic is:
 
