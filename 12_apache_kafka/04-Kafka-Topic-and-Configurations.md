@@ -9,6 +9,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
 - [Kafka Topic Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#Kafka-Topic-Configuration)
   - [cleanup.policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#cleanuppolicy--what-to-do-with-old-pages)
   - [compression.type](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#compressiontype--How-to-Pack-Each-Note)
+  - [default.replication.factor](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#default-replication-factor-–How-to-Pack-Each-Note)
 
 ## Kafka Topic
 
@@ -75,7 +76,7 @@ Do you want to delete old notes or keep only the latest version of each key?
 NOTE: To switch to `compact`, `delete`, you must go through `compact` first.
 
 * Default setting: delete
-* Is this configuration editable?: Yes
+* Is this configuration editable after a Topic has been created?: Yes
 
 
 ### `compression.type` – How to Pack Each Note
@@ -85,5 +86,14 @@ Do you let the sender decide how to pack notes (like zipping them)?
 * `producer`: Use the sender's packing choice.
 
 * Default setting: producer
-* Is this configuration editable?: No
+* Is this configuration editable after a Topic has been created?: No
+
+### `default.replication.factor` – How Many Copies of the Notebook?
+
+How many backup copies do we make of each notebook?
+
+More copies = safer, but more storage is used.
+
+* Default: 3
+* Is this configuration editable after a Topic has been created?: No
 
