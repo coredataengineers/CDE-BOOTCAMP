@@ -14,6 +14,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [flush.messages/flush.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#flushmessages--flushms--when-to-force-save)
   - [index.interval.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#indexintervalbytes--how-often-to-add-page-markers)
   - [max.message.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#maxmessagebytes--max-size-of-one-note)
+  - [max.compaction.lag.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#maxcompactionlagms--wait-time-before-cleaning)
 
 ## Kafka Topic
 
