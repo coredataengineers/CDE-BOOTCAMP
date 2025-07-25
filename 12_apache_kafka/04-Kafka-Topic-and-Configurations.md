@@ -97,3 +97,9 @@ More copies = safer, but more storage is used.
 * Default: 3
 * Is this configuration editable after a Topic has been created?: No
 
+### `file.delete.delay.ms` – Delay Before Erasing a Page?
+After deciding to delete a page, how long should we wait before really removing it?
+
+* Default: 60 seconds
+* Is this configuration editable after a Topic has been created?: No
+
