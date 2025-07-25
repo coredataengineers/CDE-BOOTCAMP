@@ -30,7 +30,7 @@ A place where Kafka writes down every event, in the order it happened — like a
 
 ### How Kafka Writes Events
 
-<br> Every time something happens, like a temperature sensor sending a new reading, Kafka writes it as a new line in the notebook.
+Every time something happens, like a temperature sensor sending a new reading, Kafka writes it as a new line in the notebook.
 It never erases or overwrites old lines. It just keeps adding new ones at the bottom.
 
 
@@ -64,8 +64,7 @@ Kafka lets you control how long you keep the notebook pages:
 Example: You only want the latest location of a delivery truck. Kafka can remove old locations and keep just the newest one.
 
 
-
-## Kafka Topic Configuration: Configuring Your Kafka Notebook
+<br> ## Kafka Topic Configuration: Configuring Your Kafka Notebook
 Imagine you’re using a shared digital notebook to track important events (like messages from a sensor or app). Now, you want to customize how this notebook works.
 
 
