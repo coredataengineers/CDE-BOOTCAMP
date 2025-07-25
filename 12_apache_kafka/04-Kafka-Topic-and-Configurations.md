@@ -7,6 +7,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [Not a Queue](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#not-a-queue)
   - [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#what-if-the-notebook-gets-too-full)
 - [Kafka Topic Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#Kafka-Topic-Configuration)
+  - [cleanup.policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#cleanuppolicy--what-to-do-with-old-pages)
 
 ## Kafka Topic
 
@@ -56,13 +57,14 @@ Kafka lets you control how long you keep the notebook pages:
 Example: You only want the latest location of a delivery truck. Kafka can remove old locations and keep just the newest one.
 
 
+
 ## Kafka Topic Configuration: Configuring Your Kafka Notebook
 Imagine you’re using a shared digital notebook to track important events (like messages from a sensor or app). Now, you want to customize how this notebook works.
 
 
 Think of each setting below as a notebook rule or behavior switch you can adjust.
 
- ### `cleanup.policy` – What to Do With Old Pages?
+ ### `cleanup.policy` – What to Do With Old Pages
 
 Do you want to delete old notes or keep only the latest version of each key?
 
