@@ -74,8 +74,8 @@ Do you want to delete old notes or keep only the latest version of each key?
 
 NOTE: To switch to `compact`, `delete`, you must go through `compact` first.
 
-**Default setting**: delete
-<br> **Is this configuration editable?**: Yes
+* Default setting: delete
+* Is this configuration editable?: Yes
 
 
 ### `compression.type` – How to Pack Each Note
@@ -84,6 +84,6 @@ Do you let the sender decide how to pack notes (like zipping them)?
 
 * `producer`: Use the sender's packing choice.
 
-**Default setting**: producer
-<br> **Is this configuration editable?**: No
+* Default setting*: producer
+* Is this configuration editable?**: No
 
