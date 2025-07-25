@@ -56,8 +56,21 @@ Kafka lets you control how long you keep the notebook pages:
 Example: You only want the latest location of a delivery truck. Kafka can remove old locations and keep just the newest one.
 
 
-## Kafka Topic Configuration
+## Kafka Topic Configuration: Configuring Your Kafka Notebook
+Imagine you’re using a shared digital notebook to track important events (like messages from a sensor or app). Now, you want to customize how this notebook works.
 
-**cleanup.policy**
 
-This configuration designates the retention policy to use on log segments. You cannot directly change `cleanup.policy` from delete to `compact, delete`. To set `cleanup.policy` to `compact`, `delete`, you must first change from `delete` to `compact`, then change to `compact, delete`
+Think of each setting below as a notebook rule or behavior switch you can adjust.
+
+ ### `cleanup.policy` – What to Do With Old Pages?
+
+Do you want to delete old notes or keep only the latest version of each key?
+
+* `delete`: Throw away old pages after a while.
+* `compact`: Clean the notebook but keep only the latest info per key.
+
+NOTE: To switch to `compact`, `delete`, you must go through `compact` first.
+
+Default settings for `cleanup.policy`: delete
+Is this configuration editable?: Yes
+
