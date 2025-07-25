@@ -8,6 +8,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#what-if-the-notebook-gets-too-full)
 - [Kafka Topic Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#Kafka-Topic-Configuration)
   - [cleanup.policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#cleanuppolicy--what-to-do-with-old-pages)
+  - [compression.type](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#compressiontype--How-to-Pack-Each-Note)
 
 ## Kafka Topic
 
@@ -73,6 +74,16 @@ Do you want to delete old notes or keep only the latest version of each key?
 
 NOTE: To switch to `compact`, `delete`, you must go through `compact` first.
 
-Default settings for `cleanup.policy`: delete
+Default setting: delete
 Is this configuration editable?: Yes
+
+
+### `compression.type` – How to Pack Each Note
+
+Do you let the sender decide how to pack notes (like zipping them)?
+
+* `producer`: Use the sender's packing choice.
+
+Default setting: producer
+Is this configuration editable?: No
 
