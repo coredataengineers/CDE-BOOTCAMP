@@ -6,7 +6,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [How Kafka Writes Events](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#how-kafka-writes-events)
   - [Not a Queue](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#not-a-queue)
   - [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#what-if-the-notebook-gets-too-full)
-
+- [Kafka Topic Configuration](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#Kafka-Topic-Configuration)
 
 ## Kafka Topic
 
@@ -57,3 +57,7 @@ Example: You only want the latest location of a delivery truck. Kafka can remove
 
 
 ## Kafka Topic Configuration
+
+**cleanup.policy**
+
+This configuration designates the retention policy to use on log segments. You cannot directly change `cleanup.policy` from delete to `compact, delete`. To set `cleanup.policy` to `compact`, `delete`, you must first change from `delete` to `compact`, then change to `compact, delete`
