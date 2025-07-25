@@ -2,13 +2,13 @@
 
 Here, we are going to be covering the basics of Kafka Topics and Configurations under the following titles:
 
-- [What is a Kafka Topic?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#what-is-a-kafka-topic)
+- [Kafka Topic](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#what-is-a-kafka-topic)
   - [How Kafka Writes Events](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###How-Kafka-Writes-Events)
   - [Not a Queue](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###Not-a-Queue)
   - [What if the Notebook Gets Too Full?](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/03-Kafka-topic-and-configurations/README.md###What-if-the-Notebook-Gets-Too-Full?)
 
 
-## What is a Kafka Topic?
+## Kafka Topic
 
 A Kafka topic is like a named folder where messages are stored.
 Producers send messages into a topic, and consumers read messages from it.
@@ -54,3 +54,6 @@ Kafka lets you control how long you keep the notebook pages:
 * **Compaction:** If you only care about the latest info, Kafka can clean up old entries with the same key
 
 Example: You only want the latest location of a delivery truck. Kafka can remove old locations and keep just the newest one.
+
+
+## Kafka Topic Configuration
