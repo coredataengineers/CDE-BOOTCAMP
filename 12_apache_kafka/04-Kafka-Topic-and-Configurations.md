@@ -63,8 +63,9 @@ Kafka lets you control how long you keep the notebook pages:
 
 Example: You only want the latest location of a delivery truck. Kafka can remove old locations and keep just the newest one.
 
+<br> 
 
-<br> ## Kafka Topic Configuration: Configuring Your Kafka Notebook
+## Kafka Topic Configuration: Configuring Your Kafka Notebook
 Imagine you’re using a shared digital notebook to track important events (like messages from a sensor or app). Now, you want to customize how this notebook works.
 
 
