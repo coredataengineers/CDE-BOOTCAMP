@@ -125,3 +125,11 @@ What’s the biggest message you can write on a single page?
 * Default: ~2MB
 * Is this configuration editable after a Topic has been created?: Yes
 
+### `max.compaction.lag.ms` – Wait Time Before Cleaning?
+
+Wait this long before even considering cleaning a message.
+
+* Default: Very long (practically unlimited)
+* Is this configuration editable after a Topic has been created?: Yes
+
+
