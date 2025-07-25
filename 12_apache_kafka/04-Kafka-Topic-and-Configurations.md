@@ -104,3 +104,18 @@ After deciding to delete a page, how long should we wait before really removing 
 * Default: 60 seconds
 * Is this configuration editable after a Topic has been created?: No
 
+### `flush.messages / flush.ms` – When to Force Save?
+
+Only save your notebook when forced — usually never, unless set manually.
+
+* Default: Never
+* Is this configuration editable after a Topic has been created?: No
+
+### `index.interval.bytes` – How Often to Add Page Markers?
+
+Analogy: Every 4KB, add a sticky note so you can quickly jump to that spot later.
+
+* Default: 4096 bytes
+* Is this configuration editable after a Topic has been created?: No
+
+
