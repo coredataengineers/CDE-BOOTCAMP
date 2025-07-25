@@ -10,6 +10,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [cleanup.policy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#cleanuppolicy--what-to-do-with-old-pages)
   - [compression.type](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#compressiontype--How-to-Pack-Each-Note)
   - [default.replication.factor](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#default-replication-factor-–How-to-Pack-Each-Note)
+  - [file.delete.delay.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#filedeletedelayms--delay-before-erasing-a-page)
 
 ## Kafka Topic
 
