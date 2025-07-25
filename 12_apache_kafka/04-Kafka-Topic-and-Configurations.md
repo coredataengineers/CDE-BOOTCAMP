@@ -84,6 +84,6 @@ Do you let the sender decide how to pack notes (like zipping them)?
 
 * `producer`: Use the sender's packing choice.
 
-* Default setting*: producer
-* Is this configuration editable?**: No
+* Default setting: producer
+* Is this configuration editable?: No
 
