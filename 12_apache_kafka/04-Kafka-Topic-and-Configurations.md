@@ -118,4 +118,10 @@ Analogy: Every 4KB, add a sticky note so you can quickly jump to that spot later
 * Default: 4096 bytes
 * Is this configuration editable after a Topic has been created?: No
 
+### `max.message.bytes` – Max Size of One Note
+
+What’s the biggest message you can write on a single page?
+
+* Default: ~2MB
+* Is this configuration editable after a Topic has been created?: Yes
 
