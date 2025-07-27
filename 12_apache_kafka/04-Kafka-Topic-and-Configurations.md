@@ -117,7 +117,7 @@ Only save your notebook when forced — usually never, unless set manually.
 
 ### `index.interval.bytes` – How Often to Add Page Markers?
 
-Analogy: Every 4KB, add a sticky note so you can quickly jump to that spot later.
+Every 4KB, add a sticky note so you can quickly jump to that spot later.
 
 * Default: 4096 bytes
 * Is this configuration editable after a Topic has been created?: No
@@ -135,5 +135,12 @@ Wait this long before even considering cleaning a message.
 
 * Default: Very long (practically unlimited)
 * Is this configuration editable after a Topic has been created?: Yes
+
+### `message.downconversion.enable` – Support for Old Formats?
+
+Can older readers get converted versions of new notes?
+
+* Default: true
+* Is this configuration editable after a Topic has been created?: ❌ No
 
 
