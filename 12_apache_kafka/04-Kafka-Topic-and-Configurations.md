@@ -142,6 +142,12 @@ Wait this long before even considering cleaning a message.
 Can older readers get converted versions of new notes?
 
 * Default: true
-* Is this configuration editable after a Topic has been created?: ❌ No
+* Is this configuration editable after a Topic has been created?: No
 
+
+### `message.timestamp.*` – Rules for Time Differences
+Analogy: How strict should we be if a note says it was written way in the future or past?
+
+* Default: Unlimited
+* Is this configuration editable after a Topic has been created?: Yes
 
