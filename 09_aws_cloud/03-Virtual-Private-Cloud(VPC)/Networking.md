@@ -8,9 +8,7 @@ when next you hit some networking challenges.
 - IP Adressing
 - CIDR Block/Range
 
-IP Adressing: IP Address is an identity used by devices to communicate over the internet. For example, you sat at the 
-balcony surfing the internet with your laptop, lets assume you decided to hit `coredataengineers.com` on your favorite browser,
-basically you want to communicate with CoreDataEngineers webiste. 
+`IP Adressing:` IP Address is an identity attached to devices when they communicate over the internet. For example, you sat at the balcony surfing the internet with your laptop, lets assume you decided to hit `coredataengineers.com` on your favorite browser, basically you want to communicate with CoreDataEngineers webiste, in this case, your device (laptop) need to identify itself, and thats simply via an IP Address which is attached to it when you send that request to `CoreDataEngineers.com` server that host our application.
 
-In this case, you will need to identify yourself, and thats simply via an IP Address which will be attached
-when you send that request to CoreDataEngineers server that host our application.
+
+
