@@ -17,6 +17,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [max.compaction.lag.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#maxcompactionlagms--wait-time-before-cleaning)
   - [message.downconversion.enable](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagedownconversionenable--support-for-old-formats)
   - [message.timestamp.*](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamp--rules-for-time-differences)
+  - [message.timestamp.type](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamptype--when-was-the-note-written)
 
 ## Kafka Topic
 
