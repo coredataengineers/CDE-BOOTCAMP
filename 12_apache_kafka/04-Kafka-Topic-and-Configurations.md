@@ -18,6 +18,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [message.downconversion.enable](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagedownconversionenable--support-for-old-formats)
   - [message.timestamp.*](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamp--rules-for-time-differences)
   - [message.timestamp.type](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamptype--when-was-the-note-written)
+  - [min.cleanable.dirty.ratio](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#mincleanabledirtyratio--when-to-clean)
 
 ## Kafka Topic
 
