@@ -170,5 +170,11 @@ Only start cleaning when at least 50% of the notebook is outdated junk.
 * Default: 0.5
 * Is this configuration editable after a Topic has been created?: No
 
+### `min.compaction.lag.ms` – Wait Before Allowing Cleanup?
+Minimum age of a note before it's eligible to be cleaned.
+
+* Default: 0
+* Is this configuration editable after a Topic has been created?: Yes
+
 
 
