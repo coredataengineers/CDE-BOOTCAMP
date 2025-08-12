@@ -190,6 +190,7 @@ Split your notebook into sections so multiple people can write/read faster.
 
 You can add sections later, but can’t remove them.
 
-Default: 6
-Is this configuration editable after a Topic has been created?: Yes (but only increase)
+* Default: 6
+* Is this configuration editable after a Topic has been created?: Yes (but only increase)
+
 
