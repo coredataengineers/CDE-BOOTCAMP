@@ -177,5 +177,9 @@ Minimum age of a note before it's eligible to be cleaned.
 * Default: 0
 * Is this configuration editable after a Topic has been created?: Yes
 
+### `min.insync.replicas` – Minimum Notebooks That Must Be Updated
+How many notebook copies must confirm the update before it counts?
 
+* Default: 2
+* Is this configuration editable after a Topic has been created?: Yes (only 1 or 2)
 
