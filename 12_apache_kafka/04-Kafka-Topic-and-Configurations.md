@@ -184,3 +184,11 @@ How many notebook copies must confirm the update before it counts?
 * Default: 2
 * Is this configuration editable after a Topic has been created?: Yes (only 1 or 2)
 
+### `num.partitions` – How Many Sections in the Notebook?
+Split your notebook into sections so multiple people can write/read faster.
+
+You can add sections later, but can’t remove them.
+
+Default: 6
+Is this configuration editable after a Topic has been created?: Yes (but only increase)
+
