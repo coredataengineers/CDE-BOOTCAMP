@@ -20,6 +20,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [message.timestamp.type](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamptype--when-was-the-note-written)
   - [min.cleanable.dirty.ratio](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#mincleanabledirtyratio--when-to-clean)
   - [min.compaction.lag.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#mincompactionlagms--wait-before-allowing-cleanup)
+  - [min.insync.replicas](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#mininsyncreplicas--minimum-notebooks-that-must-be-updated)
 
 ## Kafka Topic
 
