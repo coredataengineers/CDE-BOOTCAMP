@@ -147,8 +147,18 @@ Can older readers get converted versions of new notes?
 
 
 ### `message.timestamp.*` – Rules for Time Differences
-Analogy: How strict should we be if a note says it was written way in the future or past?
+How strict should we be if a note says it was written way in the future or past?
 
 * Default: Unlimited
+* Is this configuration editable after a Topic has been created?: Yes
+
+### `message.timestamp.type` – When Was the Note Written?
+
+There are two modes:
+* `CreateTime`: Use the time the sender wrote it.
+* `LogAppendTime`: Use the time it got into Kafka.
+
+Also,
+* Default: CreateTime
 * Is this configuration editable after a Topic has been created?: Yes
 
