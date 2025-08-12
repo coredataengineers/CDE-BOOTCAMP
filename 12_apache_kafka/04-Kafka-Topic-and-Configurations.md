@@ -167,6 +167,8 @@ Also,
 ### `min.cleanable.dirty.ratio` – When to Clean?
 Only start cleaning when at least 50% of the notebook is outdated junk.
 
-Default: 0.5
-Is this configuration editable after a Topic has been created?: No
+* Default: 0.5
+* Is this configuration editable after a Topic has been created?: No
+
+
 
