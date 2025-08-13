@@ -23,6 +23,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [min.insync.replicas](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#mininsyncreplicas--minimum-notebooks-that-must-be-updated)
   - [num.partitions](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#numpartitions--how-many-sections-in-the-notebook)
   - [preallocate](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#preallocate--reserve-space-for-pages)
+  - [retention.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#retentionbytes--max-size-of-notebook)
 
 ## Kafka Topic
 
