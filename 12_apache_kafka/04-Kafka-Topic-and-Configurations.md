@@ -200,3 +200,9 @@ Should we block out space in advance for future pages?
 * Default: false
 * Is this configuration editable after a Topic has been created?: No
 
+
+### `retention.bytes` – Max Size of Notebook?
+If the notebook gets too big, delete old pages (if delete policy is used).
+
+* Default: Unlimited (-1)
+* Is this configuration editable after a Topic has been created?: Yes
