@@ -25,6 +25,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [preallocate](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#preallocate--reserve-space-for-pages)
   - [retention.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#retentionbytes--max-size-of-notebook)
   - [retention.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#retentionms--max-time-to-keep-notes)
+  - [segment.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#segmentbytes--how-big-each-notebook-file-is)
 
 ## Kafka Topic
 
