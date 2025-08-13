@@ -193,4 +193,9 @@ You can add sections later, but can’t remove them.
 * Default: 6
 * Is this configuration editable after a Topic has been created?: Yes (but only increase)
 
+### `preallocate` – Reserve Space for Pages?
+Should we block out space in advance for future pages?
+
+* Default: false
+* Is this configuration editable after a Topic has been created?: No
 
