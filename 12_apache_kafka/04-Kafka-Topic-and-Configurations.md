@@ -221,4 +221,9 @@ Once a file reaches this size, start a new notebook segment.
 * Default: 100MB
 * Is this configuration editable after a Topic has been created?: Yes
 
+### `segment.index.bytes` – How Big is the Page Index?
+Size of the table of contents for fast lookups.
+
+* Default: 10MB
+* Is this configuration editable after a Topic has been created?: No
 
