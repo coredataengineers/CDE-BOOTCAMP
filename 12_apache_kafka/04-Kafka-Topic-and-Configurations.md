@@ -212,5 +212,7 @@ If the notebook gets too big, delete old pages (if delete policy is used).
 ### `retention.ms` – Max Time to Keep Notes?
 How long do you want to keep old notes before discarding?
 
-Default: 7 days
-Is this configuration editable after a Topic has been created?: Yes
+* Default: 7 days
+* Is this configuration editable after a Topic has been created?: Yes
+
+
