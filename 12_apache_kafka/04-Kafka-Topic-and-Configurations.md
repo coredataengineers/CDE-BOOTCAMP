@@ -215,4 +215,10 @@ How long do you want to keep old notes before discarding?
 * Default: 7 days
 * Is this configuration editable after a Topic has been created?: Yes
 
+### `segment.bytes` – How Big Each Notebook File Is
+Once a file reaches this size, start a new notebook segment.
+
+* Default: 100MB
+* Is this configuration editable after a Topic has been created?: Yes
+
 
