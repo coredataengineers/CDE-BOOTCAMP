@@ -16,7 +16,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [max.message.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#maxmessagebytes--max-size-of-one-note)
   - [max.compaction.lag.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#maxcompactionlagms--wait-time-before-cleaning)
   - [message.downconversion.enable](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagedownconversionenable--support-for-old-formats)
-  - [message.timestamp.*](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamp--rules-for-time-differences)
+  - [message.timestamp](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamp--rules-for-time-differences)
   - [message.timestamp.type](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#messagetimestamptype--when-was-the-note-written)
   - [min.cleanable.dirty.ratio](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#mincleanabledirtyratio--when-to-clean)
   - [min.compaction.lag.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/edit/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#mincompactionlagms--wait-before-allowing-cleanup)
