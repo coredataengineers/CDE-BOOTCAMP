@@ -229,3 +229,9 @@ Size of the table of contents for fast lookups.
 * Default: 10MB
 * Is this configuration editable after a Topic has been created?: No
 
+### `segment.jitter.ms` – Add Random Delay to Page Rotation?
+Add random delay so not all notebooks rotate at the same time.
+
+Default: 0
+Is this configuration editable after a Topic has been created?: No
+
