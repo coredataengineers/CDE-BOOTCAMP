@@ -247,4 +247,4 @@ Analogy: Even if the file’s not full, start a new one after this time.
 If your main notebook keeper disappears, can we promote someone who might have missing pages?
 
 * Default: false
-* Editable: No
+* Is this configuration editable after a Topic has been created?: No
