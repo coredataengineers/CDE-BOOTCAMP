@@ -242,3 +242,9 @@ Analogy: Even if the file’s not full, start a new one after this time.
 
 * Default: 7 days
 * Is this configuration editable after a Topic has been created?: Yes
+
+### `unclean.leader.election.enable` – Risky Recovery Allowed?
+If your main notebook keeper disappears, can we promote someone who might have missing pages?
+
+Default: false
+Editable: ❌ No
