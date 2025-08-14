@@ -27,6 +27,7 @@ Here, we are going to be covering the basics of Kafka Topics and Configurations 
   - [retention.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#retentionms--max-time-to-keep-notes)
   - [segment.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#segmentbytes--how-big-each-notebook-file-is)
   - [segment.index.bytes](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#segmentindexbytes--how-big-is-the-page-index)
+  - [segment.jitter.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/04-Kafka-Topic-and-Configurations.md#segmentjitterms--add-random-delay-to-page-rotation)
 
 ## Kafka Topic
 
