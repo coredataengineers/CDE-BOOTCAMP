@@ -236,3 +236,8 @@ Add random delay so not all notebooks rotate at the same time.
 * Default: 0
 * Is this configuration editable after a Topic has been created?: No
 
+### `segment.ms` – Max Time for One Notebook File
+Analogy: Even if the file’s not full, start a new one after this time.
+
+Default: 7 days
+Is this configuration editable after a Topic has been created?: Yes
