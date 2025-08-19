@@ -31,8 +31,13 @@ Let's see an example of a CIRR Range, we are going to use a tool to see how many
   - The `/28` tells us how many IPs we will have in the CIDR Range, which is calculated below
     - 2 ** (32 - 28) = 16
     - The `2` and `32` is always a constant.
+- Now that we know how to calculate how many IPs within a CIDR Range, but how do we know the individual IP Address in a specific CIDR Range?
+  - Hit this [link](https://ipgen.hasarin.com/) and see the total list of the IPs in the above CIDR Ranges, make sure to select `CIDR` instead of `plain range`.
+
+<img width="1116" height="510" alt="Screenshot 2025-08-19 at 20 30 58" src="https://github.com/user-attachments/assets/6f8a8902-1f11-4827-9f45-54e992650355" />
 
 Now that we've understood the meaning and the difference between an IP Address and CIDR Block/Range, lets talk about what you will most likely deal with most of the time in a pictorial view.
+
 
 
 
