@@ -15,7 +15,7 @@ We will talk about the below `2` important Networking concept, at the end of thi
 Let's talk about `CIDR Blocks/Range`.
 - CIDR Block/Range is a collection of IP Addresses
 - Basicaally, its a range of IP Addresses that starts from a specific IP Address and ends at a specific IP Address.
-  - For example, a range of number between 1-5 will have 1, 2, 3, 4
+  - For example, a range of number between `1-5` will have `1, 2, 3, 4`
   - A CIDR Block/Range follow the same concept, but of course not entirly the same. In addition to this, knowing the specific IP Address in a CIDR Block is not easy, because some CIDR Block has thousands of IP in it.
   - Be rest assured that there are tools already created to help know 
     - How many IPs we have in a CIDR Block/Range
@@ -24,10 +24,16 @@ Let's talk about `CIDR Blocks/Range`.
 
 Let's see an example of a CIRR Range, we are going to use a tool to see how many IP Address we have in the CIDR Range, the first IP and the Last IP, Lastly, we will see how to check if a specific IP is in the CIDR Range we have.
 - Let's consider this CIDR Range of `10.5.0.0/30`
-  - The `/30` tells us how many IPs we will have in the CIDR Range, which is calculated below
-  - To calculate how many numbers of IP in the above CIDR Range, we 2 ** (32 - 30) = 4 IPs
+  - The `/30` is called a `subnet mask` which tells us how many IPs we will have in the CIDR Range, which is calculated below
+    - 2 ** (32 - 30) = 4 IPs
+    - The `2` and `32` is always a constant. 
+- Let's consider another CIDR Range of `170.8.0.0/28`
+  - The `/28` tells us how many IPs we will have in the CIDR Range, which is calculated below
+    - 2 ** (32 - 28) = 16
+    - The `2` and `32` is always a constant.
 
 Now that we've understood the meaning and the difference between an IP Address and CIDR Block/Range, lets talk about what you will most likely deal with most of the time in a pictorial view.
+
 
 
 
