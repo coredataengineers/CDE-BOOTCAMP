@@ -32,11 +32,22 @@ Let's see an example of a CIRR Range, we are going to use a tool to see how many
     - 2 ** (32 - 28) = 16
     - The `2` and `32` is always a constant.
 - Now that we know how to calculate how many IPs within a CIDR Range, but how do we know the individual IP Address in a specific CIDR Range?
-  - Hit this [link](https://ipgen.hasarin.com/) and see the total list of the IPs in the above CIDR Ranges, make sure to select `CIDR` instead of `plain range`.
+  - Hit this [link](https://ipgen.hasarin.com/) and see the total list of the IPs in the above CIDR Ranges, make sure to select `CIDR` instead of `plain range` and input your 4 seperated digit like the below image. You will see 4 IPs, the first IP is `10.5.0.0` and the last IP is `10.5.0.3`. 
 
 <img width="1116" height="510" alt="Screenshot 2025-08-19 at 20 30 58" src="https://github.com/user-attachments/assets/6f8a8902-1f11-4827-9f45-54e992650355" />
 
-Now that we've understood the meaning and the difference between an IP Address and CIDR Block/Range, lets talk about what you will most likely deal with most of the time in a pictorial view.
+If you want to do a deep dive on how they get each of the IPs, and a general deep dive on IP Addressing and CIDR Range, please we highly recommend this [Youtube Video](https://www.youtube.com/watch?v=7hIbzlxbebc). 
+
+Now that we've understood the meaning and the difference between an IP Address and CIDR Block/Range, and also how to use the tool to see how many IPs we have in a CIDR Range, lets talk about what you will most likely deal with most of the time. Before then, lets understand this first
+- A CIDR Range is like a private Network, which is a range of IPs.
+- Any IP that is not part of a specific CIDR Range is not part of that network
+- When an IP is not part of a Network(CIDR Range), they cannot enter that Network.
+
+Let's look at the image below to understand very well.
+
+<img width="957" height="447" alt="Screenshot 2025-08-19 at 21 03 59" src="https://github.com/user-attachments/assets/db5ed76a-d06c-482e-aaac-8e5ad3f1ff00" />
+
+
 
 
 
