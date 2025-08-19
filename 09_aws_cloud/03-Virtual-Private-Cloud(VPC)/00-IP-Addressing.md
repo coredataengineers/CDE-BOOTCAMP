@@ -31,13 +31,16 @@ Let's see an example of a `CIDR Range`, we are going to use a tool to see how ma
   - The `/28` tells us how many IPs we will have in the CIDR Range, which is calculated below
     - 2 ** (32 - 28) = 16
     - The `2` and `32` is always a constant.
-- Now that we know how to calculate how many IPs within a CIDR Range, but how do we know the individual `IP Address` in a specific `CIDR Range`?
+
+## CHECK LIST OF IP ADDRESSES IN CIDR RANGE
+Now that we know how to calculate how many IPs within a CIDR Range, but how do we know the individual `IP Address` in a specific `CIDR Range`?
   - Hit this [link](https://ipgen.hasarin.com/) and see the total list of the IPs in the above `CIDR Ranges`, make sure to select `CIDR` instead of `plain range` and input your 4 seperated digit like the below image. You will see 4 IPs, the first IP is `10.5.0.0` and the last IP is `10.5.0.3`. 
 
 <img width="1116" height="510" alt="Screenshot 2025-08-19 at 20 30 58" src="https://github.com/user-attachments/assets/6f8a8902-1f11-4827-9f45-54e992650355" />
 
 If you want to do a deep dive on how they get each of the IPs, and a general deep dive on IP Addressing and CIDR Range, please we highly recommend this [Youtube Video](https://www.youtube.com/watch?v=7hIbzlxbebc). 
 
+## WHAT REALLY MATTERS
 Now that we've understood the meaning and the difference between an `IP Address` and `CIDR Range`, and also how to use the tool to see how many IPs we have in a `CIDR Range`, lets talk about what you will most likely deal with most of the time. Before then, lets understand this first
 - A `CIDR Range` is like a `private Network`, which is a range of IPs.
 - Any IP that is not part of a specific `CIDR Range` is not part of that network.
@@ -65,6 +68,7 @@ Resource References
 - [List of IPs in a CIDR Range](https://ipgen.hasarin.com/).
 - [Check if IP in CIDR Range ](https://tehnoblog.org/ip-tools/ip-address-in-cidr-range/).
 - [Show Info of a CIDR Range](https://www.ipaddressguide.com/cidr.aspx)
+
 
 
 
