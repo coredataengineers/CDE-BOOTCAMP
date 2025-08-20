@@ -54,9 +54,10 @@ Offsets are local to a partition, not global to the topic.
 ## Quick Analogy
 
 Imagine a library shelf (topic):
-* Each shelf section (partition) contains books lined up in order.
+* Each shelf section (partition) contains books lined up in order (0,1,2,3,4,...).
 * Each book has a page number (offset) that never changes.
 * Multiple people (consumers) can read different shelf sections at once, but within a section, everyone sees the books in the same order.
+
 
 
 
