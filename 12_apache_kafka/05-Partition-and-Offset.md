@@ -4,6 +4,7 @@ A topic is like a folder where related events (messages) are stored. But inside 
 
 - [What is a Partition?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#what-is-a-partition)
 - [What is an Offset?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#what-is-an-offset)
+- [Why Partitions and Offsets Matter](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#why-partitions-and-offsets-matter)
 
 ## What is a Partition?
 A partition is a smaller chunk of a topic that holds a sequence of events (messages).
@@ -38,6 +39,7 @@ Offsets are local to a partition, not global to the topic.
 
 ## Why Partitions and Offsets Matter
 1. Scalability: Partitions let Kafka spread topic data across multiple brokers, enabling it to efficiently handle massive volumes of messages/events.
+
 
 
 
