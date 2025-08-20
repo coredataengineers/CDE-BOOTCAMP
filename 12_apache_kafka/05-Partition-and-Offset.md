@@ -40,6 +40,8 @@ Offsets are local to a partition, not global to the topic.
 ## Why Partitions and Offsets are Important
 1. Scalability: Partitions let Kafka spread topic data across multiple brokers, enabling it to efficiently handle massive volumes of messages/events.
 2. Parallelism: Multiple consumers can read from different partitions at the same time, speeding up processing.
+3. Ordering Guarantees: Within a single partition, messages are strictly ordered.
+
 
 
 
