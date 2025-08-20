@@ -12,7 +12,6 @@ A partition is a smaller chunk of a topic that holds a sequence of events (messa
 * Once written, messages never change (they are immutable).
 * Partitions make topics scalable and distributed because data can be spread across multiple brokers (servers) in a Kafka cluster.
 
-<br>
 Think of a partition like a page in a notebook: each new line you write is the next message. If the notebook is too small, you can add more pages (partitions).
 
 **Example:**
@@ -36,6 +35,7 @@ Offsets are local to a partition, not global to the topic.
 
 * For example, Partition 0 might have messages with offsets 0, 1, 2...
 * Partition 1 also starts at offset 0, 1, 2... independently.
+
 
 
 
