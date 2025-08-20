@@ -34,7 +34,10 @@ Let's see an example of a `CIDR Range`, we are going to use a tool to see how ma
 
 ## CHECK LIST OF IP ADDRESSES IN CIDR RANGE
 Now that we know how to calculate how many IPs within a CIDR Range, but how do we know the individual `IP Address` in a specific `CIDR Range`?
-  - Hit this [link](https://ipgen.hasarin.com/) and see the total list of the IPs in the above `CIDR Ranges`, make sure to select `CIDR` instead of `plain range` and input your 4 seperated digit like the below image. You will see 4 IPs, the first IP is `10.5.0.0` and the last IP is `10.5.0.3`. 
+  - Hit this [link](https://ipgen.hasarin.com/) and see the total list of the IPs in the above `CIDR Ranges`, make sure to select `CIDR` instead of `plain range` and input your 4 seperated digit and `/30` which is your subnet mask like the below image.
+    - You will see 4 IPs
+    - The first IP is `10.5.0.0`
+    - The last IP is `10.5.0.3`. 
 
 <img width="1116" height="510" alt="Screenshot 2025-08-19 at 20 30 58" src="https://github.com/user-attachments/assets/6f8a8902-1f11-4827-9f45-54e992650355" />
 
@@ -68,6 +71,7 @@ Resource References
 - [List of IPs in a CIDR Range](https://ipgen.hasarin.com/).
 - [Check if IP in CIDR Range ](https://tehnoblog.org/ip-tools/ip-address-in-cidr-range/).
 - [Show Info of a CIDR Range](https://www.ipaddressguide.com/cidr.aspx)
+
 
 
 
