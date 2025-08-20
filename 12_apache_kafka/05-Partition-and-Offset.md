@@ -41,8 +41,11 @@ Offsets are local to a partition, not global to the topic.
 1. Scalability:
     * Partitions let Kafka spread topic data across multiple brokers, enabling it to efficiently handle massive volumes of messages/events.
 2. Parallelism: 
-* Multiple consumers can read from different partitions at the same time, speeding up processing.
-3. Ordering Guarantees: Within a single partition, messages are strictly ordered.
+      * Multiple consumers can read from different partitions at the same time, speeding up processing.
+3. Ordering Guarantees:
+      * Within a single partition, messages are strictly ordered.
+      * Across multiple partitions, Kafka does not guarantee global ordering.
+
 
 
 
