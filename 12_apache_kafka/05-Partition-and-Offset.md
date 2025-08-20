@@ -34,7 +34,8 @@ Inside a partition, each message is given a unique number called an `offset`.
 Offsets are local to a partition, not global to the topic.
 
 * For example, Partition 0 might have messages with offsets 0, 1, 2...
-Partition 1 also starts at offset 0, 1, 2... independently.
+* Partition 1 also starts at offset 0, 1, 2... independently.
+
 
 
 
