@@ -45,6 +45,12 @@ Offsets are local to a partition, not global to the topic.
 3. Ordering Guarantees:
       * Within a single partition, messages are strictly ordered.
       * Across multiple partitions, Kafka does not guarantee global ordering.
+4. Tracking Progress:
+      * Consumers keep track of the offset they last read.
+      * If a consumer crashes, it can resume from the last committed offset without losing data.
+
+
+
 
 
 
