@@ -53,6 +53,9 @@ Offsets are local to a partition, not global to the topic.
 
 ## Quick Analogy
 
+Imagine a library shelf (topic):
+
+
 
 
 
