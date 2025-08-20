@@ -68,9 +68,10 @@ In short, what you need to understand to be able to work with `Amazon VPC` is to
 
 Resource References
 - [IP Addressing and CIDR Deep Dive](https://www.youtube.com/watch?v=7hIbzlxbebc).
-- [List of IPs in a CIDR Range](https://ipgen.hasarin.com/).
+- [Check List of IPs in a CIDR Range](https://ipgen.hasarin.com/).
 - [Check if IP in CIDR Range ](https://tehnoblog.org/ip-tools/ip-address-in-cidr-range/).
-- [Show Info of a CIDR Range](https://www.ipaddressguide.com/cidr.aspx)
+- [Show first IP, last IP and how many IPs in a CIDR Range](https://www.ipaddressguide.com/cidr.aspx)
+
 
 
 
