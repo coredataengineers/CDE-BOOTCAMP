@@ -29,13 +29,14 @@ Inside a partition, each message is given a unique number called an `offset`.
 
 * The offset is like the line number on a notebook page.
 * It tells Kafka (and consumers) the exact position of a message in a partition.
-Offsets start at 0 and increase by 1 for each new message.
+* Offsets start at 0 and increase by 1 for each new message.
 
 Offsets are local to a partition, not global to the topic.
 
 For example, Partition 0 might have messages with offsets 0, 1, 2...
 
 Partition 1 also starts at offset 0, 1, 2... independently.
+
 
 
 
