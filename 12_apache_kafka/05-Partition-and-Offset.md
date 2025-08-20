@@ -15,3 +15,9 @@ Think of a partition like a page in a notebook: each new line you write is the n
 **Example:**
 Imagine a topic called user-signups, where:
 
+* Partition 0 might store signups from users A–M.
+* Partition 1 might store signups from users N–Z.
+This way, data is balanced and can be processed in parallel.
+
+**NOTE:** It doesn't always work like this as there are different partition strategies, but that is outside the scope of this lesson.
+
