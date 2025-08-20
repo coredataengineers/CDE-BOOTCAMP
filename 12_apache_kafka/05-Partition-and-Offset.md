@@ -4,7 +4,7 @@ A topic is like a folder where related events (messages) are stored. But inside 
 
 - [What is a Partition?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#what-is-a-partition)
 - [What is an Offset?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#what-is-an-offset)
-- [Why Partitions and Offsets Matter](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#why-partitions-and-offsets-matter)
+- [Why Partitions and Offsets are Important](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#why-partitions-and-offsets-are-important)
 - [Quick Analogy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/05-Partition-and-Offset.md#quick-analogy)
 
 ## What is a Partition?
@@ -57,6 +57,7 @@ Imagine a library shelf (topic):
 * Each shelf section (partition) contains books lined up in order (0,1,2,3,4,...).
 * Each book has a page number (offset) that never changes (Page 1, 2, 3, 4, 5, ...).
 * Multiple people (consumers) can read different shelf sections at once, but within a section, everyone sees the books in the same order.
+
 
 
 
