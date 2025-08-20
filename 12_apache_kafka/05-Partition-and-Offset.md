@@ -12,3 +12,6 @@ A partition is a smaller chunk of a topic that holds a sequence of events (messa
 <br>
 Think of a partition like a page in a notebook: each new line you write is the next message. If the notebook is too small, you can add more pages (partitions).
 
+**Example:**
+Imagine a topic called user-signups, where:
+
