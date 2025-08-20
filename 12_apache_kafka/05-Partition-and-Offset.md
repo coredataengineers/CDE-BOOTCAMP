@@ -50,9 +50,7 @@ Offsets are local to a partition, not global to the topic.
       * If a consumer crashes, it can resume from the last committed offset without losing data.
 
 
-
-
-
+## Quick Analogy
 
 
 
