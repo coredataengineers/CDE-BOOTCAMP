@@ -9,4 +9,6 @@ A partition is a smaller chunk of a topic that holds a sequence of events (messa
 * Once written, messages never change (they are immutable).
 * Partitions make topics scalable and distributed because data can be spread across multiple brokers (servers) in a Kafka cluster.
 
+<br>
+Think of a partition like a page in a notebook: each new line you write is the next message. If the notebook is too small, you can add more pages (partitions).
 
