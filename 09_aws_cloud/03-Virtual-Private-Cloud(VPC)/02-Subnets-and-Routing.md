@@ -16,13 +16,17 @@ the range of IP in the VPC CIDR Range, it's a way of dividing the overall networ
 
 Image Summary
 - The VPC has a CIDR Range `10.0.0.0/28`
-- The VPC has 2 Subnets
-  - Subnet-A has 4 IPs and Subnet-B has 8 IPs
-- The VPC has 4 more IPs not allocated to any Subnet.
+- The VPC has `2` Subnets
+  - Subnet-A has `4` IPs and Subnet-B has `8` IPs
+- The VPC has `4` more IPs not allocated to any Subnet.
 
 ### BENEFITS OF SUBNETS
 - `Logical Isolation`: Subnets allow you to divide your VPC into smaller, manageable units. This isolation is crucial for security, as it prevents resources in one subnet from directly accessing resources in another, unless explicitly allowed through routing rules and security configurations which we will cover soon.
-- `Security Control`: Subnets can be either `public` or `private`. Public subnets have access to the internet through `Routing`, while private subnets do not have access to the internet. This allows for granular control over which resources are exposed to the internet and which are kept internal.
+- `Security Control`: Subnets can be either `public` or `private`. `Public Subnets` have access to the internet through `Routing`, while `Private Subnets` do not have access to the internet. This allows for granular control over which resources are exposed to the internet and which are kept internal.
+
+To be more specific, when you create a Database or a Server in a VPC , they are actually being deployed into a specific Subnet. Let's represent that visually
+
+<img width="664" height="319" alt="Screenshot 2025-08-21 at 11 42 04" src="https://github.com/user-attachments/assets/c784047c-a006-44af-978e-9ebaff749991" />
 
 
 
