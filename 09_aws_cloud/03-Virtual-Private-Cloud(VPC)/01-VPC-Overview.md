@@ -30,7 +30,7 @@ Image Summary
 ## VPC DNS CONFIGURATIONS
 Before going into the `DNS` configurations for a VPC, lets understand the `DNS` concept itself. 
 - When you access `www.google.com` on your laptop, you are essentially calling the `IP address` of the google.com application server behind the scene. At the end, that application is running inside a `Server`.
-- `www.google.com` is a human readable Domain address, but computer doesn't understand that.
+- `www.google.com` is a human readable Domain address that human feel comfortable to remember, compare to IP Addresses. Read this [small piece](https://aws.amazon.com/route53/what-is-dns/#:~:text=DNS%2C%20or%20the,called%C2%A0queries.) for more understanding.
 - When you look for `www.google.com` on the internet, a `DNS Server` will help you tranlate that `www.google.com` into the corresponding IP address of the actual `google.com` application running in the `Server`.
 - That process is called `DNS Resolution`, and the guy doing the resolution is the `DNS Server`.
 
@@ -44,10 +44,12 @@ Documenation Reference
 - https://docs.aws.amazon.com/vpc/latest/userguide/configure-your-vpc.html
 - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-ip-addressing.html
 - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html
+- https://aws.amazon.com/route53/what-is-dns/
 - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html
 - https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc-options.html
 - https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html
   
+
 
 
 
