@@ -12,9 +12,20 @@ VPC Stands for `Virtual Private Cloud`, see it as your small Cloud environment w
   -  This means you are going to have `2 ** (32-16) = 65,536` IP Addresses that will make up your entire Private Network (VPC).
   -  If you want your friend to connect to a `Server` or `Database` inside that VPC from his house Network, you need to `whitelist` your friends `IP Address` and take care of some other things which we will cover in a later section before he can be able to connect to that `Server` or `Database`, because your friend's IP is not part of the `VPC CIDR Range`.
    
-- It's worth to know that, every `AWS Region` comes with a `default VPC` (Created by AWS), but know that this VPC allow routing to the internet, this will be clear in subsequent sections.
-  - This VPC cannot be deleted.
-- A custom VPC can as well be created by you, all configuration have to be set up by you, what needs to be set up will be seen in subsequent sections.
+- It's worth to know that, every `AWS Region` comes with a `default VPC` (Created by AWS), but know that this VPC allow routing to the internet, this will be clear in subsequent sections, so ignore this for now.
+  - The default VPC cannot be deleted.
+- A custom VPC can as well be created by you, all configuration have to be set up by you, including the CDR Range and some other resources which will be covered in subsequent sections.
+  
+The below image represent how a VPC looks like
+
+<img width="1380" height="534" alt="Screenshot 2025-08-21 at 08 19 44" src="https://github.com/user-attachments/assets/a223593f-1f2d-44a8-8427-cb4a80e4f34d" />
+
+Image Summary
+- A VPC created with `10.0.0.0/28` CIDR Range.
+- The `CIDR Range` has `16 IPs` that form the Private Network.
+- The first IP is `10.0.0.0` and the last IP is `10.0.0.15`.
+- John want's to communicate with the Network, lets say he wants to connect to a `Server` or `Database` that is inside this VPC, unfortunately its not possible because his IP `52.12.19.145` is not part of the VPC CIDR Range.
+- We will cover how IPs that are not part of a VPC can be whitelisted, so relax 😁.
 
 ## VPC DNS CONFIGURATIONS
 Before going into the `DNS` configurations for a VPC, lets understand the `DNS` concept itself. 
@@ -37,6 +48,7 @@ Documenation Reference
 - https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc-options.html
 - https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html
   
+
 
 
 
