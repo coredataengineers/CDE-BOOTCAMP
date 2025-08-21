@@ -22,7 +22,7 @@ The below image represent how a VPC looks like
 
 Image Summary
 - A VPC created with `10.0.0.0/28` CIDR Range.
-- The `CIDR Range` has `16 IPs` that form the Private Network.
+- The `CIDR Range` has `16 IPs` that form the Private Network. Read how we get that from our [previous note](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/03-Virtual-Private-Cloud(VPC)/00-IP-Addressing.md#check-list-of-ip-addresses-in-cidr-range).
 - The first IP is `10.0.0.0` and the last IP is `10.0.0.15`.
 - John want's to communicate with the Network, lets say he wants to connect to a `Server` or `Database` that is inside this VPC, unfortunately its not possible because his IP `52.12.19.145` is not part of the VPC CIDR Range.
 - We will cover how IPs that are not part of a VPC can be whitelisted, so relax 😁.
@@ -48,6 +48,7 @@ Documenation Reference
 - https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc-options.html
 - https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html
   
+
 
 
 
