@@ -8,7 +8,7 @@ that comes with a CIDR Range, this is nothing but some list of IPs that make up 
 further said if an IP is not part of that VPC CIDR Range, it will not be able to communicate with 
 resources inside that VPC.
 
-## WHAT IS A SUBNET
+### WHAT IS A SUBNET
 In the context of VPC, it's nothing but a range of IPs. Yes you heard that correctly, but in this case, its
 the range of IP in the VPC CIDR Range, it's a way of dividing the overall network into small chunks. Let's represent this visually and summarise it.
 
@@ -20,9 +20,10 @@ Image Summary
   - Subnet-A has 4 IPs and Subnet-B has 8 IPs
 - The VPC has 4 more IPs not allocated to any Subnet.
 
-# BENEFITS OF SUBNETS
+### BENEFITS OF SUBNETS
 - Logical Isolation: Subnets allow you to divide your VPC into smaller, manageable units. This isolation is crucial for security, as it prevents resources in one subnet from directly accessing resources in another, unless explicitly allowed through routing rules and security configurations.
 - Security Control: Subnets can be either public or private. Public subnets have access to the internet, while private subnets do not. This allows for granular control over which resources are exposed to the internet and which are kept internal.
+
 
 
 
