@@ -21,8 +21,9 @@ Image Summary
 - The VPC has 4 more IPs not allocated to any Subnet.
 
 ### BENEFITS OF SUBNETS
-- Logical Isolation: Subnets allow you to divide your VPC into smaller, manageable units. This isolation is crucial for security, as it prevents resources in one subnet from directly accessing resources in another, unless explicitly allowed through routing rules and security configurations.
-- Security Control: Subnets can be either public or private. Public subnets have access to the internet, while private subnets do not. This allows for granular control over which resources are exposed to the internet and which are kept internal.
+- `Logical Isolation`: Subnets allow you to divide your VPC into smaller, manageable units. This isolation is crucial for security, as it prevents resources in one subnet from directly accessing resources in another, unless explicitly allowed through routing rules and security configurations which we will cover soon.
+- `Security Control`: Subnets can be either `public` or `private`. Public subnets have access to the internet through `Routing`, while private subnets do not have access to the internet. This allows for granular control over which resources are exposed to the internet and which are kept internal.
+
 
 
 
