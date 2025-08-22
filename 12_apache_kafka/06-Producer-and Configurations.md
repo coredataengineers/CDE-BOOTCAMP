@@ -11,4 +11,7 @@ A producer is any application that sends (produces) messages to a Kafka topic.
 
 * Producers decide which topic to send data to.
 
+* They can also decide which partition in the topic gets the message.
+
+
 
