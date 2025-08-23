@@ -13,6 +13,13 @@ A producer is any application that sends (produces) messages to a Kafka topic.
 * They can also decide which partition in the topic gets the message.
 * Producers are stateless — they don’t keep old data; they just send new events into Kafka.
 
+Example:
+
+A mobile app sending user clicks to Kafka.
+
+A payment service sending transaction logs.
+
+An IoT device sending temperature readings.
 
 
 
