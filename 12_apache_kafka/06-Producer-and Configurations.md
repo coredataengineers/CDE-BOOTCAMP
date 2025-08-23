@@ -15,11 +15,10 @@ A producer is any application that sends (produces) messages to a Kafka topic.
 
 Example:
 
-A mobile app sending user clicks to Kafka.
+* A mobile app sending user clicks to Kafka.
+* A payment service sending transaction logs.
+* An IoT device sending temperature readings.
 
-A payment service sending transaction logs.
-
-An IoT device sending temperature readings.
 
 
 
