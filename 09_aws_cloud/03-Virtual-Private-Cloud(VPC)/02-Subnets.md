@@ -10,14 +10,20 @@ resources inside that VPC.
 
 ### WHAT IS A SUBNET
 In the context of VPC, it's nothing but a range of IPs. Yes you heard that correctly, but in this case, its
-the range of IP in the VPC CIDR Range, it's a way of dividing the overall network into small chunks. Let's represent this visually and summarise it.
+the range of IP in the VPC CIDR Range. 
+
+This simply mean, when you create a subnet, you need to specify the CIDR Range for that subnet, it's a way of dividing the overall network into small chunks. But its important to know that, the subnet CIDR Range must be from within the VPC CIDR Range.
+
+Let's represent this visually and summarise it.
 
 <img width="479" height="338" alt="Screenshot 2025-08-21 at 09 10 18" src="https://github.com/user-attachments/assets/c612ad95-7494-4a13-9012-dcdc230ee303" />
 
 Image Summary
 - The VPC has a CIDR Range `10.0.0.0/28`
 - The VPC has `2` Subnets
-  - Subnet-A has `4` IPs and Subnet-B has `8` IPs
+  - Subnet-A has a CIDR Range 10.0.0.0/32 which has `4` IPs.
+  - Subnet-B has a CIDR Range 10.0.0.0/32 which has `8` IPs.
+  - Use this [tool](https://www.zerobounce.net/ip-range-cidr-converter/) to convert a range of IPs to CIDR Range 
 - The VPC has `4` more IPs not allocated to any Subnet.
 
 ### BENEFITS OF SUBNETS
@@ -27,6 +33,12 @@ Image Summary
 To be more specific, when you create a Database or a Server in a VPC , they are actually being deployed into a specific Subnet. Let's represent that visually
 
 <img width="664" height="319" alt="Screenshot 2025-08-21 at 11 42 04" src="https://github.com/user-attachments/assets/c784047c-a006-44af-978e-9ebaff749991" />
+IMAGE SUMMARY
+- The Overall VPC Network is 10.0.0.0/28, which has 16 IPs
+- The Network is further divided into 2 smaller chunks subnet A and subnet B
+  - A Server is created in the Subnet A with 4 IPs, for your information, one of the IP will be attached to the Server.
+  - A Database is created in the Subnet A with 8 IPs, for your information, one of the IP will be attached to the Server hosting that Database behind the scene.
+
 
 
 
