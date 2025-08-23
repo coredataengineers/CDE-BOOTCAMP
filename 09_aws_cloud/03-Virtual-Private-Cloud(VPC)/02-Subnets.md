@@ -1,9 +1,9 @@
-# SUBNETS AND ROUTING
-Now that we now understood what a VPC is, if you haven't check that section, please feel free to read
-that [here](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/03-Virtual-Private-Cloud(VPC)/01-VPC-Overview.md) 
-before taking this section.
+# SUBNETS
+Next up is Subnet, this is a `CRITICAL` resource of the VPC, please ensure you've covered the below in the specified order
+- [IP Addressing & CIDR](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/03-Virtual-Private-Cloud(VPC)/00-IP-Addressing.md)
+- [VPC Overview](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/09_aws_cloud/03-Virtual-Private-Cloud(VPC)/01-VPC-Overview.md)
 
-It's start to explore other resources inside a VPC, in our last note on VPC, we highlighted its a Private Network
+Let's start to explore other resources inside a VPC, in our last note on VPC, we highlighted its a Private Network
 that comes with a CIDR Range, this is nothing but some list of IPs that make up the whole network. We
 further said if an IP is not part of that VPC CIDR Range, it will not be able to communicate with 
 resources inside that VPC.
@@ -38,6 +38,7 @@ IMAGE SUMMARY
 - The Network is further divided into 2 smaller chunks subnet A and subnet B
   - A Server is created in the Subnet A with 4 IPs, for your information, one of the IP will be attached to the Server.
   - A Database is created in the Subnet A with 8 IPs, for your information, one of the IP will be attached to the Server hosting that Database behind the scene.
+
 
 
 
