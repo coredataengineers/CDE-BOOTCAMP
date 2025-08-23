@@ -18,7 +18,7 @@ For example you can create a Route Table and define a Route that says, any commu
 
 <img width="1342" height="806" alt="Screenshot 2025-08-23 at 12 08 21" src="https://github.com/user-attachments/assets/1b86459c-367f-4ec9-af5c-fe8aae6838c9" />
 
-Wait, we have something new in the image called `Internet Gateway`.
+Wait, we have something new in the image called `Internet Gateway` 🤔.
 - Internet gateway is nothing but a component you attach to your VPC.
 - It facilitate the communication from your VPC to the internet and also facilitate communication from the internet into your VPC.
 - Every Default VPC already have an Internet Gateway attached to them.
@@ -33,7 +33,14 @@ Let's summarise the Image above
 - Subnet A is where we have our Database with no custom Route Table associated.
   - It's associated with a custom Route Table with a link to the Internet Gateway.
   - Any Subnet associated with a Route Table that has a route to the Internet Gateway is called a `PUBLIC SUBNET`.
+
+ ## NAT GATEWAY
+ Nat Gateway is used to establish communication from a Private Subnet to the Internet.
+ - The Nat Gateway is created in the public subnet
+ - Private subnet route table is configured to have a route to the internet using the Nat Gateway
+   - This essentially means, the communication will from the private subnet to the public subnet via the Nat Gatway who will forward the communication to the Internet Gateway which is already attached to the VPC to head to the internet. 
  
 ## CONCLUSION
 if you need John to communicate with a resource in your subnet, make sure that resource is provisioned inside a PUBLIC SUBNET,
 basically the subnet has to be associated with a Route Table that has a route linked to the Internet Gateway. 
+
