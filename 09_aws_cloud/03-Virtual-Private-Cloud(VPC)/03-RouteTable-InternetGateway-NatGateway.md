@@ -42,10 +42,15 @@ Let's summarise the Image above
    - Reason is, if you stop a Server with already attached Public IP Address, when you restart that
      the server, it will generate another Public IP which can affect connectivity.
  - Private subnet route table is configured to have a route to the internet using the Nat Gateway
-   - This essentially means, the communication will from the private subnet to the public subnet via the Nat Gatway, who will then forward the communication to the Internet Gateway which is already attached to the VPC to head to the internet. 
+   - This essentially means, the communication will from the private subnet to the public subnet via the Nat Gatway, who will then forward the communication to the Internet Gateway which is already attached to the VPC to head to the internet as illustrated below.
+  
+  
+   <img width="1167" height="729" alt="Screenshot 2025-08-25 at 01 05 57" src="https://github.com/user-attachments/assets/459dc161-9790-49b8-9997-e6a830436437" />
+
  
 ## CONCLUSION
 if you need John to communicate with a resource in your subnet, make sure that resource is provisioned inside a PUBLIC SUBNET,
 basically the subnet has to be associated with a Route Table that has a route linked to the Internet Gateway. 
+
 
 
