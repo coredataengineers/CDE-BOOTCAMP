@@ -26,4 +26,12 @@ route to the internet does not automatically allow connection from anyone on the
 
 <img width="1189" height="569" alt="Screenshot 2025-08-25 at 00 39 16" src="https://github.com/user-attachments/assets/9425bbef-8a79-4aad-940b-a5ccc6b6ee09" />
 
+IMAGE SUMMARY
+- The VPC has 1 subnet
+- The subnet has a server being deploy in it
+- We have a Security group that act as a firewall that control inbound and Outbound traffic of the Server
+- Lastly, there is a NACL that act as a firewall that control inbound and outbound traffic on the subnet.
+
+
+
 
