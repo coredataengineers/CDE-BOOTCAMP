@@ -1,4 +1,4 @@
-
+# SECURITY GROUP AND NACL
 
 A `Security Group` is a firewall that controls the traffic that is allowed to reach and leave the resources that it is associated with. 
 For example, you can create a server in a specific subnet, create a security group that can be attached to the server.
@@ -22,8 +22,8 @@ route to the internet does not automatically allow connection from anyone on the
     - Here you can say allow any connection from the Database to go to this specific IP Address or CIDR range.
 
 ## WHAT ABOUT NACL
-NACL stands for Network Access Control List. This is a firewall not on the resource residing inside a subnet , but on the subnet level itself. When you create a NACL and associate a subnet to it, if you deny inbound traffic from a specific IP into that subnet,
-no connection can happen on the resource that resides inside that subnet even if security grouo allow the conection.
+`NACL stands for Network Access Control List`. This is a `firewall` not on the resource residing inside a subnet , but on the `subnet` level itself. When you create a `NACL` and associate a subnet to it, if you deny inbound traffic from a specific IP into that subnet, no connection can happen on the resource that resides inside that subnet even if security grouo allow the conNection.
 
 <img width="1189" height="569" alt="Screenshot 2025-08-25 at 00 39 16" src="https://github.com/user-attachments/assets/9425bbef-8a79-4aad-940b-a5ccc6b6ee09" />
+
 
