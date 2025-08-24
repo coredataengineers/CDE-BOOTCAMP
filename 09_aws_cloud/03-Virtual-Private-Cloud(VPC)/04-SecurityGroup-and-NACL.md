@@ -32,6 +32,7 @@ IMAGE SUMMARY
 - We have a Security group that act as a firewall that control inbound and Outbound traffic of the Server
 - Lastly, there is a NACL that act as a firewall that control inbound and outbound traffic on the subnet.
 
+The image below demonstrate that, even if you have everything checked fine on the security level to be able to connect to the server, if communications are blocked on the subnet level, nothing can come in, its more like if the main entrance is locked, 
+there is no way to even get into the room in the house.
 
-
-
+<img width="1171" height="554" alt="Screenshot 2025-08-25 at 00 49 27" src="https://github.com/user-attachments/assets/535ee0a5-ae61-4643-a42e-0b4da28a4b32" />
