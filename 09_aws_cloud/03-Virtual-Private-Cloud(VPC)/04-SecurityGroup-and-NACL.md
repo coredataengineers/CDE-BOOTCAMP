@@ -17,6 +17,7 @@ route to the internet does not automatically allow connection from anyone on the
 - You will need to create a Security Group that will be attached to that Database Instance
 - You will create a `Security Group Rule`
   - `Ingress Rule`: Rule that control the inbound, basically control who can connect to that Database
-    - Here you can say allow any connection to the Database from this specific IP Address or CIDR range.
+    - Here you can say allow any connection into the Database from this specific IP Address or CIDR range.
   - `Egress Rule`: Rule that control outbound, pretty much communication that can leave the Database instance
     - Here you can say allow any connection from the Database to go to this specific IP Address or CIDR range.
+
