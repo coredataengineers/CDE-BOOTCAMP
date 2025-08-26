@@ -42,6 +42,11 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * Both need to be converted into bytes before sending.
 * Serializers handle this conversion.
 
+Some Common options:
+
+* StringSerializer (for text data)
+* IntegerSerializer (for numbers)
+* Avro / JSON Serializer (for structured data)
 
 
 
