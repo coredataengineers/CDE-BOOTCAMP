@@ -32,7 +32,7 @@ See this image below from AWS official Documenation
 
 <img width="831" height="219" alt="image" src="https://github.com/user-attachments/assets/675efa42-0c04-4cc4-ae58-b2776d9fd755" />
 
-IMAGE SUMMARY
+**IMAGE SUMMARY**
 - Every EC2 Instance comes with hardwares like `CPU`, `Memory`, `Storage` and `Network`.
 - c7gn is the Family this instance belongs to
 - 2xlarge is the instance size . 
@@ -50,6 +50,7 @@ We will cover 4 of these categories that we consider the most common
   - See [HERE](https://docs.aws.amazon.com/ec2/latest/instancetypes/so.html) to see all Instance Types and specifications for the Storage Optimized category.
 - `High-performance computing` – Purpose built to offer the best price performance for running HPC workloads at scale on AWS. These instances are ideal for applications that benefit from high-performance processors, such as large, complex simulations and deep learning workloads.
   - See [HERE](https://docs.aws.amazon.com/ec2/latest/instancetypes/hpc.html) to see all Instance Types and specifications for the High-performance computing category.
+
 
 
 
