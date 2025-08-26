@@ -27,6 +27,14 @@ When a producer sends a message:
 * Kafka assigns the message to a topic partition.
 * The message is stored with a unique offset.
 
+### Producer Configurations (Key Settings)
+
+Producers in Kafka are very configurable. Here are the most important beginner-friendly ones:
+
+1. `bootstrap.servers`
+
+* The address of the Kafka brokers (default address/port is localhost:9092).
+* This is how the producer knows where to send data.
 
 
 
