@@ -19,6 +19,15 @@ Example:
 * A payment service sending transaction logs.
 * An IoT device sending temperature readings.
 
+### How a Producer Works
+
+When a producer sends a message:
+
+* It connects to a Kafka broker (server).
+
+Kafka assigns the message to a topic partition.
+
+The message is stored with a unique offset.
 
 
 
