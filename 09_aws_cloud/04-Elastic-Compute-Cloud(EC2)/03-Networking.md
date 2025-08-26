@@ -39,4 +39,18 @@ This is what the general represention looks like below
 
 <img width="853" height="398" alt="Screenshot 2025-08-26 at 21 43 33" src="https://github.com/user-attachments/assets/38d6b780-d46c-4735-ba47-3fd7410b180e" />
 
+## EC2 DNS HOSTNAME
+It's important to know that when you create an EC2 Instance, at the end its a Server that anyone would have to connect to, either human being or an application.
+But how do we communicate with Servers, we can't use their IP address, its not easy to remember, plus IP Address can change, in that case we give the Server a DNS Hostname that is easy to remember.
+
+AWS EC2 instances also give DNS Hostname to instances that you launch, if you have an EC2 instance that you want someone from the internet to reach, they will have a Public DNS hostname, 
+however for instances within your VPC, they all have their Private DNS Hostname.
+
+Lets see how a DNS Hostname will be for the image we have above
+- Private DNS Hostname: `ip-10.0.0.2.us-west-2.compute.internal`.
+- Public DNS Hostname: `ip-43.39.19.2.us-west-2.compute.internal`.
+So essentially, this above hostnames is what you use to connect to the instance, behind the scenee, the DNS Hostnames will be resolved back to their corresponding IP address, you don't care about this but AWS will do this.
+
+
+
 
