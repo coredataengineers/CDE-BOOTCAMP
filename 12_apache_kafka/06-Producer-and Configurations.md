@@ -3,7 +3,10 @@ So far, we know that a Kafka topic is like a notebook (or diary) where events ar
 
 But who actually writes into this notebook?
 
-That’s the `Producer`.
+That is the `Producer`.
+[What is a Producer?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#what-is-a-producer)
+
+
 
 ### What is a Producer?
 
@@ -60,6 +63,7 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 
 * If a message fails to send, how many times should Kafka retry?
 * This also helps to handle temporary network issues.
+
 
 
 
