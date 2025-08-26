@@ -1,14 +1,15 @@
-## Kafka Producers and Configurations
+# Kafka Producers and Configurations
 So far, we know that a Kafka topic is like a notebook (or diary) where events are written, and partitions are like the pages that keep data organized. 
 
 But who actually writes into this notebook?
 
 That is the `Producer`.
+
 [What is a Producer?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#what-is-a-producer)
 
 
 
-### What is a Producer?
+## What is a Producer?
 
 A producer is any application that sends (produces) messages to a Kafka topic.
 
@@ -22,7 +23,7 @@ Example:
 * A payment service sending transaction logs.
 * An IoT device sending temperature readings.
 
-### How a Producer Works
+## How a Producer Works
 
 When a producer sends a message:
 
@@ -30,7 +31,7 @@ When a producer sends a message:
 * Kafka assigns the message to a topic partition.
 * The message is stored with a unique offset.
 
-### Producer Configurations (Key Settings)
+## Producer Configurations (Key Settings)
 
 Producers in Kafka are very configurable. Here are the most important beginner-friendly ones:
 
@@ -63,6 +64,7 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 
 * If a message fails to send, how many times should Kafka retry?
 * This also helps to handle temporary network issues.
+
 
 
 
