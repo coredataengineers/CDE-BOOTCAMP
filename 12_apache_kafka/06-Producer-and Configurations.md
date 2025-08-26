@@ -48,6 +48,13 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * IntegerSerializer (for numbers)
 * Avro / JSON Serializer (for structured data)
 
+3. `acks (Acknowledgments)`
+
+  This controls how "safe" message delivery is:
+
+* acks=0 → Fire-and-forget (producer doesn’t wait for confirmation). Fast, but risky.
+* acks=1 → Waits for leader partition to confirm. Balanced.
+* acks=all → Waits for all replicas to confirm. Safest, but slower.
 
 
 
