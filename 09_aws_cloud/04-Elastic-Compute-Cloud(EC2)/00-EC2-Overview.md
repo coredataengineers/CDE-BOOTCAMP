@@ -47,8 +47,9 @@ We will cover 4 of these categories that we consider the most common
 - `Memory optimized` – Designed to deliver fast performance for workloads that process large data sets in memory.
   - See [HERE](https://docs.aws.amazon.com/ec2/latest/instancetypes/mo.html) to see all Instance Types and specifications for the Compute optimized category.
 - `Storage optimized` – Designed for workloads that require high, sequential read and write access to very large data sets on local storage. They are optimized to deliver tens of thousands of low-latency, random I/O operations per second (IOPS) to applications.
-  - See [HERE](https://docs.aws.amazon.com/ec2/latest/instancetypes/so.html) to see all Instance Types and specifications for the Compute optimized category.
+  - See [HERE](https://docs.aws.amazon.com/ec2/latest/instancetypes/so.html) to see all Instance Types and specifications for the Storage Optimized category.
 - `High-performance computing` – Purpose built to offer the best price performance for running HPC workloads at scale on AWS. These instances are ideal for applications that benefit from high-performance processors, such as large, complex simulations and deep learning workloads.
-  - See [HERE](https://docs.aws.amazon.com/ec2/latest/instancetypes/hpc.html) to see all Instance Types and specifications for the Compute optimized category.
+  - See [HERE](https://docs.aws.amazon.com/ec2/latest/instancetypes/hpc.html) to see all Instance Types and specifications for the High-performance computing category.
+
 
 
