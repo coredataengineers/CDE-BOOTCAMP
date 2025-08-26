@@ -31,7 +31,7 @@ When a producer sends a message:
 
 Producers in Kafka are very configurable. Here are the most important beginner-friendly ones:
 
-1. `bootstrap.servers`
+### `bootstrap.servers`
 
 * The address of the Kafka brokers (default address/port is localhost:9092).
 * This is how the producer knows where to send data.
@@ -60,6 +60,7 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 
 * If a message fails to send, how many times should Kafka retry?
 * This also helps to handle temporary network issues.
+
 
 
 
