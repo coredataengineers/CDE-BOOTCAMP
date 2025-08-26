@@ -36,6 +36,14 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * The address of the Kafka brokers (default address/port is localhost:9092).
 * This is how the producer knows where to send data.
 
+2. `key.serializer & value.serializer`
+
+* Kafka messages have a key and a value.
+* Both need to be converted into bytes before sending.
+* Serializers handle this conversion.
+
+
+
 
 
 
