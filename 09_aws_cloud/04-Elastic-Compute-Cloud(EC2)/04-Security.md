@@ -19,7 +19,7 @@ We designed IAM roles so that your applications can securely make API requests f
 without requiring you to manage the security credentials that the applications use. Instead of creating and distributing your AWS credentials, 
 you can delegate permission to make API requests using IAM roles as follows:
 
-## KAY PAIRS
+## KEY PAIRS
 A key pair, consisting of a public key and a private key, is a set of security credentials that you use to prove your identity when connecting
 to an Amazon EC2 instance. For Linux instances, the private key allows you to securely SSH into your instance. For Windows instances, 
 the private key is required to decrypt the administrator password, which you then use to connect to your instance.
@@ -36,3 +36,4 @@ If you don't specify a security group, Amazon EC2 uses the default security grou
 you can change its security groups.
 
 Security is a shared responsibility between AWS and you. For more information, see Security in Amazon EC2. AWS provides security groups as one of the tools for securing your instances, and you need to configure them to meet your security needs. If you have requirements that aren't fully met by security groups, you can maintain your own firewall on any of your instances in addition to using security groups.
+
