@@ -14,18 +14,25 @@ subnet. Lets understand this with the below image
 - `EC2 Instance` launched in `SUBNET A` automatically and randomly get one of the available IPs, this is done by AWS. 
 
 ## ELASTIC NETWORK INTERFACE
-When you launch an instance, it automatically comes with an Elastic Network Interface, this will be created 
-behind the scene by AWS.
-The instance is configured with a primary network interface, which is a logical virtual network card. 
-The instance receives a primary private IP address from the IPv4 address of the subnet, 
-and it is assigned to the primary network interface.
+When you launch an instance, we know it gets an IP address from the available IPs in that Subnet where it was launched into,
+but the reality is this, the IP address is not attached to the EC2 Instance directly, infact its attached with to the `Elastic Network Interface`.
 
-You can control whether the instance receives a public IP address from Amazon's pool of public IP addresses. 
-The public IP address of an instance is associated with your instance only until it is stopped or terminated. 
-If you require a persistent public IP address, you can allocate an Elastic IP address for your AWS account 
-and associate it with an instance or a network interface. 
-An Elastic IP address remains associated with your AWS account until you release it, 
-and you can move it from one instance to another as needed. 
-You can bring your own IP address range to your AWS account, where it appears as an address pool,
-and then allocate Elastic IP addresses from your address pool.
+`Elastic Network Interface` is a `CRITICAL` networking component in a VPC that represents a virtual network card, see it as a card. You can create and configure network interfaces and attach them to instances that you launch in the same Availability Zone. When yoiu create ENI in a specific Availability Zone, make sure that the Instance you are attaching it to is also in the same Availability Zone.
+
+So this is what happened when you launch an Instance
+- AWS create an Elastic Network Interface called the Primary ENI
+- Attach the available IP in that subnet to the ENI
+- The EC2 instance will be created and the ENI will be attached to that instance.
+
+## ELASTIC IP
+Before we go into `Elastic IP`, it's important to know that if you want anyone outside of your `VPC CIDR Range` to connect to your `EC2 instance`,
+you need to ensure `Public IP` is attached to the EC2 Instance during the time of creation. Again, behind the scene, that `Public IP` will be 
+attached to the primary `Elastic Network Interface`.
+
+There is one issue that comes with this, when you stop that instance and start it again, you will not have the same `Public IP`, it will be changed 
+to another one. This can be a problem sometimes depending on the use case.
+
+To solve this problem, you can create an `Elastic IP` and attach it to the instance, when you stop and restart the Instance, the `Public IP` still 
+remain the same. This `IP Address` is yours until you release it, this mean you remove it from your `EC2 Instance`. You can move an `Elastic IP` from one instance to another instance.
+
 
