@@ -24,10 +24,9 @@ Example:
 When a producer sends a message:
 
 * It connects to a Kafka broker (server).
+* Kafka assigns the message to a topic partition.
+* The message is stored with a unique offset.
 
-Kafka assigns the message to a topic partition.
-
-The message is stored with a unique offset.
 
 
 
