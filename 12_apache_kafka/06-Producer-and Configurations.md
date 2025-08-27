@@ -65,7 +65,14 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * If a message fails to send, how many times should Kafka retry?
 * This also helps to handle temporary network issues.
 
-5. `linger.ms & batch.size`
+### 5. `linger.ms & batch.size`
+
+* Producers can group messages into batches before sending.
+* linger.ms waits a little before sending to allow batching.
+* batch.size sets the maximum batch size.
+* Batching improves throughput (more efficient) but may add small delays.
+
+
 
 
 
