@@ -52,7 +52,7 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * IntegerSerializer (for numbers)
 * Avro / JSON Serializer (for structured data)
 
-3. `acks (Acknowledgments)`
+### 3. `acks (Acknowledgments)`
 
   This controls how "safe" message delivery is:
 
@@ -66,6 +66,7 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * This also helps to handle temporary network issues.
 
 5. `linger.ms & batch.size`
+
 
 
 
