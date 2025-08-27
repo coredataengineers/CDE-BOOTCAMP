@@ -60,12 +60,13 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * acks=1 → Waits for leader partition to confirm. Balanced.
 * acks=all → Waits for all replicas to confirm. Safest, but slower.
 
-4. `retries & retry.backoff.ms`
+### 4. `retries & retry.backoff.ms`
 
 * If a message fails to send, how many times should Kafka retry?
 * This also helps to handle temporary network issues.
 
 5. `linger.ms & batch.size`
+
 
 
 
