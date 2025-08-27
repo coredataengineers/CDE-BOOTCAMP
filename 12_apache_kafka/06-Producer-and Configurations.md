@@ -65,6 +65,8 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * If a message fails to send, how many times should Kafka retry?
 * This also helps to handle temporary network issues.
 
+5. `linger.ms & batch.size`
+
 
 
 
