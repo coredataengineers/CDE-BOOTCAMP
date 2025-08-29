@@ -72,7 +72,11 @@ Producers in Kafka are very configurable. Here are the most important beginner-f
 * batch.size sets the maximum batch size.
 * Batching improves throughput (more efficient) but may add small delays.
 
+### 6. `partitioner.class (Optional)`
 
+* Decides which partition a message goes to.
+* Default: Kafka uses the message key’s hash to pick a partition.
+* If no key is given, Kafka distributes messages in a round-robin fashion.
 
 
 
