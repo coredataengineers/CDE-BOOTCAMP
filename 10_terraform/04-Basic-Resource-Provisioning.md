@@ -45,7 +45,19 @@ you should see something like below
 - The IAM User `id`, `arn`, `unique_id` will all be known after you apply
 - We added `3 Properties/Arguments` in our above block of code, but terraform added some other properties and some `Attribute` of the resources.
 
+## STEP 3
+Now that your plan is okay to you, for example if it shows a plan output that doesn't match your intent, then you might want to revisit your script.
+- Now we need to create the resource since its fine with us
+- Running `terraform apply` will ask you if you really want to create the resource, it will ask you to hit yes, if you want to, something like below
 
+<img width="489" height="105" alt="Screenshot 2025-08-30 at 21 35 24" src="https://github.com/user-attachments/assets/9b267dde-582d-4223-b70a-d3f75345cd7c" />
+
+- After typing yes and hit enter, it will create the resource, you should see something like below.
+
+<img width="548" height="177" alt="Screenshot 2025-08-30 at 21 37 40" src="https://github.com/user-attachments/assets/3939f1c4-2364-42f5-96c0-5338f42de431" />
+
+Now that we've successfully provision our iam user resource, next is understanding something that allow terraform to function, and that is the 
+`State File`.
 
 
 
