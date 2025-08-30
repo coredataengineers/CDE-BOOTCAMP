@@ -19,3 +19,10 @@ resource "aws_iam_user" "lb" {
   }
 }
 ```
+
+**SCRIPT DETAIL**
+- `resource`: This simply mean you want to create a new resource, this will always be constant anytime you want to create a new resource with terraform.
+- `aws_iam_user`: This is telling Terraform the specific resource you want to create, there are lots of
+resources. For example if you want to create an s3 bucket, it will be different and you can see the resource
+name of s3 bucket [HERE](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket).
+
