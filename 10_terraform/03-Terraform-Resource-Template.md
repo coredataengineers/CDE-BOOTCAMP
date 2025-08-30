@@ -25,4 +25,10 @@ resource "aws_iam_user" "lb" {
 - `aws_iam_user`: This is telling Terraform the specific resource you want to create, there are lots of
 resources. For example if you want to create an s3 bucket, it will be different and you can see the resource
 name of s3 bucket [HERE](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket).
+- `lb`: This is the identifier for that resource in the Terraform State file. For example, if you want to create 2 IAM Users, obviously their name will be different, in the above code block, the name of the IAM User is `testing`, but in Terraform, you don't use the resource properties to reference a resource, the resource identifier is used to reference a resource.
+- `name`, `path`, `tags`: These are called the `Properties` of what the resource support.
+  - Every resource you create with Terraform will have one or more properties,
+  - All supported properties are always defined in the Terraform Documentation. For example, you can see all properties supported for `IAM USER` [HERE](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user#argument-reference).
+    - Please note that any Property not part of this is not supported.
+
 
