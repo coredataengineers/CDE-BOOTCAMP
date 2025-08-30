@@ -40,9 +40,11 @@ resource "aws_iam_user" "lb" {
 you should see something like below
 
 <img width="404" height="359" alt="Screenshot 2025-08-30 at 21 16 18" src="https://github.com/user-attachments/assets/8529ab6f-d129-43a0-81da-3776e6c134df" />
+
 - The image tells us you plan to add 1 resource
 - The IAM User `id`, `arn`, `unique_id` will all be known after you apply
 - We added `3 Properties/Arguments` in our above block of code, but terraform added some other properties and some `Attribute` of the resources.
+
 
 
 
