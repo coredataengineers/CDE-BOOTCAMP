@@ -20,7 +20,7 @@ resource "aws_iam_user" "lb" {
 }
 ```
 
-**SCRIPT DETAIL**
+**SCRIPT BREAKDOWN**
 - `resource`: This simply mean you want to create a new resource, this will always be constant anytime you want to create a new resource with terraform.
 - `aws_iam_user`: This is telling Terraform the specific resource you want to create, there are lots of
 resources. For example if you want to create an s3 bucket, it will be different and you can see the resource
@@ -30,6 +30,7 @@ name of s3 bucket [HERE](https://registry.terraform.io/providers/hashicorp/aws/l
   - Every resource you create with Terraform will have one or more properties,
   - All supported properties are always defined in the Terraform Documentation. For example, you can see all properties supported for `IAM USER` [HERE](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_user#argument-reference).
     - Please note that any Property not part of this is not supported.
+
 
 
 
