@@ -32,5 +32,26 @@ name of s3 bucket [HERE](https://registry.terraform.io/providers/hashicorp/aws/l
     - Please note that any Property not part of this is not supported.
 
 
+```
+Terraform will perform the following actions:
+
+  # aws_iam_user.lb will be created
+  + resource "aws_iam_user" "lb" {
+      + arn           = (known after apply)
+      + force_destroy = false
+      + id            = (known after apply)
+      + name          = "testing"
+      + path          = "/system/"
+      + tags          = {
+          + "tag-key" = "tag-value"
+        }
+      + tags_all      = {
+          + "tag-key" = "tag-value"
+        }
+      + unique_id     = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+```
 
 
