@@ -10,6 +10,7 @@ In this module, we will be covering the following topics:
 - [What is a Producer?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#what-is-a-producer)
 - [How a Producer works?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#how-a-producer-works)
 - [Producer Configurations (Key Settings)](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#producer-configurations-key-settings)
+  - [bootstrap.servers]() 
 
 
 
@@ -93,6 +94,7 @@ Think of a producer like a post office clerk:
   * Drop it in the bin (acks=0)
   * Wait for a receipt from the recipient (acks=1)
   * Wait until all family members in the house confirm they got it (acks=all).
+
 
 
 
