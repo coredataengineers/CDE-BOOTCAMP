@@ -28,7 +28,7 @@ Amazon EC2 stores the public key on your instance, and you store the private key
 It's important that you store your private key in a secure place because anyone who possesses your private key can connect to your instances 
 that use the key pair.
 
-## SECURITY GRROUP
+## SECURITY GROUP
 A security group acts as a virtual firewall for your EC2 instances to control incoming and outgoing traffic. 
 Inbound rules control the incoming traffic to your instance, and outbound rules control the outgoing traffic from your instance. 
 When you launch an instance, you can specify one or more security groups. 
@@ -36,4 +36,5 @@ If you don't specify a security group, Amazon EC2 uses the default security grou
 you can change its security groups.
 
 Security is a shared responsibility between AWS and you. For more information, see Security in Amazon EC2. AWS provides security groups as one of the tools for securing your instances, and you need to configure them to meet your security needs. If you have requirements that aren't fully met by security groups, you can maintain your own firewall on any of your instances in addition to using security groups.
+
 
