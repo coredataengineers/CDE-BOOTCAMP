@@ -37,7 +37,7 @@ The visual representation looks like the below
 Let us illustrate how a table will be store on Disk in a `Row Based` and `Columnar Based` Database, lets assume 
 we have `Customer Table` with just 3 rows below.
 
-|   Name  | Age     |  Location |
+|  Name  | Age     |  Location |
 |---------|---------|-----------|
 |  John   |  20     |  Berlin   |
 |         |         |           |
@@ -66,6 +66,7 @@ we have `Customer Table` with just 3 rows below.
 - if you are interested in the same Age Column and specifically where Age is 18, because this is stored in a Columns, Redshift will check only the Block 2, this will reduce `I/O (Input/Output)` because Redshift only care about that column.
 
 For more on Redshift Columnar Storage: https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
+
 
 
 
