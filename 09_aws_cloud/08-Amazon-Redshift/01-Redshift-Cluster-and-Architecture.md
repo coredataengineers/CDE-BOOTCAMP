@@ -42,5 +42,8 @@ to handle more complex workloads.
 - Although it provides the same functionality as a typical RDBMS, including online transaction processing (OLTP) functions such as inserting and deleting data,
 - Amazon Redshift is optimized for high-performance analysis and reporting of very large datasets.
 
-For more on the Architecture: https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html
+For more on the Architecture: 
+- https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html
+- https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-practices-redshift/data-warehouse-arch-components.html
+
 
