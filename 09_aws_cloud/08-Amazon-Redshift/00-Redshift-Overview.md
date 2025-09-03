@@ -29,7 +29,9 @@ The visual representation looks like the below
 
 <img width="653" height="438" alt="Screenshot 2025-09-03 at 19 41 56" src="https://github.com/user-attachments/assets/09cd365e-7e49-43ae-bec7-9de73faaf5bf" />
 
-
-
-
-
+## WHAT DO WE MEAN BY COLUMNAR STORAGE 
+`Columnar storage`: This is a database architecture that organizes and stores data by column rather than by row. 
+- This method stores all values of a single column together in a `Block` on Disk.
+  - `Block`: This is where data are stored on `Disk` in a Database, `Disk` is just a storage.
+  - When you read or write data to a database table, you are actyually reading from that block or writing to that block.
+- This method is very efficient for analytical queries and data warehousing applications that only need to access a subset of a table's columns.
