@@ -33,11 +33,13 @@ Image Summary
 To be more specific, when you create a Database or a Server in a VPC , they are actually being deployed into a specific Subnet. Let's represent that visually
 
 <img width="664" height="319" alt="Screenshot 2025-08-21 at 11 42 04" src="https://github.com/user-attachments/assets/c784047c-a006-44af-978e-9ebaff749991" />
+
 IMAGE SUMMARY
 - The Overall VPC Network is 10.0.0.0/28, which has 16 IPs
 - The Network is further divided into 2 smaller chunks subnet A and subnet B
   - A Server is created in the Subnet A with 4 IPs, for your information, one of the IP will be attached to the Server.
   - A Database is created in the Subnet A with 8 IPs, for your information, one of the IP will be attached to the Server hosting that Database behind the scene.
+
 
 
 
