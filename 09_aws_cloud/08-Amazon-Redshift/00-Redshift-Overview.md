@@ -49,10 +49,24 @@ we have `Customer Table` with just 3 rows below.
 
 <img width="1322" height="157" alt="Screenshot 2025-09-03 at 20 31 32" src="https://github.com/user-attachments/assets/01726a8e-dd4f-4d6a-8973-9a94db22e29a" />
 
-Image Summary
-- We assume Postgres stores the 3 rows inside 3 blocks on Disk. Please be aware that this is just an example, a block can take more than a row depending on its fixed size, we are not here to discuss the detail of Database block.
-- If you are interested in only the Age column and only where Age is 18, the query will look like this `select Age where Age = 18;`
-- As simple as this query is, this will scan all the entire block, because postgres is not sure if any age is 18 in the first block or not, it will check all the blocks and that will impact the query time.
+**Image Summary**
+- We assume `Postgres` stores the 3 rows inside `3 blocks` on Disk.
+  - Please be aware that this is just an example, a block can take more than a row depending on its fixed size, we are not here to discuss the detail of Database block.
+- If you are interested in only the `Age Column` and only where `Age is 18`, the query will look like this `select Age where Age = 18;`
+- As simple as this query is, this will scan all the entire `Block`, because Postgres is not sure if any age is 18 in the `first block` or not, it will check all the blocks and that will impact the query time.
+- In this scenerio, we say the frequency of `I/O (Input/Output)` is high for `Row Oriented` Database when they conduct `analytical queries`, because it needs to keep checking in and out of blocks.
+
+2. Let's represent how these 3 rows will be stored on a Redshift Cluster Disk. Note, Redshift is Columnar Oriented.
+
+<img width="1309" height="154" alt="Screenshot 2025-09-03 at 21 30 24" src="https://github.com/user-attachments/assets/8d9d8c9a-ed43-4699-aed1-838c79e7d224" />
+
+**Image Summary**
+- We assume `Redshift` stores the 3 rows inside `3 blocks` on Disk.
+  - Again, this is just an example, a fixed block size in Redshift is 1 MB, so this can take in more rows, but we are using this to explain the concept.
+- if you are interested in the same Age Column and specifically where Age is 18, because this is stored in a Columns, Redshift will check only the Block 2, this will reduce `I/O (Input/Output)` because Redshift only care about that column.
+
+
+
 
 
 
