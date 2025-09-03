@@ -1,12 +1,11 @@
 # OVERVIEW
-Amazon Redshift is a fully managed, petabyte-scale data warehouse service in the cloud.
-But let's break this down a bit, fully managed means it's a manage service by AWS, 
-you don't need to build it yourself, basically with few clicks you have a functioning Datawarehousing
-system.
+`Amazon Redshift` is a fully managed, `petabyte-scale` data warehouse service in the cloud.
+But let's break this down a bit, 
+- `Fully Managed` means it's manage by AWS.
+- you don't need to build it yourself, basically with few clicks you have a functioning `Datawarehousing
+System`.
 
-In addition to the above, Amazon Redshift is Distributed System, this mean it leverage the concept of Master and Slave architecture, 
-where the Master designited what needs to be done to the slaves, it's also worth to know that Redshift
-leverage columnar storage concept to store it's data. 
+In addition to the above, Amazon Redshift is `Distributed System`, this mean it leverage the concept of `Master and Slave Architecture`, where the `Master` designited what needs to be done to the `Slaves`. it's also worth to know that Redshift leverage `Columnar Storage` architecture to store it's data. 
 
 Before anything, Amazon Redshift is an AWS service, Cluster is a resource you create within that service that let you build your Datawarehouse. To better understand Amazon Redshift, we need to understand what a `Redshift Cluster`, `Distributed System` and a `Columnar Storage` mean, the concept needs to be clear.
 We need to know that we are not here to write SQL against this cluster, but we need to properly
@@ -16,7 +15,6 @@ deep dive into what the system is, so as to enable us work efficiently with it.
 `Redshift Cluster`: is a collection of 2 or more computers called `Node` networked together to act as a single system. These Nodes networked together act as a unified system that helps to process our queries and store the data within that cluster. The Cluster is designed to allow the `Nodes` to communicate with one another. The image representation below shows a Redshift cluster with 3 Nodes connected to each other.
 
 <img width="555" height="393" alt="Screenshot 2025-09-03 at 19 34 26" src="https://github.com/user-attachments/assets/944e22c5-37b8-41bb-9ade-9708ecf86beb" />
-
 
 ## DESTRIBUTED SYSTEM CONCEPT
 `Distributed System`: These are systems that leverage a Master and Slave architecture. Redshift is a distrubted system, the above image shows what a typical Redshift Cluster looks like. 
@@ -35,3 +33,24 @@ The visual representation looks like the below
   - `Block`: This is where data are stored on `Disk` in a Database, `Disk` is just a storage.
   - When you read or write data to a database table, you are actyually reading from that block or writing to that block.
 - This method is very efficient for analytical queries and data warehousing applications that only need to access a subset of a table's columns.
+
+Let us illustrate how a table will be store on Disk in a `Row Based` and `Columnar Based` Database, lets assume 
+we have `Customer Table` with just 3 rows below.
+
+|   Name  | Age     |  Location |
+|---------|---------|-----------|
+|  John   |  20     |  Berlin   |
+|         |         |           |
+|  Terry  |  18     |  Lagos    |
+|         |         |           |
+| Cynthia |  25     |  London   |
+
+1. Let's represent how these 3 rows will be stored on a Postgres Database Disk. Note, Postgres Database is Row Oriented Database.
+
+<img width="1322" height="157" alt="Screenshot 2025-09-03 at 20 31 32" src="https://github.com/user-attachments/assets/01726a8e-dd4f-4d6a-8973-9a94db22e29a" />
+
+IMAGE SUMMRY ( This is only an Example, number of rows that goes on a single block depends )
+- 
+
+
+
