@@ -1,6 +1,6 @@
 # REDSHIFT ARCHITECTURE
-From the overview of `Redshift`, we understood that its a `Distributed System` which uses `Master` and `Slave` concept.
-We also see it leverage a `Columnar Storage` architecture to store its data on Disk.
+From the overview of `Redshift`, we understood that it's a `Distributed System` which uses `Master` and `Slave` concept.
+We also saw it leverage a `Columnar Storage` architecture to store its data on Disk.
 Now let's dive into the architecture of a `Redshift Cluster`. 
 
 Firstly, `Amazon Redshift` is based on `PostgreSQL`, so most existing SQL client applications will work with 
@@ -45,5 +45,6 @@ to handle more complex workloads.
 For more on the Architecture: 
 - https://docs.aws.amazon.com/redshift/latest/dg/c_high_level_system_architecture.html
 - https://docs.aws.amazon.com/prescriptive-guidance/latest/query-best-practices-redshift/data-warehouse-arch-components.html
+
 
 
