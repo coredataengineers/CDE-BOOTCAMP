@@ -65,6 +65,9 @@ we have `Customer Table` with just 3 rows below.
   - Again, this is just an example, a fixed block size in Redshift is 1 MB, so this can take in more rows, but we are using this to explain the concept.
 - if you are interested in the same Age Column and specifically where Age is 18, because this is stored in a Columns, Redshift will check only the Block 2, this will reduce `I/O (Input/Output)` because Redshift only care about that column.
 
+For more on Redshift Columnar Storage: https://docs.aws.amazon.com/redshift/latest/dg/c_columnar_storage_disk_mem_mgmnt.html
+
+
 
 
 
