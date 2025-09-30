@@ -1,0 +1,1 @@
+To install and setup Apache Airflow on your PC, follow the comprehensive guide [here](https://github.com/coredataengineers/set-up-guides/tree/main/airflow_installation_guide).
