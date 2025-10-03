@@ -12,6 +12,11 @@ In this module, we will be covering the following topics:
 - [Producer Configurations (Key Settings)](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#producer-configurations-key-settings)
   - [bootstrap.servers](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#1-bootstrapservers)
   - [key.serializer & value.serializer](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#2-keyserializer--valueserializer)
+  - [acks(Acknowledgements)](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#3-acks-acknowledgments)
+  - [retries & retry.backoff.ms](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#4-retries--retrybackoffms)
+  - [linger.ms & batch size](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#5-lingerms--batchsize)
+  - [partitioner.class (Optional)](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#6-partitionerclass-optional)
+- [Quick Analogy](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/06-Producer-and%20Configurations.md#quick-analogy)
 
 
 
@@ -95,6 +100,7 @@ Think of a producer like a post office clerk:
   * Drop it in the bin (acks=0)
   * Wait for a receipt from the recipient (acks=1)
   * Wait until all family members in the house confirm they got it (acks=all).
+
 
 
 
