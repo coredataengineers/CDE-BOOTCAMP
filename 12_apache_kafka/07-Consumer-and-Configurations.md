@@ -8,7 +8,7 @@ Simply put, if a producer is the writer in Kafka, then a `consumer` is the reade
 
 In this module, we will be covering the following topics:
 
-- [What is a Consumer?]()
+- [What is a Consumer?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/07-Consumer-and-Configurations.md#what-is-a-consumer)
 - [How Consumers work]()
 
 
@@ -25,4 +25,15 @@ Example:
 * A dashboard that reads real-time user activity.
 * A fraud detection system that consumes payment events.
 * A database sync service that consumes topic data and writes it into a table.
+
+## How Consumers Work
+
+When a consumer subscribes to a topic:
+
+* Kafka assigns one or more **partitions** from that topic to the consumer.
+* The consumer reads messages in order (based on **offsets**).
+* After processing each message, it can commit the offset, meaning “*I’ve read this message; move to the next.*”
+
+If a consumer crashes and restarts, it resumes reading from the last committed offset, not from the beginning.
+
 
