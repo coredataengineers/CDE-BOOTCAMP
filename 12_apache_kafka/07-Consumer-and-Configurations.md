@@ -41,16 +41,17 @@ If a consumer crashes and restarts, it resumes reading from the last committed o
 
 Here are the most important configuration properties you’ll use with Kafka consumers 👇
 
-### 1. bootstrap.servers
+### 1. `bootstrap.servers`
 
 * The Kafka brokers your consumer connects to.
 * Example: `localhost:9092` or `broker1:9092`,`broker2:9092`
 
-### 2. group.id
+### 2. `group.id`
 
 * Consumers belong to consumer groups (more on that later).
 * The `group.id` identifies which group the consumer belongs to.
 * All consumers in the same group share the work. Kafka makes sure each partition is read by only one consumer in the group.
+
 
 
 
