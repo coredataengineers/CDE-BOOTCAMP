@@ -10,7 +10,7 @@ In this module, we will be covering the following topics:
 
 - [What is a Consumer?](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/07-Consumer-and-Configurations.md#what-is-a-consumer)
 - [How Consumers work](https://github.com/coredataengineers/CDE-BOOTCAMP/blob/main/12_apache_kafka/07-Consumer-and-Configurations.md#how-consumers-work)
-
+   [Consumer Configurations](Key Settings)
 
 ## What is a Consumer?
 
@@ -35,6 +35,22 @@ When a consumer subscribes to a topic:
 * After processing each message, it can commit the offset, meaning “*I’ve read this message; move to the next.*”
 
 If a consumer crashes and restarts, it resumes reading from the last committed offset, not from the beginning.
+
+
+## Consumer Configurations (Key Settings)
+
+Here are the most important configuration properties you’ll use with Kafka consumers 👇
+
+### 1. bootstrap.servers
+
+* The Kafka brokers your consumer connects to.
+* Example: `localhost:9092` or `broker1:9092`,`broker2:9092`
+
+### 2. group.id
+
+* Consumers belong to consumer groups (more on that later).
+* The `group.id` identifies which group the consumer belongs to.
+* All consumers in the same group share the work. Kafka makes sure each partition is read by only one consumer in the group.
 
 
 
