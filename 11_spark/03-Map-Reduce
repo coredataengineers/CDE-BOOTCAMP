@@ -1,0 +1,64 @@
+# Map Reduce
+
+As data continued to grow, scaling a single machine was no longer enough. The industry needed a way to process massive datasets across multiple machines instead of relying on one powerful server.
+
+This led to the creation of Hadoop, an ecosystem designed for distributed storage and distributed processing.
+
+You can think of Hadoop as the parent ecosystem that provides the infrastructure for handling big data. Within the Hadoop ecosystem, MapReduce serves as the processing framework responsible for executing data processing jobs across a cluster of machines.
+
+A simplified view of the Hadoop ecosystem looks like this:
+
+- HDFS (Storage)
+- YARN (Resource Management)
+- MapReduce (Processing)
+
+MapReduce was one of the first widely adopted distributed processing frameworks and played a major role in the growth of big data technologies.
+
+## How MapReduce Solved the Single-Node Problem
+
+MapReduce breaks a job into two main phases:
+
+### Map Phase
+
+The input data is divided into smaller chunks and distributed across multiple nodes. Each node processes its assigned portion of the data independently.
+
+### Reduce Phase
+
+The intermediate results produced during the Map phase are collected, grouped, and combined to produce the final result.
+
+The workflow can be summarized as:
+
+Input Data → Map → Intermediate Results → Reduce → Final Output
+
+This approach allowed organizations to process terabytes and petabytes of data that would have been impossible to handle on a single machine.
+
+Instead of processing a 10 TB dataset on one machine, MapReduce distributes the workload across multiple nodes, allowing each machine to process only a fraction of the data. This significantly reduces the memory pressure on any single node and enables large-scale distributed processing.
+
+## Limitations of MapReduce
+
+Although MapReduce solved the scaling problem, it introduced new challenges.
+
+The biggest limitation was that MapReduce is a disk-based processing framework. After almost every stage of processing, intermediate results are written to disk before the next stage begins.
+
+A simplified workflow looks like this:
+
+Read from Disk → Process Data → Write to Disk → Read Again → Process Again → Write Again
+
+This constant reading and writing creates significant Disk I/O (Input/Output) overhead. Since disk access is much slower than memory access, processing becomes slower as workloads grow.
+
+For this reason, MapReduce is often described as being disk-bound.
+
+Another challenge was the developer experience. MapReduce jobs were primarily written in Java. For developers familiar with Python, SQL, or R, the learning curve could be steep. Even simple data processing tasks often required a significant amount of Java code, making development slower and less accessible.
+
+While MapReduce introduced distributed processing to the world of big data, it had several limitations:
+
+- Slow execution speed
+- Heavy reliance on disk storage
+- High Disk I/O overhead
+- Disk-bound architecture
+- Complex development experience
+- Primarily Java-based programming model
+
+Organizations needed a system that could process data faster, reduce disk operations, make better use of memory, support multiple programming languages, and simplify distributed data processing.
+
+These needs eventually led to the creation of Apache Spark.
