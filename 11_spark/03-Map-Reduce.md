@@ -35,18 +35,18 @@ Instead of processing a 10 TB dataset on one machine, MapReduce distributes the 
 
 While MapReduce introduced distributed processing to the world of big data, it had several limitations:
 
-- **Slow execution speed – Processing could become slow, especially for complex workloads involving multiple stages.
+- Slow execution speed – Processing could become slow, especially for complex workloads involving multiple stages.
 
-- **Heavy reliance on disk storage – Intermediate results were frequently written to disk rather than kept in memory.
+- Heavy reliance on disk storage – Intermediate results were frequently written to disk rather than kept in memory.
 
-- **High Disk I/O overhead – Constant reading from and writing to disk increased processing time and reduced overall performance.
+- High Disk I/O overhead – Constant reading from and writing to disk increased processing time and reduced overall performance.
 
-- **Disk-bound architecture – Performance was largely constrained by disk access speeds, which are significantly slower than memory access speeds.
+- Disk-bound architecture – Performance was largely constrained by disk access speeds, which are significantly slower than memory access speeds.
 
-- **Complex development experience – Building and maintaining MapReduce jobs often required a significant amount of code, making development more challenging.
+- Complex development experience – Building and maintaining MapReduce jobs often required a significant amount of code, making development more challenging.
 
-- **Primarily Java-based programming model – Developers familiar with Python, SQL, or R often faced a steep learning curve when working with MapReduce.
+- Primarily Java-based programming model – Developers familiar with Python, SQL, or R often faced a steep learning curve when working with MapReduce.
 
-As organizations processed increasingly larger datasets, they needed a system that could reduce disk operations, make better use of memory, provide better performance, and support more developer-friendly programming languages.
+As organizations processed increasingly larger datasets, they needed a system that could reduce disk operations, make better use of memory, provide better performance and support more developer friendly programming languages.
 
 These needs eventually led to the creation of Apache Spark.
