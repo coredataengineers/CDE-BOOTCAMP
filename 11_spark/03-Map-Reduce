@@ -1,4 +1,4 @@
-# Map Reduce
+MapReduce
 
 As data continued to grow, scaling a single machine was no longer enough. The industry needed a way to process massive datasets across multiple machines instead of relying on one powerful server.
 
@@ -8,21 +8,21 @@ You can think of Hadoop as the parent ecosystem that provides the infrastructure
 
 A simplified view of the Hadoop ecosystem looks like this:
 
-- HDFS (Storage)
-- YARN (Resource Management)
-- MapReduce (Processing)
+HDFS (Storage)
+YARN (Resource Management)
+MapReduce (Processing)
 
 MapReduce was one of the first widely adopted distributed processing frameworks and played a major role in the growth of big data technologies.
 
-## How MapReduce Solved the Single-Node Problem
+How MapReduce Solved the Single-Node Problem
 
 MapReduce breaks a job into two main phases:
 
-### Map Phase
+Map Phase
 
 The input data is divided into smaller chunks and distributed across multiple nodes. Each node processes its assigned portion of the data independently.
 
-### Reduce Phase
+Reduce Phase
 
 The intermediate results produced during the Map phase are collected, grouped, and combined to produce the final result.
 
@@ -34,7 +34,7 @@ This approach allowed organizations to process terabytes and petabytes of data t
 
 Instead of processing a 10 TB dataset on one machine, MapReduce distributes the workload across multiple nodes, allowing each machine to process only a fraction of the data. This significantly reduces the memory pressure on any single node and enables large-scale distributed processing.
 
-## Limitations of MapReduce
+Limitations of MapReduce
 
 Although MapReduce solved the scaling problem, it introduced new challenges.
 
@@ -52,13 +52,13 @@ Another challenge was the developer experience. MapReduce jobs were primarily wr
 
 While MapReduce introduced distributed processing to the world of big data, it had several limitations:
 
-- Slow execution speed
-- Heavy reliance on disk storage
-- High Disk I/O overhead
-- Disk-bound architecture
-- Complex development experience
-- Primarily Java-based programming model
+Slow execution speed
+Heavy reliance on disk storage
+High Disk I/O overhead
+Disk-bound architecture
+Complex development experience
+Primarily Java-based programming model
 
 Organizations needed a system that could process data faster, reduce disk operations, make better use of memory, support multiple programming languages, and simplify distributed data processing.
 
-These needs eventually led to the creation of Apache Spark.
+These needs eventually led to the creation of Apache Spark
