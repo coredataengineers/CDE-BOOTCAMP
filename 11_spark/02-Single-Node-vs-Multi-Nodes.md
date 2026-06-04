@@ -8,9 +8,9 @@ A node is simply a computing machine. It could be a laptop, desktop computer, vi
 
 A node typically consists of:
 
-- Applications (Pandas, Polars, Python, PostgreSQL, etc.)
+- Application Layer for applications like (Pandas, Polars, Python, PostgreSQL, etc.)
 - An Operating System (Windows, Linux, macOS)
-- Hardware resources such as CPU, Memory (RAM) and Storage
+- Hardware Layer that hosts resources such as CPU, Memory (RAM) and Storage
 
 Regardless of its size, a node provides the resources required to run applications and process data.
 
@@ -20,7 +20,7 @@ In a single-node system, all processing happens on one machine. Popular tools su
 
 When you run a Pandas script on your laptop, all computation is performed using the CPU and memory available on that single machine.
 
-Consider a machine with:
+Consider a machine/node with:
 
 - 4 CPU cores
 - 7 GB RAM
