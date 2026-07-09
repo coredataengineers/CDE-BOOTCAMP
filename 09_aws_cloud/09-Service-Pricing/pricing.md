@@ -1,6 +1,6 @@
 # AWS Services – Pricing Overview
 
-A quick-reference guide to how each service in the architecture is billed, with links to the official AWS pricing pages for full rate tables (rates vary by region and change periodically — always confirm current rates before finalizing a cost estimate).
+A quick-reference guide to how each service in the architecture is billed, with links to the official AWS pricing pages for full rate tables (rates vary by region and change periodically always confirm current rates before finalizing a cost estimate).
 
 ---
 
