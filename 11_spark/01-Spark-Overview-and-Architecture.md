@@ -1,6 +1,6 @@
 # Apache Spark Overview and Architecture
 
-Every computer has three resources that limit data processing: CPU (how fast it computes), memory or RAM (how much data it can hold for fast access), and disk (how much it can store, but slowly). The most important for data processing is RAM, because computation happens on data loaded into memory. This are terms we use everyday. To be fair, most times when the average person wants to purchase a laptop, they just ask for RAM (e.g 8GB, 16GB, 32GB), and then disk (500GB SSD, 1T SSD, 2T SSD), they hardly ask about cores (CPU).
+Every computer has three resources that limit data processing: CPU (how fast it computes), memory or RAM (how much data it can hold for fast access), and disk (how much it can store, but slowly). The most important for data processing is RAM, because computation happens on data loaded into memory. RAM, Disk/Storage are terms we are already familiar with. To be fair, most times when the average person wants to purchase a laptop, they just ask for RAM (e.g 8GB, 16GB, 32GB), and then disk (500GB SSD, 1T SSD, 2T SSD), they hardly ask about cores (CPU). But, all three are important and will solidify our understanding of Spark (and even any distributed system).
 
 Apache Spark is a **distributed, in-memory data processing engine**. In plain English: it takes a job that is too big for one computer, chops it into small pieces, spreads those pieces across many computers, processes them **in RAM** (which is much faster than disk), and then brings the answer back to you.
 
