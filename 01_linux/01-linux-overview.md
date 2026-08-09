@@ -15,13 +15,13 @@ Image Summary below 👇
 - The `Fourth Layer` highlights the `Operating System` talking to the hardware to request for resources like `CPU`, `Memory` to be allocated to the VScode application that was launched.
 
 In short, `Operating Systems` are software that bridges the communication between the User applications and the underlying Hardware. As users, we launch various applications on our laptop, but how 
-the applications get resources to run is hidden away from us, that is made possible becasue of the Operating System software.
+the applications get resources to run is hidden away from us, that is made possible because of the Operating System software.
 
 # WHAT IS LINUX
 `Linux` is an open source `Operating System`, similar to `MacOS` and `Windows`. Open Source in this context means it was developed by the community, contrary to `MacOS` and `Windows` which are both developed and owned 
 by Apple Inc and Microsoft respectively.
 
-The below image shows a similar layers as we have above, the major difference is that the applications communicate with the `Linux Kernel` which is the actuall Operating System
+The below image shows a similar layers as we have above, the major difference is that the applications communicate with the `Linux Kernel` which is the actual Operating System
 software via the `System Calls` interface.
 
 <img width="799" alt="Screenshot 2025-05-17 at 23 56 03" src="https://github.com/user-attachments/assets/a368b919-d3a5-48dd-889b-f3cb5ae05ea4" />
