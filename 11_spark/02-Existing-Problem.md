@@ -56,16 +56,41 @@ These needs eventually led to the creation of Apache Spark.
 In classic **Hadoop MapReduce**, intermediate data is forcibly written to physical disk at multiple stages, making chained operations heavily disk-bound compared to Spark's in-memory pipelining.
 
 ```mermaid
+---
+config:
+  theme: base
+  themeVariables:
+    actorTextColor: "#000000"
+    actorBkg: "#e2e8f0"
+    actorBorder: "#334155"
+    signalColor: "#1e293b"
+    signalTextColor: "#000000"
+    labelBoxBkgColor: "#f1f5f9"
+    labelBoxBorderColor: "#475569"
+    labelTextColor: "#000000"
+    loopTextColor: "#000000"
+    sequenceNumberColor: "#ffffff"
+---
 sequenceDiagram
     autonumber
+    
     participant InputDisk as 💾 Input Storage (HDFS/Disk)
     participant MapRAM as Map Task (RAM Buffer)
     participant MapDisk as 💾 Local Node Disk (Intermediate)
     participant ReduceRAM as Reduce Task (RAM Buffer)
     participant OutputDisk as 💾 Final Output (HDFS/Disk)
 
+    box Worker Node A
+    participant MapRAM
+    participant MapDisk
+    end
+
+    box Worker Node B
+    participant ReduceRAM
+    end
+
     %% MAP PHASE
-    rect rgb(235, 243, 250)
+    rect rgb(219, 234, 254)
     note over InputDisk, MapDisk: 1. MAP PHASE (Process & Spill)
     InputDisk->>MapRAM: Read 5 Raw Rows (Alice $10, Bob $20, Alice $15, Bob $30, Alice $5)
     MapRAM->>MapRAM: Apply Map function & tag keys (Partition 0: Alice, Partition 1: Bob)
@@ -74,14 +99,14 @@ sequenceDiagram
     end
 
     %% SHUFFLE & SORT
-    rect rgb(255, 248, 220)
+    rect rgb(254, 240, 138)
     note over MapDisk, ReduceRAM: 2. SHUFFLE PHASE (Merge & Transfer)
     MapDisk->>MapDisk: Merge multiple spill files into single sorted map output file
     MapDisk->>ReduceRAM: Transfer partition byte streams across network or local bus
     end
 
     %% REDUCE PHASE
-    rect rgb(235, 250, 235)
+    rect rgb(220, 252, 231)
     note over ReduceRAM, OutputDisk: 3. REDUCE PHASE (Aggregate & Save)
     ReduceRAM->>ReduceRAM: Aggregate totals in memory (Alice = $30, Bob = $50)
     ReduceRAM->>OutputDisk: 💾 FORCE WRITE: Save final reduce outputs to persistent storage
