@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0369a1"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <!-- Host machine boundary -->
+  <rect x="20" y="20" width="840" height="510" rx="14" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="44" y="54" font-size="17" font-weight="600" fill="#334155">Your machine (Docker)</text>
+
+  <!-- spark-master -->
+  <rect x="60" y="85" width="290" height="140" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="205" y="113" text-anchor="middle" font-size="16" font-weight="700" fill="#0c4a6e">spark-master</text>
+  <text x="205" y="138" text-anchor="middle" font-size="12.5" fill="#334155">Master Web UI &#8594; localhost:8080</text>
+  <text x="205" y="157" text-anchor="middle" font-size="12.5" fill="#334155">cluster port 7077</text>
+  <line x1="78" y1="170" x2="332" y2="170" stroke="#bae6fd" stroke-width="1"/>
+  <text x="205" y="192" text-anchor="middle" font-size="11.5" fill="#0f172a" font-family="Consolas, Menlo, monospace">./data &#8594; /opt/spark/data</text>
+
+  <!-- spark-worker -->
+  <rect x="530" y="85" width="290" height="140" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="1.5"/>
+  <text x="675" y="113" text-anchor="middle" font-size="16" font-weight="700" fill="#0c4a6e">spark-worker</text>
+  <text x="675" y="138" text-anchor="middle" font-size="12.5" fill="#334155">2 cores &#183; 2 GB RAM</text>
+  <text x="675" y="157" text-anchor="middle" font-size="12.5" fill="#334155">executes your tasks</text>
+  <line x1="548" y1="170" x2="802" y2="170" stroke="#bae6fd" stroke-width="1"/>
+  <text x="675" y="192" text-anchor="middle" font-size="11.5" fill="#0f172a" font-family="Consolas, Menlo, monospace">./data &#8594; /opt/spark/data</text>
+
+  <!-- worker registers with master -->
+  <text x="440" y="112" text-anchor="middle" font-size="11" fill="#64748b">registers at</text>
+  <text x="440" y="128" text-anchor="middle" font-size="11.5" fill="#334155" font-family="Consolas, Menlo, monospace">spark://spark-master:7077</text>
+  <line x1="526" y1="148" x2="356" y2="148" stroke="#0369a1" stroke-width="2" marker-end="url(#arrowBlue)"/>
+
+  <!-- jupyter-node -->
+  <rect x="60" y="300" width="380" height="170" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+  <text x="250" y="328" text-anchor="middle" font-size="16" font-weight="700" fill="#78350f">jupyter-node</text>
+  <text x="250" y="353" text-anchor="middle" font-size="12.5" fill="#334155">JupyterLab &#8594; localhost:8888</text>
+  <text x="250" y="372" text-anchor="middle" font-size="12.5" fill="#334155">Spark Driver UI &#8594; localhost:4040</text>
+  <text x="250" y="392" text-anchor="middle" font-size="11.5" font-style="italic" fill="#92400e">local mode (default): driver + executors run here</text>
+  <line x1="78" y1="403" x2="422" y2="403" stroke="#fde68a" stroke-width="1"/>
+  <text x="250" y="424" text-anchor="middle" font-size="11.5" fill="#0f172a" font-family="Consolas, Menlo, monospace">./notebook-work &#8594; /home/jovyan/notebook-work</text>
+  <text x="250" y="444" text-anchor="middle" font-size="11.5" fill="#0f172a" font-family="Consolas, Menlo, monospace">./data &#8594; /home/jovyan/data</text>
+
+  <!-- optional cluster-mode connection -->
+  <line x1="250" y1="296" x2="228" y2="231" stroke="#64748b" stroke-width="1.7" stroke-dasharray="6 5" marker-end="url(#arrowGray)"/>
+  <text x="268" y="256" font-size="11" fill="#64748b">cluster mode only:</text>
+  <text x="268" y="273" font-size="11" fill="#475569" font-family="Consolas, Menlo, monospace">.master("spark://spark-master:7077")</text>
+
+  <!-- volumes caption -->
+  <text x="440" y="506" text-anchor="middle" font-size="12" font-style="italic" fill="#475569">./data and ./notebook-work live in this repo on your machine &#8212; mounted into the containers, so edits appear on both sides instantly.</text>
+</svg>
