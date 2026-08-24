@@ -1,7 +1,8 @@
-
 # Spark Dev Environment: Student Setup Guide
 
-Welcome! This repository gives you a complete, local Apache Spark development environment using Docker. In about 10 minutes you will have:
+> **Source repository:** [cappymayor/spark-dev-environment](https://github.com/cappymayor/spark-dev-environment) — everything referenced in this guide (`docker-compose.yaml`, the demo notebook, and the sample data) lives there.
+
+Welcome! The [spark-dev-environment](https://github.com/cappymayor/spark-dev-environment) repository gives you a complete, local Apache Spark development environment using Docker. Follow this guide to set it up — in about 10 minutes you will have:
 
 - A **Spark standalone cluster** (one master + one worker) running in containers
 - A **JupyterLab** instance with PySpark pre-installed, ready to run notebooks
@@ -30,7 +31,7 @@ No local installation of Spark, Java, or Python is required — Docker handles e
 
 ## 1. What You're Building
 
-The environment is defined in a single file, `docker-compose.yaml`, and consists of three containers:
+The environment is defined in a single file, [`docker-compose.yaml`](https://github.com/cappymayor/spark-dev-environment/blob/master/docker-compose.yaml), and consists of three containers:
 
 | Container | Image | Role | Ports on your machine |
 |---|---|---|---|
@@ -97,11 +98,11 @@ Give Docker at least **4 GB of RAM** (Docker Desktop → Settings → Resources)
 Clone the repository and move into it:
 
 ```bash
-git clone <REPOSITORY_URL>
+git clone https://github.com/cappymayor/spark-dev-environment.git
 cd spark-dev-environment
 ```
 
-(If your instructor gave you a zip file instead, unzip it and `cd` into the extracted folder.)
+(No Git installed? Download the repo as a zip instead — on the [repository page](https://github.com/cappymayor/spark-dev-environment), click **Code → Download ZIP**, unzip it, and `cd` into the extracted folder.)
 
 Every command in the rest of this guide assumes you are inside the `spark-dev-environment` directory — the one containing `docker-compose.yaml`.
 
@@ -169,7 +170,7 @@ Open **http://localhost:8888**. JupyterLab should load directly with **no login 
 
 ## 6. Opening JupyterLab and Running Your First Notebook
 
-1. In JupyterLab's file browser, open `notebook-work/demo.ipynb`.
+1. In JupyterLab's file browser, open [`notebook-work/demo.ipynb`](https://github.com/cappymayor/spark-dev-environment/blob/master/notebook-work/demo.ipynb).
 2. Run the cells in order (`Shift + Enter` runs a cell and moves to the next one).
 
 The notebook does three things:
@@ -203,7 +204,7 @@ df.explain(True)
 
 A few things worth understanding here:
 
-- **The path `../data/...`** is relative to the notebook's location (`/home/jovyan/notebook-work` inside the container), so it resolves to `/home/jovyan/data/bucketing/orders.csv` — the `data/` folder from this repo, mounted into the container.
+- **The path `../data/...`** is relative to the notebook's location (`/home/jovyan/notebook-work` inside the container), so it resolves to `/home/jovyan/data/bucketing/orders.csv` — the `data/` folder from the repo, mounted into the container.
 - **`inferSchema=true`** makes Spark scan the file to guess column types (so `order_id` becomes an integer, not a string). Convenient for learning; in production you'd usually declare an explicit schema.
 - **`df.explain(True)`** prints the four stages of Spark's query planning: the Parsed, Analyzed, and Optimized logical plans, and the final Physical Plan. Getting comfortable reading these plans is one of the most valuable Spark skills you'll build in this course.
 
@@ -223,7 +224,7 @@ spark.stop()
 
 ## 7. Understanding the Setup (How the Pieces Fit Together)
 
-Open `docker-compose.yaml` and read along — every line matters.
+Open [`docker-compose.yaml`](https://github.com/cappymayor/spark-dev-environment/blob/master/docker-compose.yaml) and read along — every line matters.
 
 ### The master
 
@@ -320,7 +321,7 @@ Two gotchas when running in cluster mode:
 
 ## 9. Working with the Sample Data
 
-The `data/bucketing/` folder contains two related datasets, sized to be joined:
+The [`data/bucketing/`](https://github.com/cappymayor/spark-dev-environment/tree/master/data/bucketing) folder contains two related datasets, sized to be joined:
 
 **`orders.csv`** — 1,000 orders:
 
@@ -372,7 +373,7 @@ Feel free to add your own datasets under `data/` — they'll appear inside the c
 | What you want | Command | Effect |
 |---|---|---|
 | Pause for the day | `docker compose stop` | Containers stop but are kept; `docker compose start` resumes them quickly |
-| Shut down properly | `docker compose down` | Containers and network are removed. **Your notebooks and data are safe** — they live in this repo's folders, not in the containers |
+| Shut down properly | `docker compose down` | Containers and network are removed. **Your notebooks and data are safe** — they live in the repo's folders, not in the containers |
 | Restart after editing `docker-compose.yaml` | `docker compose up -d` | Recreates only the containers whose configuration changed |
 | Watch what a container is doing | `docker compose logs -f jupyter` | Streams that container's logs (`Ctrl+C` to stop watching) |
 | Reclaim disk space at the end of the course | `docker compose down` then `docker image rm apache/spark:latest jupyter/pyspark-notebook:latest` | Removes the ~5 GB of downloaded images |
