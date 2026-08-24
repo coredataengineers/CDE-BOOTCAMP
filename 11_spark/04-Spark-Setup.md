@@ -40,29 +40,8 @@ The environment is defined in a single file, `docker-compose.yaml`, and consists
 
 A picture of the layout:
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Your machine (Docker)                │
-│                                                         │
-│  ┌──────────────┐   spark://spark-master:7077           │
-│  │ spark-master │◄─────────────┐                        │
-│  │  (UI: 8080)  │              │                        │
-│  └──────────────┘       ┌──────┴───────┐                │
-│                         │ spark-worker │                │
-│                         │ 2 cores, 2GB │                │
-│                         └──────────────┘                │
-│                                                         │
-│  ┌────────────────────────────┐                         │
-│  │ jupyter-node               │                         │
-│  │ JupyterLab (UI: 8888)      │                         │
-│  │ Spark Driver UI (4040)     │                         │
-│  └────────────────────────────┘                         │
-│                                                         │
-│  Shared folders from this repo:                         │
-│    ./data          → mounted into all three containers  │
-│    ./notebook-work → mounted into jupyter-node          │
-└─────────────────────────────────────────────────────────┘
-```
+![Environment layout: a Docker host running spark-master, spark-worker, and jupyter-node, with the repo's data and notebook-work folders mounted into the containers](assets/spark_setup_architecture.svg)
+
 
 The repository folders you'll interact with:
 
