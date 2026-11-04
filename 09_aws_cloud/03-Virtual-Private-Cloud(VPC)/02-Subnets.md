@@ -21,8 +21,8 @@ Let's represent this visually and summarise it.
 Image Summary
 - The VPC has a CIDR Range `10.0.0.0/28`
 - The VPC has `2` Subnets
-  - Subnet-A has a CIDR Range 10.0.0.0/32 which has `4` IPs.
-  - Subnet-B has a CIDR Range 10.0.0.0/32 which has `8` IPs.
+  - Subnet-A has a CIDR Range 10.0.0.0/30 which has `4` IPs.
+  - Subnet-B has a CIDR Range 10.0.0.0/29 which has `8` IPs.
   - Use this [tool](https://www.ipaddressguide.com/cidr#:~:text=Calculate-,IP%20Range%20To%20CIDR,-Result) to convert a range of IPs to CIDR Range 
 - The VPC has `4` more IPs not allocated to any Subnet.
 
@@ -38,7 +38,7 @@ IMAGE SUMMARY
 - The Overall VPC Network is 10.0.0.0/28, which has 16 IPs
 - The Network is further divided into 2 smaller chunks subnet A and subnet B
   - A Server is created in the Subnet A with 4 IPs, for your information, one of the IP will be attached to the Server.
-  - A Database is created in the Subnet A with 8 IPs, for your information, one of the IP will be attached to the Server hosting that Database behind the scene.
+  - A Database is created in the Subnet B with 8 IPs, for your information, one of the IP will be attached to the Server hosting that Database behind the scene.
 
 
 
